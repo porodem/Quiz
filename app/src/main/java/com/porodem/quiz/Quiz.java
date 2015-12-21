@@ -16,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -44,6 +45,8 @@ public class Quiz extends AppCompatActivity {
     int items = 0;
     //для флага - какая кнопка с ингредиентам была нажата,
     int flafIng;
+    //длина массива верных ингредиентов
+    int RAlength;
 
     //ingredients checket by user
     //массив ингредиентов выбор которых подтвердил пользователь
@@ -51,6 +54,15 @@ public class Quiz extends AppCompatActivity {
 
     //массив верных ингредиентов для текущего предмета
     int[] correctIngr;
+
+    //массив верных ингредиентов для текущего предмета
+    int[] ingrpack;
+
+    //окончательный массив с верной длиной для выбраных пользователем вещей
+    int[] finalIngByUser;
+
+    //ID выбранного элемента (добавляется к массиву ingrByUser
+    int thisID;
 
     public static final String LOG = "myLogs";
 
@@ -70,8 +82,13 @@ public class Quiz extends AppCompatActivity {
 
     TypedArray itemImg;
 
+    //объявляем объекты предметов которые будут использованы для работы с диалогом
     Item firstIng;
     Item secondIng;
+    Item thirdIng;
+    Item fourthIng;
+    Item fifthIng;
+    Item sixthIng;
 
     DB db;
 
@@ -79,6 +96,10 @@ public class Quiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        //объявляем массивы для ID правильных и введенных ответов
+        ingByUser = new int[4];
+        correctIngr = new int[4];
 
         //get resurses for all images
         Resources res = getResources();
@@ -109,7 +130,8 @@ public class Quiz extends AppCompatActivity {
 
 
 
-        if (db.checkOnEmpty() == false) {
+        //следующая строка раньше выглядела так: if (db.checkOnEmpty() == false) {
+        if (!db.checkOnEmpty()) {
             try {
                 Log.d(LOG, "-- Start TRY block --");
                 JSONObject obj = new JSONObject(loadJSONFromRaw());
@@ -172,6 +194,7 @@ public class Quiz extends AppCompatActivity {
         } else {
             Log.d(LOG, "-- TRY DOESN'T WORK --");
         }
+        db.close();
 
         //look all data containing in DB
         /*
@@ -181,6 +204,10 @@ public class Quiz extends AppCompatActivity {
         c.close();
         */
 
+
+        // ---------------------------- GET RANDOM ITEM ----------------------------------
+        //********************************************************************************
+/*
         //take first random Item
         Item item = db.getRandomItem();
 
@@ -213,18 +240,21 @@ public class Quiz extends AppCompatActivity {
                 allIngrToQuiz[3] = ingrpack[3];
                 allIngrToQuiz[4] = ingrToQuiz[0];
                 allIngrToQuiz[5] = ingrToQuiz[1];
+                RAlength = 2;
             }
             if (ingrToQuiz.length == 3) {
                 allIngrToQuiz[2] = ingrpack[2];
                 allIngrToQuiz[3] = ingrToQuiz[0];
                 allIngrToQuiz[4] = ingrToQuiz[1];
                 allIngrToQuiz[5] = ingrToQuiz[2];
+                RAlength = 3;
             }
             if (ingrToQuiz.length == 4) {
                 allIngrToQuiz[2] = ingrToQuiz[0];
                 allIngrToQuiz[3] = ingrToQuiz[1];
                 allIngrToQuiz[4] = ingrToQuiz[2];
                 allIngrToQuiz[5] = ingrToQuiz[3];
+                RAlength = 4;
             }
 
             //перемешиваем элементы масссива
@@ -246,16 +276,16 @@ public class Quiz extends AppCompatActivity {
             secondIng = db.getParticularItem(allIngrToQuiz[1]);
             check2but.setImageResource(itemImg.getResourceId(secondIng.img, 1));
             //3
-            Item thirdIng = db.getParticularItem(allIngrToQuiz[2]);
+            thirdIng = db.getParticularItem(allIngrToQuiz[2]);
             check3but.setImageResource(itemImg.getResourceId(thirdIng.img, 1));
             //4
-            Item fourthIng = db.getParticularItem(allIngrToQuiz[3]);
+            fourthIng = db.getParticularItem(allIngrToQuiz[3]);
             check4but.setImageResource(itemImg.getResourceId(fourthIng.img, 1));
             //5
-            Item fifthIng = db.getParticularItem(allIngrToQuiz[4]);
+            fifthIng = db.getParticularItem(allIngrToQuiz[4]);
             check5but.setImageResource(itemImg.getResourceId(fifthIng.img, 1));
             //6
-            Item sixthIng = db.getParticularItem(allIngrToQuiz[5]);
+            sixthIng = db.getParticularItem(allIngrToQuiz[5]);
             check6but.setImageResource(itemImg.getResourceId(sixthIng.img, 1));
             //7
 
@@ -269,7 +299,8 @@ public class Quiz extends AppCompatActivity {
         //db.getIngToQuiz(numing, lvl);
 
         db.close();
-
+*/
+        getNextDish();
     }
     //metod for log cursor
     void logCursor(Cursor c) {
@@ -323,7 +354,7 @@ public class Quiz extends AppCompatActivity {
     @Override
     protected Dialog onCreateDialog(int id) {
         AlertDialog.Builder adb = new AlertDialog.Builder(this);
-        adb.setTitle("custom dialog");
+        adb.setTitle(R.string.check);
         //create view from dialog.xml
         view = (LinearLayout)getLayoutInflater()
                 .inflate(R.layout.dialog, null);
@@ -354,6 +385,7 @@ public class Quiz extends AppCompatActivity {
     @Override
     protected void onPrepareDialog(int id, Dialog dialog){
         super.onPrepareDialog(id, dialog);
+
         if (id == DIALOG) {
             // Находим TextView для отображения параметров предмета
             TextView tvTime = (TextView) dialog.getWindow().findViewById(
@@ -375,6 +407,30 @@ public class Quiz extends AppCompatActivity {
                     ivItem.setImageResource(itemImg.getResourceId(secondIng.img, 1));
                     Log.d(LOG, "Button for DIALOG = " + secondIng.title + " ID: " + R.id.check1);
                     flafIng = 2;
+                    break;
+                case R.id.check3:
+                    tvTime.setText(thirdIng.param);
+                    ivItem.setImageResource(itemImg.getResourceId(thirdIng.img, 1));
+                    Log.d(LOG, "Button for DIALOG = " + thirdIng.title + " ID: " + R.id.check1);
+                    flafIng = 3;
+                    break;
+                case R.id.check4:
+                    tvTime.setText(fourthIng.param);
+                    ivItem.setImageResource(itemImg.getResourceId(fourthIng.img, 1));
+                    Log.d(LOG, "Button for DIALOG = " + fourthIng.title + " ID: " + R.id.check1);
+                    flafIng = 4;
+                    break;
+                case R.id.check5:
+                    tvTime.setText(fifthIng.param);
+                    ivItem.setImageResource(itemImg.getResourceId(fifthIng.img, 1));
+                    Log.d(LOG, "Button for DIALOG = " + fifthIng.title + " ID: " + R.id.check1);
+                    flafIng = 5;
+                    break;
+                case R.id.check6:
+                    tvTime.setText(sixthIng.param);
+                    ivItem.setImageResource(itemImg.getResourceId(sixthIng.img, 1));
+                    Log.d(LOG, "Button for DIALOG = " + sixthIng.title + " ID: " + R.id.check1);
+                    flafIng = 6;
                     break;
             }
             /*
@@ -398,26 +454,47 @@ public class Quiz extends AppCompatActivity {
             //определяем нажатую кнопку в диалоговом окне
             switch (which) {
 
+
                 // положительная кнопка (подтверждение выбора)
                 case Dialog.BUTTON_POSITIVE:
-
+                    Log.d(LOG, "Length of right array = "+ RAlength);
                     Log.d(LOG, "Poitive button WORK");
                     //set picket item to first imageView
                     //если выбранных вещей на данный момент ноль...
                     if (items==0) {
                         //в зависимости от значения флага выбираем какую картинку использовать
                         //для заполнения первого ответа
+
                         switch (flafIng) {
 
                             case 1:
-                                correctIngr[0] = firstIng.itemID;
+                                //correctIngr[0] = firstIng.itemID;
+                                thisID = firstIng.itemID;
                                 imgPicked1.setImageResource(itemImg.getResourceId(firstIng.img, 1));
                                 break;
                             case 2:
+                                thisID = secondIng.itemID;
                                 imgPicked1.setImageResource(itemImg.getResourceId(secondIng.img, 1));
                                 break;
-                        }
+                            case 3:
+                                thisID = thirdIng.itemID;
+                                imgPicked1.setImageResource(itemImg.getResourceId(thirdIng.img, 1));
+                                break;
+                            case 4:
+                                thisID = fourthIng.itemID;
+                                imgPicked1.setImageResource(itemImg.getResourceId(fourthIng.img, 1));
+                                break;
+                            case 5:
+                                thisID = fifthIng.itemID;
+                                imgPicked1.setImageResource(itemImg.getResourceId(fifthIng.img, 1));
+                                break;
+                            case 6:
+                                thisID = sixthIng.itemID;
+                                imgPicked1.setImageResource(itemImg.getResourceId(sixthIng.img, 1));
+                                break;
 
+                        }
+                        ingByUser[0] = thisID;
                         items+=1;
                         //break;
                         //если уже выбрана одна вещь, тогда делаем то же самое
@@ -426,17 +503,132 @@ public class Quiz extends AppCompatActivity {
 
                         switch (flafIng) {
                             case 1:
+                                thisID = fifthIng.itemID;
                                 imgPicked2.setImageResource(itemImg.getResourceId(firstIng.img, 1));
                                 break;
                             case 2:
+                                thisID = secondIng.itemID;
                                 imgPicked2.setImageResource(itemImg.getResourceId(secondIng.img, 1));
-                                //break;
+                                break;
+                            case 3:
+                                thisID = thirdIng.itemID;
+                                imgPicked2.setImageResource(itemImg.getResourceId(thirdIng.img, 1));
+                                break;
+                            case 4:
+                                thisID = fourthIng.itemID;
+                                imgPicked2.setImageResource(itemImg.getResourceId(fourthIng.img, 1));
+                                break;
+                            case 5:
+                                thisID = fifthIng.itemID;
+                                imgPicked2.setImageResource(itemImg.getResourceId(fifthIng.img, 1));
+                                break;
+                            case 6:
+                                thisID = sixthIng.itemID;
+                                imgPicked2.setImageResource(itemImg.getResourceId(sixthIng.img, 1));
+                                break;
+                        }
+                        ingByUser[1] = thisID;
+                        items+=1;
+
+                        if (RAlength == 2) {
+                            Log.d(LOG, "Length of right array = "+ RAlength);
+                            Log.d(LOG, "--- Go to next dish ---");
+                            finalIngByUser = new int[2];
+                            finalIngByUser[0] = ingByUser[0];
+                            finalIngByUser[1] = ingByUser[1];
+                            showRes();
+                            //getNextDish();
+                        }
+                        //break;
+                    } else if (items == 2) {
+
+
+                        switch (flafIng) {
+                            case 1:
+                                thisID = fifthIng.itemID;
+                                imgPicked3.setImageResource(itemImg.getResourceId(firstIng.img, 1));
+                                break;
+                            case 2:
+                                thisID = secondIng.itemID;
+                                imgPicked3.setImageResource(itemImg.getResourceId(secondIng.img, 1));
+                                break;
+                            case 3:
+                                thisID = thirdIng.itemID;
+                                imgPicked3.setImageResource(itemImg.getResourceId(thirdIng.img, 1));
+                                break;
+                            case 4:
+                                thisID = fourthIng.itemID;
+                                imgPicked3.setImageResource(itemImg.getResourceId(fourthIng.img, 1));
+                                break;
+                            case 5:
+                                thisID = fifthIng.itemID;
+                                imgPicked3.setImageResource(itemImg.getResourceId(fifthIng.img, 1));
+                                break;
+                            case 6:
+                                thisID = sixthIng.itemID;
+                                imgPicked3.setImageResource(itemImg.getResourceId(sixthIng.img, 1));
+                                break;
+                        }
+                        ingByUser[2] = thisID;
+                        items+=1;
+
+                        if (RAlength == 3) {
+                            Log.d(LOG, "Length of right array = 2");
+                            Log.d(LOG, "--- Go to next dish ---");
+                            finalIngByUser = new int[3];
+                            finalIngByUser[0] = ingByUser[0];
+                            finalIngByUser[1] = ingByUser[1];
+                            finalIngByUser[2] = ingByUser[2];
+                            showRes();
+                            //getNextDish();
                         }
 
+                    } else if (items == 3) {
+                        switch (flafIng) {
+                            case 1:
+                                thisID = fifthIng.itemID;
+                                imgPicked4.setImageResource(itemImg.getResourceId(firstIng.img, 1));
+                                break;
+                            case 2:
+                                thisID = secondIng.itemID;
+                                imgPicked4.setImageResource(itemImg.getResourceId(secondIng.img, 1));
+                                break;
+                            case 3:
+                                thisID = thirdIng.itemID;
+                                imgPicked4.setImageResource(itemImg.getResourceId(thirdIng.img, 1));
+                                break;
+                            case 4:
+                                thisID = fourthIng.itemID;
+                                imgPicked4.setImageResource(itemImg.getResourceId(fourthIng.img, 1));
+                                break;
+                            case 5:
+                                thisID = fifthIng.itemID;
+                                imgPicked4.setImageResource(itemImg.getResourceId(fifthIng.img, 1));
+                                break;
+                            case 6:
+                                thisID = sixthIng.itemID;
+                                imgPicked4.setImageResource(itemImg.getResourceId(sixthIng.img, 1));
+                                break;
+                        }
+                        ingByUser[3] = thisID;
                         items+=1;
-                        break;
+
+                        if (RAlength == 4) {
+                            Log.d(LOG, "Length of right array = 2");
+                            Log.d(LOG, "--- Go to next dish ---");
+                            finalIngByUser = new int[4];
+                            finalIngByUser[0] = ingByUser[0];
+                            finalIngByUser[1] = ingByUser[1];
+                            finalIngByUser[2] = ingByUser[2];
+                            finalIngByUser[3] = ingByUser[3];
+                            showRes();
+                            //getNextDish();
+                        }
+
                     }
                     Log.d(LOG, "Poitive button items count: " + items);
+                    String arrayF = Arrays.toString(ingByUser);
+                    Log.d(LOG, "Array ingByUser contains: " + arrayF);
                     break;
                 case Dialog.BUTTON_NEGATIVE:
 
@@ -452,14 +644,177 @@ public class Quiz extends AppCompatActivity {
     }
 
     public void click_check3(View view) {
+        btn = view.getId();
+        showDialog(DIALOG);
     }
 
     public void click_check4(View view) {
+        btn = view.getId();
+        showDialog(DIALOG);
     }
 
     public void click_check5(View view) {
+        btn = view.getId();
+        showDialog(DIALOG);
     }
 
     public void click_check6(View view) {
+        btn = view.getId();
+        showDialog(DIALOG);
+    }
+
+    //метод который начинает очередной вопрос (очищает выбранные предметы, генерирует случайный предмет
+    //для угадывания, и заполняет варианты возможных ингредиентов перемешанные с правильными ингредиентами
+    public void getNextDish() {
+        //сначала очищаем все выбранные предметы, ставим вопросики вместо них
+        imgPicked1.setImageResource(R.drawable.quest_mark);
+        imgPicked2.setImageResource(R.drawable.quest_mark);
+        imgPicked3.setImageResource(R.drawable.quest_mark);
+        imgPicked4.setImageResource(R.drawable.quest_mark);
+        db.open();
+        //take first random Item
+        Item item = db.getRandomItem();
+
+        ivQuizImg.setImageResource(itemImg.getResourceId(item.img, 1));
+        Log.d(LOG, "item img = " + item.img);
+
+        //get ingr pack for this item
+        int num = item.itemID;
+        Log.d(LOG, "item ID = " + num);
+        //take correct ingredients for item
+        /*
+        int[] ingrpack = db.getCurrentIngr(num);
+        //создаем массив длинна которого равна количеству правильных ингредиентов
+        correctIngr = new int[ingrpack.length];
+         */
+        ingrpack = db.getCurrentIngr(num);
+        //создаем массив длинна которого равна количеству правильных ингредиентов
+        //correctIngr = new int[ingrpack.length];
+        String x = Arrays.toString(ingrpack);
+        if (ingrpack[0] != 0) {
+            int lvl = item.level -1;
+            //find out how many ingredients need add
+            int moreIngr = 6 - ingrpack.length;
+            int[] ingrToQuiz = db.getIngToQuiz(moreIngr, lvl);
+            //создаем новый массив с элементами которые будем использовать в вариантах ответов
+            //массив заполняется из двух массивов (предыдущих) какой именно элемент из какого
+            //определяется исходя из кол-ва верных ингредиентов необходимых для сборки предмета
+            int[] allIngrToQuiz = new int[6];
+            allIngrToQuiz[0] = ingrpack[0];
+            allIngrToQuiz[1] = ingrpack[1];
+            //если для сборки нужно 4 вещи (дополнительных приходит 2) , то первые 2 берем из первого массива, а 5 и 6 из второго
+            if (ingrToQuiz.length == 2) {
+                allIngrToQuiz[2] = ingrpack[2];
+                allIngrToQuiz[3] = ingrpack[3];
+                allIngrToQuiz[4] = ingrToQuiz[0];
+                allIngrToQuiz[5] = ingrToQuiz[1];
+                RAlength = 4;
+            }
+            if (ingrToQuiz.length == 3) {
+                allIngrToQuiz[2] = ingrpack[2];
+                allIngrToQuiz[3] = ingrToQuiz[0];
+                allIngrToQuiz[4] = ingrToQuiz[1];
+                allIngrToQuiz[5] = ingrToQuiz[2];
+                RAlength = 3;
+            }
+            if (ingrToQuiz.length == 4) {
+                allIngrToQuiz[2] = ingrToQuiz[0];
+                allIngrToQuiz[3] = ingrToQuiz[1];
+                allIngrToQuiz[4] = ingrToQuiz[2];
+                allIngrToQuiz[5] = ingrToQuiz[3];
+                RAlength = 2;
+            }
+
+            //перемешиваем элементы масссива
+            Random rnd = new Random();
+            for (int i = allIngrToQuiz.length - 1; i > 0; i--) {
+                int index = rnd.nextInt(i + 1);
+                // Simple swap
+                int a = allIngrToQuiz[index];
+                allIngrToQuiz[index] = allIngrToQuiz[i];
+                allIngrToQuiz[i] = a;
+            }
+
+
+            //пробуем по полученным ID ингредиентов получить названия и поместить на кнопки
+            //первая кнопка и первый ингредиент
+            firstIng = db.getParticularItem(allIngrToQuiz[0]);
+            //раньше тут было setImageResource но из за этого торчали края кнопок на изображении
+            check1but.setBackgroundResource(itemImg.getResourceId(firstIng.img, 1));
+            //вторая кнопка и второй ингредиент
+            secondIng = db.getParticularItem(allIngrToQuiz[1]);
+            check2but.setBackgroundResource(itemImg.getResourceId(secondIng.img, 1));
+            //3
+            thirdIng = db.getParticularItem(allIngrToQuiz[2]);
+            check3but.setBackgroundResource(itemImg.getResourceId(thirdIng.img, 1));
+            //4
+            fourthIng = db.getParticularItem(allIngrToQuiz[3]);
+            check4but.setBackgroundResource(itemImg.getResourceId(fourthIng.img, 1));
+            //5
+            fifthIng = db.getParticularItem(allIngrToQuiz[4]);
+            check5but.setBackgroundResource(itemImg.getResourceId(fifthIng.img, 1));
+            //6
+            sixthIng = db.getParticularItem(allIngrToQuiz[5]);
+            check6but.setBackgroundResource(itemImg.getResourceId(sixthIng.img, 1));
+            //7
+
+        }
+
+
+        Log.d(LOG, "-- Array ingredients: " + x);
+
+        int ingByUser[] = {0,0,0,0};
+        String xa = Arrays.toString(ingByUser);
+
+        Log.d(LOG, "-- Array ingredients after clean: " + xa);
+
+        //get items with quiz level
+        int lvl = item.level - 1;
+        //Log.d(LOG, "level current item = " + lvl);
+        //db.getIngToQuiz(numing, lvl);
+
+        db.close();
+
+        //проверяем сколько правильных вещей нужно и делаем массив такой длины, куда будут записываться верные
+        //ингредиенты
+
+        if (ingrpack.length == 2) {
+            ingByUser = new int[2];
+            Log.d(LOG, "ingByUser length: " + ingrpack.length);
+        } else if (ingrpack.length == 3) {
+            ingByUser = new int[3];
+            Log.d(LOG, "ingByUser length: " + ingrpack.length);
+        } else if (ingrpack.length == 4) {
+            ingByUser = new int[4];
+            Log.d(LOG, "ingByUser length: " + ingrpack.length);
+        }
+    }
+
+    public void showRes() {
+        String ibu = Arrays.toString(finalIngByUser);
+        String coi = Arrays.toString(ingrpack);
+        Log.d(LOG, "Arrays to compare - ingByUser: " + ibu + " ingrpack: " + coi);
+        Log.d(LOG, ">> -- showRes -- <<");
+        if (finalIngByUser.length != ingrpack.length) {
+            Log.d(LOG, "-- not equal length");
+        } else {
+            Log.d(LOG, "-- equal length");
+        }
+        int on = 0;
+        int i;
+        int j;
+        for (i = 0; i < finalIngByUser.length; i++) {
+            for (j = 0; j < ingrpack.length; j++) {
+                if (finalIngByUser[i] == ingrpack[j]){
+                    on++;
+                }
+            }
+        }
+        if (on==finalIngByUser.length) {
+            Log.d(LOG, "-- Array equal--");
+        } else {
+            Log.d(LOG, "-- Not equal array --");
+        }
+        //Toast.makeText(this, R.string.correct, Toast.LENGTH_LONG).show();
     }
 }

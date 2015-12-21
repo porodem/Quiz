@@ -8,4 +8,8 @@
     <string name="remove">Удалить</string>
     <string name="addItem">Apply</string>
     <string name="cancle">Отмена</string>
+
+    <string name="check">Добавить предмет?</string>
+
+    <string name="correct">Верно!</string>
 </resources>

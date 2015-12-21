@@ -11,6 +11,10 @@ import android.util.Log;
  * Created by porod on 09.11.2015.
  */
 public class DB {
+    //array with all Items with ingredients
+    int[]iItems = new int[] {1,2,3,4,5,7,9,10,14,16,19,20,25,26,27,28,30,31,
+            32,33,36,37,38,39,41,42,45,46,47,48,50,51,55,56,57,59,60,62,63,
+            64,66,67,68,71,72,73,74,77,78,79,80,83,84,87,89,90,96,99,100,101,102};
     public static final String LOG = "myLogs";
 
     private static final String DB_NAME = "mydb";
@@ -214,7 +218,9 @@ public class DB {
     }
 
     public Item getRandomItem() {
-        int random = 1 + (int)(Math.random() * ((124 - 1) + 1));
+
+        int randomArrayElement = 1 + (int)(Math.random() * ((iItems.length - 1) + 1));
+        int random = iItems[randomArrayElement];
         //int random = 1;
         String selection = "_id = ?";
         String randomS = Integer.toString(random);

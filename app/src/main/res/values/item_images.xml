@@ -125,6 +125,9 @@
         <item>@drawable/void_stone</item>
         <item>@drawable/wraith_band</item>
         <item>@drawable/yasha</item>
+        <item>@drawable/yb_aether_lens_lg</item>
+        <item>@drawable/yc_dragon_lance_lg</item>
+        <item>@drawable/yd_iron_talon_lg</item>
         <item>@drawable/z_recipe</item>
     </array>
 </resources>
