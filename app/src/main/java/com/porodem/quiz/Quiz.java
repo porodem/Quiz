@@ -6,7 +6,11 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.AudioManager;
+import android.media.SoundPool;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,14 +37,43 @@ import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
-public class Quiz extends AppCompatActivity {
+public class Quiz extends AppCompatActivity implements SoundPool.OnLoadCompleteListener {
+
+    //sound int
+    int aganim_venom;
+    int armlet_lifestealer;
+    int assault_lifestealer;
+    int battlefury_jugger;
+    int blackking_spiritbreaker;
+    int blademail;
+    int blink_nightstalker;
+    int bloodstone_dp;
+    int bootstravel_tinker;
+    int butterfly_slark;
+    int dagon_nyx;
+    int deadalus_draw;
+    int desolator_bh;
+    int divine_gyro;
+    int eye_medusa;
+
+    int holy_shit;
+
+    SoundPool sp;
 
     //for dialog
     int btn;
     final int DIALOG = 1;
     LinearLayout view;
     TextView tvCount;
+
+    TextView dItemName;
+    TextView dParam;
+
+    //item to quiz
+    Item item;
+
     //счетчик выбранных (заполненных) ингредиентов для MyClickListener в диалоге
     //подтверждения выбора
     int items = 0;
@@ -65,6 +99,10 @@ public class Quiz extends AppCompatActivity {
     int thisID;
 
     public static final String LOG = "myLogs";
+
+    RatingBar ratingBar;
+    //score
+    int score;
 
     ImageView ivQuizImg;
 
@@ -96,6 +134,35 @@ public class Quiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        //add Sound Pool
+        sp = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+        sp.setOnLoadCompleteListener(this);
+        aganim_venom = sp.load(this, R.raw.aganim_venom, 1);
+        armlet_lifestealer = sp.load(this, R.raw.armlet_lifestealer, 1);
+        assault_lifestealer = sp.load(this, R.raw.assault_lifestealer, 1);
+        battlefury_jugger = sp.load(this, R.raw.battlefury_jugger, 1);
+        blackking_spiritbreaker = sp.load(this, R.raw.blackking_spiritbreaker, 1);
+        blademail = sp.load(this, R.raw.blademail, 1);
+        blink_nightstalker = sp.load(this, R.raw.blink_nightstalker, 1);
+        bloodstone_dp = sp.load(this, R.raw.bloodstone_dp, 1);
+        bootstravel_tinker = sp.load(this, R.raw.bootstravel_tinker, 1);
+        butterfly_slark = sp.load(this, R.raw.butterfly_slark, 1);
+        dagon_nyx = sp.load(this, R.raw.dagon_nyx, 1);
+        deadalus_draw = sp.load(this, R.raw.deadalus_draw, 1);
+        desolator_bh = sp.load(this, R.raw.desolator_bh, 1);
+        divine_gyro = sp.load(this, R.raw.divine_gyro, 1);
+        eye_medusa = sp.load(this, R.raw.eye_medusa, 1);
+        holy_shit = sp.load(this, R.raw.announcer_kill_holy, 1);
+
+        score = 0;
+
+        //Rating Bar score
+        ratingBar = (RatingBar)findViewById(R.id.rating);
+        Drawable progress = ratingBar.getProgressDrawable();
+        DrawableCompat.setTint(progress, Color.YELLOW);
+        ratingBar.setNumStars(5);
+        ratingBar.setRating(0);
 
         //объявляем массивы для ID правильных и введенных ответов
         ingByUser = new int[4];
@@ -141,7 +208,7 @@ public class Quiz extends AppCompatActivity {
                     JSONObject jo_inside = m_jArray.getJSONObject(i);
                     String title = jo_inside.getString("title");
                     int imgJSON = i;
-                    String sound = "sfx";
+                    String sound = jo_inside.getString("sound");
                     int level = jo_inside.getInt("level");
                     int gold = jo_inside.getInt("gold");
 
@@ -387,49 +454,57 @@ public class Quiz extends AppCompatActivity {
         super.onPrepareDialog(id, dialog);
 
         if (id == DIALOG) {
+            // Находим TextView для отображения названия предмета
+            dItemName = (TextView) dialog.getWindow().findViewById(R.id.dItemName);
             // Находим TextView для отображения параметров предмета
-            TextView tvTime = (TextView) dialog.getWindow().findViewById(
-                    R.id.param);
+            dParam = (TextView) dialog.getWindow().findViewById(
+                    R.id.dParam);
             //Button btnAdd = (Button)dialog.getWindow().findViewById(R.id.btnApply);
 
             ImageView ivItem = (ImageView)dialog.getWindow().findViewById(R.id.ivItem);
 
             switch (btn) {
                 case R.id.check1:
-                    tvTime.setText(firstIng.param);
+                    dItemName.setText(firstIng.title);
+                    dParam.setText(firstIng.param);
                     ivItem.setImageResource(itemImg.getResourceId(firstIng.img, 1));
-                    Log.d(LOG, "Button for DIALOG = " + firstIng.title + " ID: " + R.id.check1);
+                    Log.d(LOG, "Button for DIALOG = " + firstIng.title + " ID: " + firstIng.itemID);
                     //так как мы выбрали первый предмет, то ставим флаг в значение = 1
                     flafIng = 1;
                     break;
                 case R.id.check2:
-                    tvTime.setText(secondIng.param);
+                    dItemName.setText(secondIng.title);
+                    dParam.setText(secondIng.param);
                     ivItem.setImageResource(itemImg.getResourceId(secondIng.img, 1));
-                    Log.d(LOG, "Button for DIALOG = " + secondIng.title + " ID: " + R.id.check1);
+                    Log.d(LOG, "Button for DIALOG = " + secondIng.title + " ID: " + secondIng.itemID);
                     flafIng = 2;
                     break;
                 case R.id.check3:
-                    tvTime.setText(thirdIng.param);
+                    dItemName.setText(thirdIng.title);
+                    dParam.setText(thirdIng.param);
                     ivItem.setImageResource(itemImg.getResourceId(thirdIng.img, 1));
-                    Log.d(LOG, "Button for DIALOG = " + thirdIng.title + " ID: " + R.id.check1);
+                    Log.d(LOG, "Button for DIALOG = " + thirdIng.title + " ID: " + thirdIng.itemID);
                     flafIng = 3;
                     break;
                 case R.id.check4:
-                    tvTime.setText(fourthIng.param);
+                    dItemName.setText(fourthIng.title);
+                    dParam.setText(fourthIng.param);
                     ivItem.setImageResource(itemImg.getResourceId(fourthIng.img, 1));
-                    Log.d(LOG, "Button for DIALOG = " + fourthIng.title + " ID: " + R.id.check1);
+                    Log.d(LOG, "Button for DIALOG = " + fourthIng.title + " ID: " + fourthIng.itemID);
                     flafIng = 4;
                     break;
                 case R.id.check5:
-                    tvTime.setText(fifthIng.param);
+                    dItemName.setText(fifthIng.title);
+                    dParam.setText(fifthIng.param);
                     ivItem.setImageResource(itemImg.getResourceId(fifthIng.img, 1));
-                    Log.d(LOG, "Button for DIALOG = " + fifthIng.title + " ID: " + R.id.check1);
+                    Log.d(LOG, "Button for DIALOG = " + fifthIng.title + " ID: " + fifthIng.itemID);
                     flafIng = 5;
                     break;
                 case R.id.check6:
-                    tvTime.setText(sixthIng.param);
+                    dItemName.setText(sixthIng.title);
+                    dParam.setText(sixthIng.param);
                     ivItem.setImageResource(itemImg.getResourceId(sixthIng.img, 1));
-                    Log.d(LOG, "Button for DIALOG = " + sixthIng.title + " ID: " + R.id.check1);
+                    Log.d(LOG, "Button for DIALOG = " + sixthIng.title + " ID: " + sixthIng.itemID);
                     flafIng = 6;
                     break;
             }
@@ -503,7 +578,7 @@ public class Quiz extends AppCompatActivity {
 
                         switch (flafIng) {
                             case 1:
-                                thisID = fifthIng.itemID;
+                                thisID = firstIng.itemID;
                                 imgPicked2.setImageResource(itemImg.getResourceId(firstIng.img, 1));
                                 break;
                             case 2:
@@ -545,7 +620,7 @@ public class Quiz extends AppCompatActivity {
 
                         switch (flafIng) {
                             case 1:
-                                thisID = fifthIng.itemID;
+                                thisID = firstIng.itemID;
                                 imgPicked3.setImageResource(itemImg.getResourceId(firstIng.img, 1));
                                 break;
                             case 2:
@@ -586,7 +661,7 @@ public class Quiz extends AppCompatActivity {
                     } else if (items == 3) {
                         switch (flafIng) {
                             case 1:
-                                thisID = fifthIng.itemID;
+                                thisID = firstIng.itemID;
                                 imgPicked4.setImageResource(itemImg.getResourceId(firstIng.img, 1));
                                 break;
                             case 2:
@@ -666,6 +741,13 @@ public class Quiz extends AppCompatActivity {
     //метод который начинает очередной вопрос (очищает выбранные предметы, генерирует случайный предмет
     //для угадывания, и заполняет варианты возможных ингредиентов перемешанные с правильными ингредиентами
     public void getNextDish() {
+        /*try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
+        //очищаем счетчик выбраных предметов
+        items = 0;
         //сначала очищаем все выбранные предметы, ставим вопросики вместо них
         imgPicked1.setImageResource(R.drawable.quest_mark);
         imgPicked2.setImageResource(R.drawable.quest_mark);
@@ -673,9 +755,65 @@ public class Quiz extends AppCompatActivity {
         imgPicked4.setImageResource(R.drawable.quest_mark);
         db.open();
         //take first random Item
-        Item item = db.getRandomItem();
+        item = db.getRandomItem();
 
         ivQuizImg.setImageResource(itemImg.getResourceId(item.img, 1));
+
+        //play sound
+        ratingBar.setRating(score);
+        String itemSound = item.sound;
+        Log.d(LOG, "-------- SOUND :" + itemSound + " " + item.title);
+        switch (itemSound){
+            case "aghanim":
+                sp.play(aganim_venom, 1, 1, 0, 0, 1);
+                Log.d(LOG, "*** Aganim sound SOUND ***");
+                break;
+            case "armlet":
+                sp.play(armlet_lifestealer, 1, 1, 0, 0, 1);
+                break;
+            case "assault":
+                sp.play(assault_lifestealer, 1, 1, 0, 0, 1);
+                break;
+            case "batterfury":
+                sp.play(battlefury_jugger, 1, 1, 0, 0, 1);
+                break;
+            case "blackking":
+                sp.play(blackking_spiritbreaker, 1, 1, 0, 0, 1);
+                break;
+            case "blademail":
+                sp.play(blademail, 1, 1, 0, 0, 1);
+                break;
+            case "blink":
+                sp.play(blink_nightstalker, 1, 1, 0, 0, 1);
+                break;
+            case "bloodstone":
+                sp.play(bloodstone_dp, 1, 1, 0, 0, 1);
+                break;
+            case "bootstravel":
+                sp.play(bootstravel_tinker, 1, 1, 0, 0, 1);
+                break;
+            case "butterfly":
+                sp.play(butterfly_slark, 1, 1, 0, 0, 1);
+                break;
+            case "dagon":
+                sp.play(dagon_nyx, 1, 1, 0, 0, 1);
+                break;
+            case "deadalus":
+                sp.play(deadalus_draw, 1, 1, 0, 0, 1);
+                break;
+            case "desolator":
+                sp.play(desolator_bh, 1, 1, 0, 0, 1);
+                break;
+            case "divine":
+                sp.play(divine_gyro, 1, 1, 0, 0, 1);
+                break;
+            case "eye":
+                sp.play(eye_medusa, 1, 1, 0, 0, 1);
+                break;
+            default:
+                Log.d(LOG, "*** This item have not SOUND ***");
+                break;
+        }
         Log.d(LOG, "item img = " + item.img);
 
         //get ingr pack for this item
@@ -763,10 +901,10 @@ public class Quiz extends AppCompatActivity {
 
         Log.d(LOG, "-- Array ingredients: " + x);
 
-        int ingByUser[] = {0,0,0,0};
-        String xa = Arrays.toString(ingByUser);
+        //int ingByUser[] = {0,0,0,0};
+        //String xa = Arrays.toString(ingByUser);
 
-        Log.d(LOG, "-- Array ingredients after clean: " + xa);
+        //Log.d(LOG, "-- Array ingredients after clean: " + xa);
 
         //get items with quiz level
         int lvl = item.level - 1;
@@ -805,16 +943,37 @@ public class Quiz extends AppCompatActivity {
         int j;
         for (i = 0; i < finalIngByUser.length; i++) {
             for (j = 0; j < ingrpack.length; j++) {
+                Log.d(LOG, "---- IngByUser: i = " + i + " with j = " + j + " IngByUser = " + finalIngByUser[i] + " and Ingrpack = " + ingrpack[j]);
                 if (finalIngByUser[i] == ingrpack[j]){
+                    ingrpack[j]=0;
                     on++;
                 }
             }
         }
         if (on==finalIngByUser.length) {
             Log.d(LOG, "-- Array equal--");
+            score += 1;
+            if (score > 5) {
+                sp.play(holy_shit, 1, 1, 0, 0, 1);
+            }
+            Log.d(LOG, "-- score: " + score);
+
+            Toast.makeText(this, R.string.correct, Toast.LENGTH_LONG).show();
+
+            getNextDish();
         } else {
             Log.d(LOG, "-- Not equal array --");
+            score = 0;
+            ratingBar.setRating(score);
+            Toast.makeText(this, R.string.wrong, Toast.LENGTH_SHORT).show();
+            Log.d(LOG, "-- LOSE --");
+            getNextDish();
         }
         //Toast.makeText(this, R.string.correct, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
+
     }
 }

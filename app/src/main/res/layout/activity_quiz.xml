@@ -11,13 +11,15 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
     <RatingBar
+        android:id="@+id/rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:isIndicator="true"
         android:layout_gravity="center" />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/daedalus"
+        android:src="@drawable/quest_mark"
         android:id="@+id/mainImg"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -29,17 +31,15 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/z_recipe"
+            android:src="@drawable/quest_mark"
             android:id="@+id/imagePicked2"
-            android:background="@color/colorAccent"
             android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/imagePicked1"
-            android:layout_toStartOf="@+id/imagePicked1" />
+            android:layout_toRightOf="@+id/imagePicked1"
+            android:layout_toEndOf="@+id/imagePicked1" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="@color/colorAccent"
             android:id="@+id/dummyForCenter"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
@@ -47,7 +47,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/yb_aether_lens_lg"
+            android:src="@drawable/quest_mark"
             android:id="@+id/imagePicked1"
             android:background="@color/colorAlert"
             android:layout_alignParentTop="true"
@@ -57,27 +57,28 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/yc_dragon_lance_lg"
+            android:src="@drawable/quest_mark"
             android:id="@+id/imagePicked3"
             android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/dummyForCenter"
-            android:layout_alignStart="@+id/dummyForCenter" />
+            android:layout_toLeftOf="@+id/imagePicked1"
+            android:layout_toStartOf="@+id/imagePicked1" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/yd_iron_talon_lg"
+            android:src="@drawable/quest_mark"
             android:id="@+id/imagePicked4"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imagePicked3"
-            android:layout_toEndOf="@+id/imagePicked3" />
+            android:layout_toRightOf="@+id/imagePicked2"
+            android:layout_toEndOf="@+id/imagePicked2" />
 
 
     </RelativeLayout>
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp">
         <TableRow
             android:layout_height="match_parent">
             <TextView

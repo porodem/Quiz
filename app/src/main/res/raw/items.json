@@ -13,7 +13,7 @@
     },
     {
       "title": "Aghanim's Scepter",
-      "sound": "",
+      "sound": "aghanim",
       "level": 5,
       "gold": 4200,
       "recipe": [82, 112, 75, 11],
@@ -33,7 +33,7 @@
     },
     {
       "title": "Armlet of Mordiggian",
-      "sound": "",
+      "sound": "armlet",
       "level": 3,
       "gold": 2320,
       "recipe": [49,43,12,128],
@@ -43,7 +43,7 @@
     },
     {
       "title": "Assault Cuirass",
-      "sound": "звук",
+      "sound": "assault",
       "level": 5,
       "gold": 5250,
       "recipe": [81,52,21,128],
@@ -63,7 +63,7 @@
     },
     {
       "title": "Battle Fury",
-      "sound": "звук",
+      "sound": "batterfury",
       "level": 5,
       "gold": 4525,
       "recipe": [18,23,78,86],
@@ -83,7 +83,7 @@
     },
     {
       "title": "Black King Bar",
-      "sound": "звук",
+      "sound": "blackking",
       "level": 5,
       "gold": 3975,
       "recipe": [75,65,128],
@@ -93,7 +93,7 @@
     },
     {
       "title": "Blade Mail",
-      "sound": "звук",
+      "sound": "blademail",
       "level": 4,
       "gold": 2200,
       "recipe": [18,21,95],
@@ -123,7 +123,7 @@
     },
     {
       "title": "Blink Dagger",
-      "sound": "звук",
+      "sound": "blink",
       "level": 4,
       "gold": 2250,
       "recipe": [0],
@@ -133,10 +133,10 @@
     },
     {
       "title": "Bloodstone",
-      "sound": "звук",
+      "sound": "bloodstone",
       "level": 5,
       "gold": 4900,
-      "recipe": [112,111,128],
+      "recipe": [110,111,128],
       "param": "+ 500 к здоровью \n + 400 к мане \n + 9 к регенерации здоровья \n + 200% к регенерации маны",
       "use": "Активная: Pocket Deny — мгновенно убивает вас. \n Пассивная: Bloodpact — изначально имеет 8 зарядов и получает 1 дополнительный заряд каждый раз, когда в радиусе 1675 умирает вражеский герой. Каждый заряд увеличивает регенерацию маны на 1 и уменьшает время возрождения на 3 сек. Если владелец Bloodstone умирает, предмет потеряет треть зарядов и восстановит 500 здоровья + 30 здоровья за каждый заряд всем союзникам в радиусе 1675. ",
       "info": "Ярко-рубиновый цвет Bloodstone ни с чем не спутать. Похоже, владелец этого артефакта способен иметь безграничные жизненные и духовные силы."
@@ -153,7 +153,7 @@
     },
     {
       "title": "Boots of Travel",
-      "sound": "звук",
+      "sound": "bootstravel",
       "level": 4,
       "gold": 2450,
       "recipe": [15,128],
@@ -193,7 +193,7 @@
     },
     {
       "title": "Butterfly",
-      "sound": "звук",
+      "sound": "butterfly",
       "level": 5,
       "gold": 5875,
       "recipe": [34,114,85],
@@ -263,7 +263,7 @@
     },
     {
       "title": "Daedalus",
-      "sound": "звук",
+      "sound": "deadalus",
       "level": 5,
       "gold": 5520,
       "recipe": [26,29,128],
@@ -273,7 +273,7 @@
     },
     {
       "title": "Dagon",
-      "sound": "звук",
+      "sound": "dagon",
       "level": 4,
       "gold": 2720,
       "recipe": [112,72,128],
@@ -293,7 +293,7 @@
     },
     {
       "title": "Desolator",
-      "sound": "звук",
+      "sound": "desolator",
       "level": 5,
       "gold": 3500,
       "recipe": [65,65,128],
@@ -313,7 +313,7 @@
     },
     {
       "title": "Divine Rapier",
-      "sound": "звук",
+      "sound": "divine",
       "level": 5,
       "gold": 6200,
       "recipe": [97,29],
@@ -373,7 +373,7 @@
     },
     {
       "title": "Eye of Skadi",
-      "sound": "звук",
+      "sound": "eye",
       "level": 5,
       "gold": 5675,
       "recipe": [116,116,82,76],
@@ -886,7 +886,7 @@
       "sound": "звук",
       "level": 5,
       "gold": 5200,
-      "recipe": [78,78,125],
+      "recipe": [78,78,128],
       "param": "+ 10 к регенерации здоровья \n + 250% к регенерации маны \n + 20 Урон ",
       "use": "Активируемая: Reset Cooldowns — сбрасывает время перезарядки всех ваших предметов и способностей. ",
       "info": "Могущественный артефакт, созданный для магов. "
