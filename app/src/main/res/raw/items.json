@@ -7,9 +7,9 @@
       "level": 5,
       "gold": 6750,
       "recipe": [107, 97],
-      "param": "+ 70 Урон \n + 10 к силе \n ШАНС В БЛИЖНЕМ БОЮ: 25% \n ШАНС В ДАЛЬНЕМ БОЮ: 10% \n ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ: 1.4 \n ДОП. УРОН ОТ BASH: 120 \n ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ ОТ OVERWHELM: 2 ",
-      "use": "Активируемая: Overwhelm — оглушает выбранного противника на 2.0 сек. Проходит сквозь невосприимчивость к заклинаниям. \n Пассивная: Bash — дает каждой атаке шанс оглушить противника на 1.4 сек. и нанести 60 дополнительного урона; шанс зависит от типа атаки владельца.",
-      "info": "Острие потерянного клинка Повелителя Хаоса впивается врагу прямо в душу."
+      "param": "+ 70 Damage \n + 10 Strength \n BASH MELEE CHANCE: 25% \n BASH RANGED CHANCE: 10% \n BASH STUN DURATION: 1.4 \n BASH BONUS DAMAGE: 120 \n OVERWHELM STUN DURATION: 2 ",
+      "use": "Active: Overwhelm - Stuns a target enemy unit for 2.0 seconds. Pierces Spell Immunity. \n Passive: Bash - Grants each attack a chance to stun the target for 1.4 seconds and deal 120 bonus damage, based on whether the equipped hero is ranged or melee.",
+      "info": "The lost blade of the Commander of the Abyss, this edge cuts into an enemy's soul. "
     },
     {
       "title": "Aghanim's Scepter",
@@ -17,9 +17,9 @@
       "level": 5,
       "gold": 4200,
       "recipe": [82, 112, 75, 11],
-      "param": "+ 10 ко всем атрибутам \n + 200 к здоровью \n + 150 к мане",
-      "use": "Пассивная: Ultimate Upgrade — улучшает ульт, а также некоторые способности части героев.",
-      "info": "Скипетр колдуна, наделенный силами, присущими полубогам."
+      "param": "+ 10 All Attributes \n + 200 Health \n + 150 Mana ",
+      "use": "Passive: Ultimate Upgrade - Upgrades the ultimate, and some abilities, of certain heroes. ",
+      "info": "The scepter of a wizard with demigod-like powers."
     },
     {
       "title": "Arcane Boots",
@@ -27,9 +27,9 @@
       "level": 3,
       "gold": 1300,
       "recipe": [15, 35],
-      "param": "+ 50 к скорости передвижения \n + 250 к мане \n ПОПОЛНЯЕТ МАНЫ: 135 \n РАДИУС ДЕЙСТВИЯ: 900 ",
-      "use": "Активируемая: Replenish Mana — восстанавливает ману всем союзникам в радиусе 900 вокруг героя.",
-      "info": "В этих ботинках маг становится более ценным в бою. "
+      "param": "+ 50 Movement Speed \n + 250 Mana \n REPLENISH MANA RESTORE: 135 \n REPLENISH CAST RADIUS: 900 ",
+      "use": "Active: Replenish Mana - Restores mana to all allies in a 900 area around the hero.",
+      "info": "Magi equipped with these boots are valued in battle. "
     },
     {
       "title": "Armlet of Mordiggian",
@@ -37,9 +37,9 @@
       "level": 3,
       "gold": 2320,
       "recipe": [49,43,12,128],
-      "param": "+ 9 Урон \n + 25 к скорости атаки \n + 5 к броне \n + 7 к регенерации здоровья ",
-      "use": "Активируемая: Unholy Strength — на время действия увеличивает урон на 31 и силу на 25, но отнимает 40 здоровья в секунду. Вы не можете умереть ни от потери здоровья во время действия способности, ни от спада бонуса к силе после ее отключения. ",
-      "info": "Это оружие — выбор жестоких безумцев. Armlet дает огромную силу и мощь владельцу, взамен забирая его жизненные силы. "
+      "param": "+ 9 Damage \n + 25 Attack Speed \n + 5 Armor \n + 7 HP Regeneration ",
+      "use": "Active: Toggle Unholy Strength - When active, Unholy Strength grants +31 damage and +25 strength, but drains 40 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated. ",
+      "info": "Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power. "
     },
     {
       "title": "Assault Cuirass",
@@ -47,9 +47,9 @@
       "level": 5,
       "gold": 5250,
       "recipe": [81,52,21,128],
-      "param": "+ 35 к скорости атаки \n + 10 к броне \n АУРА СКОРОСТИ АТАКИ: 20 \n ДОП. БРОНЯ СОЮЗНИКАМ В АУРЕ: 5 \n СНИЖЕНИЕ БРОНИ ВРАГАМ В АУРЕ: 5 ",
-      "use": "Пассивная: Assault Aura — увеличивает скорость атаки и броню союзникам (включая сооружения), при этом снижая броню вражеским юнитам поблизости.",
-      "info": "Выкованная в кузнях преисподней, эта адская броня обеспечивает владельцу и его союзникам дополнительную броню и скорость атаки. "
+      "param": "+ 35 Attack Speed \n + 10 Armor \n AURA ATTACK SPEED: 20 \n AURA ALLY BONUS ARMOR: 5 \n AURA ENEMY ARMOR REDUCTION: 5 ",
+      "use": "Passive: Assault Aura - Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies.",
+      "info": "Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed. "
     },
     {
       "title": "Band of Elvenskin",
@@ -57,9 +57,9 @@
       "level": 2,
       "gold": 450,
       "recipe": [0],
-      "param": "+ 6 к ловкости ",
+      "param": "+ 6 Agility ",
       "use": "",
-      "info": "Эластичная ткань часто используется из-за малого веса и облегчения передвижения. "
+      "info": "A tensile fabric often used for its light weight and ease of movement. "
     },
     {
       "title": "Battle Fury",
@@ -67,9 +67,9 @@
       "level": 5,
       "gold": 4525,
       "recipe": [18,23,78,86],
-      "param": "+ 55 Урон \n + 6 к регенерации здоровья \n + 150% к регенерации маны \n УРОН СОСЕДНИМ ЦЕЛЯМ: 35% \n ДОП. УРОН У ГЕРОЕВ БЛИЖНЕГО БОЯ: 160% \n ДОП. УРОН У ГЕРОЕВ ДАЛЬНЕГО БОЯ: 125% \n ДАЛЬНОСТЬ ДЕЙСТВИЯ НА ДЕРЕВО: 350 \n ДАЛЬНОСТЬ ДЕЙСТВИЯ НА ВАРД: 450 ",
-      "use": "Активируемая: Chop Tree/Ward — уничтожает выбранное дерево или вард. Дальность использования больше, если цель способности — вард. \n Пассивная: Quell — увеличивает урон от атак по юнитам, не являющимися героями, в зависимости от типа атаки владельца. Не увеличивает урон по Рошану. \n Пассивная: Cleave — наносит процент от урона всем врагам в радиусе 280 единиц вокруг цели атаки. Не работает на героях с дальней атакой. ",
-      "info": "Владелец этого могучего топора может сокрушать ряды врагов в один миг. "
+      "param": "+ 55 Damage \n + 6 HP Regeneration \n + 150% Mana Regeneration \n CLEAVE DAMAGE: 35% \n QUELL MELEE DAMAGE: 160% \n QUELL RANGED DAMAGE: 125% \n CHOP TREE CAST RANGE: 350 \n CHOP WARD CAST RANGE: 450 ",
+      "use": "Active: Chop Tree/Ward - Destroy a target tree or ward. Chop cast range is increased when targetting wards. \n Passive: Quell - Increases attack damage against non-hero units, based on whether the equipped hero is ranged or melee. Does not provide bonus damage against Roshan. \n Passive: Cleave - Deals a percent of attack damage in a 280 area around the target. Ranged units cannot Cleave. ",
+      "info": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.  "
     },
     {
       "title": "Belt of Strength",
@@ -77,9 +77,9 @@
       "level": 2,
       "gold": 450,
       "recipe": [0],
-      "param": "+ 6 к силе ",
+      "param": "+ 6 Strength ",
       "use": "",
-      "info": "Ценный аксессуар для улучшения выживаемости. "
+      "info": "A valued accessory for improving vitality. "
     },
     {
       "title": "Black King Bar",
@@ -87,9 +87,9 @@
       "level": 5,
       "gold": 3975,
       "recipe": [75,65,128],
-      "param": "+ 10 к силе \n + 24 Урон \n ДЛИТЕЛЬНОСТЬ: 10/9/8/7/6/5 ",
-      "use": "Активируемая: Avatar — дает невосприимчивость к заклинаниям и полное сопротивление магическому урону. Продолжительность и время перезарядки уменьшаются с каждым использованием. Некоторые способности могут проходить сквозь невосприимчивость к заклинаниям. ",
-      "info": "Мощный посох, наделенный силой гигантов. "
+      "param": "+ 10 Strength \n + 24 Damage \n AVATAR DURATION: 10/9/8/7/6/5 ",
+      "use": "Active: Avatar - Grants Spell Immunity and 100% Magic Damage Resistance. Duration and cooldown decrease with each use. Some abilities are able to disable through Avatar. ",
+      "info": "A powerful staff imbued with the strength of giants. "
     },
     {
       "title": "Blade Mail",
@@ -97,9 +97,9 @@
       "level": 4,
       "gold": 2200,
       "recipe": [18,21,95],
-      "param": "+ 22 Урон \n + 6 к броне \n + 10 к интеллекту \n ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ: 4.5 ",
-      "use": "Активируемая: Damage Return — отражает любой получаемый урон наносящему его врагу в течение 4.5 сек. ",
-      "info": "Острая, как лезвие бритвы, кольчуга. Выбор самоотверженных мучеников. "
+      "param": "+ 22 Damage \n + 6 Armor \n + 10 Intelligence \n DAMAGE RETURN DURATION: 4.5 ",
+      "use": "Active: Damage Return - Reflects any damage taken back to the unit that dealt the damage. Lasts 4.5 seconds. ",
+      "info": "A razor-sharp coat of mail, it is the choice of selfless martyrs in combat."
     },
     {
       "title": "Blade of Alacrity",
@@ -107,9 +107,9 @@
       "level": 3,
       "gold": 1000,
       "recipe": [0],
-      "param": "+ 10 к ловкости ",
+      "param": "+ 10 Agility ",
       "use": "",
-      "info": "Длинный клинок, наделенный магией времени. "
+      "info": "A long blade imbued with time magic. "
     },
     {
       "title": "Blades of Attack",
@@ -117,9 +117,9 @@
       "level": 2,
       "gold": 420,
       "recipe": [0],
-      "param": "+ 9 Урон ",
+      "param": "+ 9 Damage  ",
       "use": "",
-      "info": "Не стоит недооценивать пользу от этих маленьких незаметных клинков. "
+      "info": "The damage of these small, concealable blades should not be underestimated. "
     },
     {
       "title": "Blink Dagger",
@@ -128,8 +128,8 @@
       "gold": 2250,
       "recipe": [0],
       "param": "",
-      "use": "Активируемая: Blink — телепортирует к указанной точке на расстоянии до 1200 единиц. Если вы получите урон, то не сможете использовать Blink Dagger в течение 3.0 сек. ",
-      "info": "Легендарный кинжал, использовавшийся самым быстрым убийцей, когда-либо ходившим по земле. "
+      "use": "Active: Blink - Teleport to a target point up to 1200 units away. If damage is taken, Blink Dagger cannot be used for 3.0 seconds. ",
+      "info": "The fabled dagger used by the fastest assassin ever to walk the lands. "
     },
     {
       "title": "Bloodstone",
@@ -137,9 +137,9 @@
       "level": 5,
       "gold": 4900,
       "recipe": [110,111,128],
-      "param": "+ 500 к здоровью \n + 400 к мане \n + 9 к регенерации здоровья \n + 200% к регенерации маны",
-      "use": "Активная: Pocket Deny — мгновенно убивает вас. \n Пассивная: Bloodpact — изначально имеет 8 зарядов и получает 1 дополнительный заряд каждый раз, когда в радиусе 1675 умирает вражеский герой. Каждый заряд увеличивает регенерацию маны на 1 и уменьшает время возрождения на 3 сек. Если владелец Bloodstone умирает, предмет потеряет треть зарядов и восстановит 500 здоровья + 30 здоровья за каждый заряд всем союзникам в радиусе 1675. ",
-      "info": "Ярко-рубиновый цвет Bloodstone ни с чем не спутать. Похоже, владелец этого артефакта способен иметь безграничные жизненные и духовные силы."
+      "param": "+ 500 Health \n + 400 Mana \n + 9 HP Regeneration \n + 200% Mana Regeneration ",
+      "use": "Active: Pocket Deny - Instantly causes you to die. \n Passive: Bloodpact - Begins with 8 charges, and gains a charge each time an enemy hero dies within 1675 range. Each charge grants 1 mana regeneration per second, and reduces respawn time by 3 seconds. If the bearer dies, 500 + 30 health per charge is restored to all allies within a 1675 radius, while the Bloodstone loses a third of its charges. ",
+      "info": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit. "
     },
     {
       "title": "Boots of Speed",
@@ -147,9 +147,9 @@
       "level": 2,
       "gold": 400,
       "recipe": [0],
-      "param": "+ 45 к скорости передвижения ",
+      "param": "+ 45 Movement Speed ",
       "use": "",
-      "info": "Удобная обувь, ускоряющая передвижение. "
+      "info": "Fleet footwear, increasing movement. "
     },
     {
       "title": "Boots of Travel",
@@ -157,9 +157,9 @@
       "level": 4,
       "gold": 2450,
       "recipe": [15,128],
-      "param": "+ 100 к скорости передвижения ",
-      "use": "Активируемая: Teleport — телепортирует вас к дружественному юниту, не являющимся героем, или сооружению. Двойное нажатие телепортирует вас к фонтану вашей команды. Улучшение позволяет телепортироваться к союзным героям.",
-      "info": "Крылатые сапоги, дающие вездесущность. "
+      "param": "+ 100 Movement Speed ",
+      "use": "Active: Teleport - Teleports you to an allied non-hero unit or structure. Double-click to teleport to your team's base fountain. Upgradable to allow you to teleport to allied heroes. ",
+      "info": "Winged boots that grant omnipresence. "
     },
     {
       "title": "Bracer",
@@ -167,9 +167,9 @@
       "level": 3,
       "gold": 525,
       "recipe": [22,40,128],
-      "param": "+ 6 к силе \n + 3 к ловкости \n + 3 к интеллекту \n + 3 Урон ",
+      "param": "+ 6 Strength \n + 3 Agility \n + 3 Intelligence \n + 3 Damage ",
       "use": "",
-      "info": "Наручи — типичный выбор для укрепления защиты и продления жизни в бою. "
+      "info": "The bracer is a common choice to toughen up defenses and increase longevity. "
     },
     {
       "title": "Broadsword",
@@ -177,9 +177,9 @@
       "level": 4,
       "gold": 1200,
       "recipe": [0],
-      "param": "+ 18 Урон ",
+      "param": "+ 18 Damage ",
       "use": "",
-      "info": "Будучи классическим оружием рыцарей, этот клинок является прочным и надежным выбором для убийства врагов. "
+      "info": "The classic weapon of choice for knights, this blade is sturdy and reliable for slaying enemies. "
     },
     {
       "title": "Buckler",
@@ -187,9 +187,9 @@
       "level": 3,
       "gold": 800,
       "recipe": [21,53,128],
-      "param": "+ 5 к броне \n + 2 ко всем атрибутам \n РАДИУС СПОСОБНОСТИ: 900 ",
-      "use": "Активируемая: Armor Bonus — дает +2 к броне всем союзникам в радиусе 900. Действует 25 секунд на героях, 30 секунд на юнитах. ",
-      "info": "Мощный щит, который напоминает владельцу о прошлых героях, носивших его. Эта незамысловатая вещица способна защищать в бою целые армии. "
+      "param": "+ 5 Armor \n + 2 All Attributes \n ARMOR CAST RADIUS: 900 ",
+      "use": "Active: Armor Bonus - Gives +2 armor to all allied units in a 900 radius. Lasts 25 seconds on heroes, 30 seconds on units. ",
+      "info": "A powerful shield that imbues the bearer with the strength of heroes past, it is capable of protecting entire armies in battle. "
     },
     {
       "title": "Butterfly",
@@ -197,9 +197,9 @@
       "level": 5,
       "gold": 5875,
       "recipe": [34,114,85],
-      "param": "+ 30 к ловкости \n + 30 Урон \n + 35% к уклонению \n + 30 к скорости атаки \n ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ОТ FLUTTER: 35% \n ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ FLUTTER: 4 ",
-      "use": "Активируемая: Flutter — обменивает шанс уклонения на 25% дополнительной скорости в течение 6.0 секунд.",
-      "info": "Только самые сильные и опытные воины могут владеть Butterfly, ведь он дает невероятную ловкость в бою. "
+      "param": "+ 30 Agility \n + 30 Damage \n + 35% Evasion \n + 30 Attack Speed \n FLUTTER BONUS MOVE SPEED: 35% \n FLUTTER DURATION: 4 ",
+      "use": "Active: Flutter - Trade evasion for 35% additional movement speed for 4.0 seconds.",
+      "info": "Only the mightiest and most experienced of warriors can wield the Butterfly, but it provides incredible dexterity in combat.  "
     },
     {
       "title": "Chainmail",
@@ -207,9 +207,9 @@
       "level": 3,
       "gold": 550,
       "recipe": [0],
-      "param": "+ 5 к броне ",
+      "param": "+ 5 Armor ",
       "use": "",
-      "info": "Кольчуга среднего размера. "
+      "info": "A medium weave of metal chains. "
     },
     {
       "title": "Circlet",
@@ -217,9 +217,9 @@
       "level": 1,
       "gold": 165,
       "recipe": [0],
-      "param": "+ 2 ко всем атрибутам ",
+      "param": "+ 2 All Attributes ",
       "use": "",
-      "info": "Элегантный браслет, предназначенный для человеческих принцесс. "
+      "info": "An elegant circlet designed for human princesses. "
     },
     {
       "title": "Claymore",
@@ -227,9 +227,9 @@
       "level": 4,
       "gold": 1400,
       "recipe": [0],
-      "param": "+ 21 Урон",
+      "param": "+ 21 Damage ",
       "use": "",
-      "info": "Меч, способный пробить броню — это обычный выбор начинающих меченосцев. "
+      "info": "A sword that can cut through armor, it's a commonly chosen first weapon for budding swordsmen. "
     },
     {
       "title": "Cloak",
@@ -237,9 +237,9 @@
       "level": 3,
       "gold": 550,
       "recipe": [0],
-      "param": "+ 15% к сопротивлению магии ",
+      "param": "+ 15% Spell Resistance ",
       "use": "",
-      "info": "Мантия, созданная из магического материала, который рассеивает любое заклинание. "
+      "info": "A cloak made of a magical material that works to dispel any magic cast on it. "
     },
     {
       "title": "Crimson Guard",
@@ -247,9 +247,9 @@
       "level": 5,
       "gold": 3550,
       "recipe": [118,19,128],
-      "param": "+ 250 к здоровью \n + 6 к регенерации здоровья \n + 2 ко всем атрибутам \n + 5 к броне \n ШАНС БЛОКА: 100% \n БЛОК УРОНА У ГЕРОЕВ БЛИЖНЕГО БОЯ: 32 \n БЛОК УРОНА У ГЕРОЕВ ДАЛЬНЕГО БОЯ: 16 \n БРОНИ ОТ GUARD: 2 \n ДЛИТЕЛЬНОСТЬ GUARD: 10 \n РАДИУС GUARD: 900 \n БЛОК УРОНА ОТ GUARD: 55",
-      "use": "Активируемая: Guard — дает героям поблизости 2 брони и 100% шанс заблокировать 55 урона от каждой атаки. Длится 10 секунд. \n Пассивная: Damage Block — дает носителю шанс заблокировать урон от каждой атаки, зависящий от типа атаки владельца. ",
-      "info": "Кираса, изначально выкованная, чтобы защищать от ужасающего Годня. "
+      "param": "+ 250 Health \n + 6 HP Regeneration \n + 2 All Attributes \n + 5 Armor \n ШАНС БЛОКА: 100% \n BLOCK DAMAGE MELEE: 32 \n BLOCK DAMAGE RANGED: 16 \n GUARD ARMOR: 2 \n GUARD DURATION: 10 \n GUARD RADIUS: 900 \n GUARD DAMAGE BLOCK: 55",
+      "use": "Active: Guard - Grant nearby allied heroes a 100% chance to block 55 damage from each incoming attack, along with 2 armor. Lasts 10 seconds. \n Passive: Damage Block - Makes the wielder block damage from each incoming attack based on whether the equipped hero is melee or ranged. ",
+      "info": "A cuirass originally built to protect against the dreaded Year Beast. "
     },
     {
       "title": "Crystalys",
@@ -257,9 +257,9 @@
       "level": 4,
       "gold": 2120,
       "recipe": [18,12,128],
-      "param": "+ 30 Урон \n ШАНС КРИТА: 20% \n КРИТИЧЕСКИЙ УРОН: 175% ",
-      "use": "Пассивная: Critical Strike — дает шанс нанести дополнительный урон при каждой атаке. Строениям дополнительный урон не наносится. ",
-      "info": "Клинок, скованный из редких кристаллов. Он находит слабые места в броне врага. "
+      "param": "+ 30 Damage \n CRITICAL CHANCE: 20% \n CRITICAL DAMAGE: 175% ",
+      "use": "Passive: Critical Strike - Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings. ",
+      "info": "A blade forged from rare crystals, it seeks weak points in enemy armor. "
     },
     {
       "title": "Daedalus",
@@ -267,9 +267,9 @@
       "level": 5,
       "gold": 5520,
       "recipe": [26,29,128],
-      "param": "+ 81 Урон \n ШАНС КРИТА: 30% \n КРИТИЧЕСКИЙ УРОН: 220%",
-      "use": "Пассивная: Critical Strike — дает шанс нанести дополнительный урон при каждой атаке. Строениям дополнительный урон не наносится.",
-      "info": "Оружие невероятной силы, с которым нелегко управиться даже самому сильному воину."
+      "param": "+ 81 Damage \n CRITICAL CHANCE: 30% \n CRITICAL DAMAGE: 220%",
+      "use": "Passive: Critical Strike - Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings. ",
+      "info": "A weapon of incredible power that is difficult for even the strongest of warriors to control."
     },
     {
       "title": "Dagon",
@@ -277,9 +277,9 @@
       "level": 4,
       "gold": 2720,
       "recipe": [112,72,128],
-      "param": "+ 13/16/19/22/25 к интеллекту \n + 3 ко всем атрибутам \n + 9 Урон \n МГНОВЕННЫЙ УРОН: 400/500/600/700/800 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 600/650/700/750/800 ",
-      "use": "Активируемая: Energy Burst — выпускает мощный всплеск энергии, наносящий урон выбранному вражескому юниту. Улучшаемая. ",
-      "info": "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд. "
+      "param": "+ 13/16/19/22/25 Intelligence \n + 3 All Attributes \n + 9 Damage \n BURST DAMAGE: 400/500/600/700/800 \n CAST RANGE: 600/650/700/750/800 ",
+      "use": "Active: Energy Burst - Emits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.  ",
+      "info": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user. "
     },
     {
       "title": "Demon Edge",
@@ -287,9 +287,9 @@
       "level": 4,
       "gold": 2400,
       "recipe": [0],
-      "param": "+ 46 Урон ",
+      "param": "+ 46 Damage ",
       "use": "",
-      "info": "Одно из старейших орудий, скованное кузнецом-демоном Абзидианом, убило своего создателя, когда тот проверял его заточку. "
+      "info": "One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its maker when he tested its edge. "
     },
     {
       "title": "Desolator",
@@ -297,9 +297,9 @@
       "level": 5,
       "gold": 3500,
       "recipe": [65,65,128],
-      "param": "+ 50 Урон \n СНИЖЕНИЕ БРОНИ: 7",
-      "use": "ассивная: Corruption — ваши атаки уменьшают броню цели на 15 секунд. \n Desolator — уникальный модификатор атаки",
-      "info": "Это проклятое оружие использовалось при пытках особо опасных преступников. "
+      "param": "+ 50 Damage \n ARMOR REDUCTION: 7",
+      "use": "Desolator is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers. ",
+      "info": "A wicked weapon, used in torturing political criminals. "
     },
     {
       "title": "Diffusal Blade",
@@ -307,9 +307,9 @@
       "level": 5,
       "gold": 3150,
       "recipe": [11,11,95,128],
-      "param": "+ 25/35 к ловкости \n + 10/15 к интеллекту \n ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ: 4 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 600 ",
-      "use": "Активируемая: Purge — снимает положительные эффекты и замедляет противника на 4.0 сек. или снимает отрицательные эффекты с союзника. \n Пассивная: Manabreak — каждая ваша атака сжигает 25 маны врага и наносит ему такое же количество физического урона. Иллюзии героев дальнего боя сжигают по 12 маны за атаку. Не складывается с другими способностями, сжигающими ману.",
-      "info": "Зачарованный меч, позволяющий разрубить врага и добраться прямо до его души."
+      "param": "+ 25/35 Agility \n + 10/15 Intelligence \n PURGE SLOW DURATION: 4 \n PURGE CAST RANGE: 600 ",
+      "use": "Active: Purge - If cast on an enemy, removes buffs from the target and slows it for 4.0 seconds. If cast on an ally, Purge removes most debuffs. \n Passive: Manabreak - Each attack burns 25 mana from the target, and deals the same amount in physical damage. Burns 12 mana per attack from ranged illusions. Does not stack with other manabreak abilities.",
+      "info": "An enchanted blade that allows the user to cut straight into the enemy's soul. "
     },
     {
       "title": "Divine Rapier",
@@ -317,9 +317,9 @@
       "level": 5,
       "gold": 6200,
       "recipe": [97,29],
-      "param": "+ 330 Урон ",
-      "use": "Выпадает при смерти. Если союзник подобрал этот артефакт, то он теряет свои свойства, пока его не вернут бывшему владельцу. Если его подберет враг, это правило отменяется, позволяя кому угодно получить бонусы от подобранной Divine Rapier. Курьер не может подобрать этот артефакт, если он выпал при смерти. ",
-      "info": "Настолько могущественное, что у него даже не может быть единственного владельца. "
+      "param": "+ 330 Damage ",
+      "use": "Drops on death. Becomes unusable if picked up by an ally of its owner until it is returned to its owner. It is immediately usable by anybody if an enemy of the owner picks it up. A dropped Rapier cannot be picked up by a courier. ",
+      "info": "So powerful, it cannot have a single owner. "
     },
     {
       "title": "Drum of Endurance",
@@ -327,9 +327,9 @@
       "level": 4,
       "gold": 1850,
       "recipe": [95,17,128],
-      "param": "+ 9 ко всем атрибутам \n + 3 Урон \n АУРА СКОРОСТИ АТАКИ: 5 \n АУРА СКОРОСТИ ПЕРЕДВИЖЕНИЯ: 5% \n СКОРОСТЬ АТАКИ ОТ ENDURANCE: 25 \n СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ОТ ENDURANCE: 10% \n ДЛИТЕЛЬНОСТЬ: 6 \n РАДИУС АУРЫ/СПОСОБНОСТИ: 900 ",
-      "use": "Активируемая: Endurance — дает +25 к скорости атаки и +13% к скорости передвижения союзников в радиусе 900. \n Пассивная: Swiftness Aura — увеличивает скорость атаки и передвижения союзников в радиусе 900.",
-      "info": "Артефакт, дающий жизненные силы и ускоряющий всех вокруг. "
+      "param": "+ 9 All Attributes \n + 3 Damage \n AURA ATTACK SPEED: 5 \n AURA MOVE SPEED: 5% \n ENDURANCE ATTACK SPEED: 25 \n ENDURANCE MOVE SPEED: 10% \n ENDURANCE DURATION: 6 \n AURA/ENDURANCE RADIUS: 900 ",
+      "use": "Active: Endurance - Gives bonus +25 attack speed and +13% movement speed to allies in a 900 radius. \n Passive: Swiftness Aura - Gives bonus attack and movement speed to allies in a 900 radius.",
+      "info": "A relic that enchants the bodies of those around it for swifter movement in times of crisis. "
     },
     {
       "title": "Eaglesong",
@@ -337,9 +337,9 @@
       "level": 5,
       "gold": 3200,
       "recipe": [0],
-      "param": "+ 25 к ловкости",
+      "param": "+ 25 Agility ",
       "use": "",
-      "info": "Этот артефакт удерживает в себе зов орла: тот, кто способен слышать его, получает безграничную ловкость. "
+      "info": "Capturing the majestic call of an eagle, this mystical horn brings limitless dexterity to those who hear it.  "
     },
     {
       "title": "Energy Booster",
@@ -347,9 +347,9 @@
       "level": 3,
       "gold": 900,
       "recipe": [0],
-      "param": "+ 250 к мане ",
+      "param": "+ 250 Mana ",
       "use": "",
-      "info": "Этот ляписовый камень усиливает магический потенциал владельца, позволяя ему дольше сохранять колдовские силы в бою. "
+      "info": "This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat. "
     },
     {
       "title": "Ethereal Blade",
@@ -357,9 +357,9 @@
       "level": 5,
       "gold": 4700,
       "recipe": [34,41],
-      "param": "+ 40 к ловкости \n + 10 к силе \n + 10 к интеллекту \n ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ: 80% \n ДЛИТЕЛЬНОСТЬ НА ВРАГАХ: 3 \n ДЛИТЕЛЬНОСТЬ НА СОЮЗНИКЕ/СЕБЕ: 4 \n ДОП. МАГИЧЕСКИЙ УРОН: 40% ",
-      "use": "Активируемая: Ether Blast — выпускает снаряд, который придает вашей цели бесплотную форму. В этой форме цель не может атаковать, получает повышенный магический урон, но полностью защищена от физического урона. При применении на противника тот будет замедлен и получит магический урон в размере 2.0х вашего основного атрибута +75 ед. Использование Town Portal Scroll или Boots of Travel не развеивает бесплотную форму. ",
-      "info": "Этот мерцающий меч — грозное оружие, способное наносить урон в любом мире, независимо от его физической или магической природы. "
+      "param": "+ 40 Agility \n + 10 Strength \n + 10 Intelligence \n BLAST ENEMY MOVE SLOW: 80% \n BLAST ENEMY DURATION: 3 \n BLAST ALLY/SELF DURATION: 4 \n INCREASED MAGIC DAMAGE: 40% ",
+      "use": "Active: Ether Blast - Launches a projectile which converts the target to ethereal form, increasing any incoming magic damage they take, while rendering them immune to physical damage and unable to attack. Can be cast on self. If the target is an enemy, it is also slowed, and takes 2.0x your primary attribute + 75 as magical damage.",
+      "info": "A flickering blade of a ghastly nature, it is capable of dealing damage in both magical and physical planes. "
     },
     {
       "title": "Eul's Scepter of Divinity",
@@ -367,9 +367,9 @@
       "level": 4,
       "gold": 2825,
       "recipe": [98,112,122,128],
-      "param": "+ 10 к интеллекту \n + 150% к регенерации маны \n + 40 к скорости передвижения \n ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ: 2.5 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 575 ",
-      "use": "Активируемая: Cyclone — подбрасывает выбранную цель ураганом в небо, делая ее неуязвимой на 2.5 сек. Можно использовать на себя. Если цель — враг, то по приземлении он получит 50 магического урона. ",
-      "info": "Мистический скипетр, прошедший сквозь века, позволяет призывать на помощь силу ветра, которая может быть использована как с добрыми, так и плохими намерениями. "
+      "param": "+ 10 Intelligence \n + 150% Mana Regeneration \n + 40 Movement Speed \n CYCLONE DURATION: 2.5 \n CYCLONE CAST RANGE: 575 ",
+      "use": "Active: Cyclone - Sweeps a target unit up into cyclone, making them invulnerable for 2.5 seconds. Cyclone can be cast on yourself. Enemy units take 50 magical damage upon landing. ",
+      "info": "A mysterious scepter passed down through the ages, its disruptive winds can be used for good or evil.  "
     },
     {
       "title": "Eye of Skadi",
@@ -377,9 +377,9 @@
       "level": 5,
       "gold": 5675,
       "recipe": [116,116,82,76],
-      "param": "+ 25 ко всем атрибутам \n + 250 к здоровью \n + 250 к мане \n ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ: 35% \n ЗАМЕДЛЕНИЕ АТАКИ: 45 \n ЗАМЕДЛЕНИЕ В БЛИЖНЕМ БОЮ: 5 \n ЗАМЕДЛЕНИЕ В ДАЛЬНЕМ БОЮ: 2.5 ",
-      "use": "Пассивная: Cold Attack — каждая атака замедляет скорость передвижения и атаки цели. Длительность эффекта зависит от типа атаки владельца. Eye of Skadi, несмотря на уникальный модификатор, сочетается с модификаторами атаки, дарующими вампиризм.",
-      "info": "Невероятно редкий артефакт, охраняемый лазурными драконами. "
+      "param": "+ 25 All Attributes \n + 250 Health \n + 250 Mana \n COLD MOVE SLOW: 35% \n COLD ATTACK SLOW: 45 \n COLD MELEE DURATION: 5 \n COLD RANGED DURATION: 2.5 ",
+      "use": "Passive: Cold Attack - Each attack slows the movement and attack speed of the target. The duration of the slow is based on whether the equipped hero is melee or ranged.",
+      "info": "Extremely rare artifact, guarded by the azure dragons. "
     },
     {
       "title": "Force Staff",
@@ -387,9 +387,9 @@
       "level": 4,
       "gold": 2250,
       "recipe": [112,94,128],
-      "param": "+ 10 к интеллекту \n + 4 к регенерации здоровья ",
-      "use": "Активируемая: Force — толкает любой выбранный юнит на расстояние в 600 в направлении его взгляда. При двойном нажатии мгновенно применяется на самого себя. ",
-      "info": "Позволяет вам манипулировать другими ради добра или зла.  "
+      "param": "+ 10 Intelligence \n + 4 HP Regeneration ",
+      "use": "Active: Force - Pushes any target unit 600 units in the direction it is facing. Double click to instantly cast Force on yourself. ",
+      "info": "Allows you to manipulate others, for good or evil. "
     },
     {
       "title": "Gauntlets of Strength",
@@ -397,9 +397,9 @@
       "level": 1,
       "gold": 150,
       "recipe": [0],
-      "param": "+ 3 к силе ",
+      "param": "+ 3 Strength ",
       "use": "",
-      "info": "Шипованные кожаные перчатки, которые дают грубую силу. "
+      "info": "Studded leather gloves that add brute strength. "
     },
     {
       "title": "Ghost Scepter",
@@ -407,9 +407,9 @@
       "level": 4,
       "gold": 1500,
       "recipe": [0],
-      "param": "+ 5 ко всем атрибутам \n ДЛИТЕЛЬНОСТЬ: 4 \n ДОП. МАГИЧЕСКИЙ УРОН: 40% ",
-      "use": "Активируемая: Ghost Form — придает бесплотную форму, в которой герой полностью защищен от физического урона, но получает на 40% больше урона от заклинаний и теряет возможность атаковать.",
-      "info": "На время переносит сущность владельца в мир духов, что защищает его от всех физических атак. "
+      "param": "+ 5 All Attributes \n GHOST DURATION: 4 \n GHOST ADDED MAGIC DAMAGE: 40% ",
+      "use": "Active: Ghost Form - Enter ghost form, becoming immune to physical damage, yet unable to attack and taking 40% extra magic damage.",
+      "info": "Imbues the wielder with a ghostly presence, allowing them to evade physical damage. "
     },
     {
       "title": "Glimmer Cape",
@@ -417,9 +417,9 @@
       "level": 4,
       "gold": 1950,
       "recipe": [103,24],
-      "param": "+ 20 к скорости атаки \n + 15% к сопротивлению магии \n ЗАДЕРЖКА НЕВИДИМОСТИ: 0.6 \n СОПРОТИВЛЕНИЕ МАГИИ В НЕВИДИМОСТИ: 45% \n ДЛИТЕЛЬНОСТЬ: 5 ",
-      "use": "Активируемая: Glimmer - делает вас или союзника невидимым спустя 0.6 сек., а также дает цели 45% к сопротивлению магии. Можно использовать во время произнесения заклинаний. ",
-      "info": "Украденная накидка великого иллюзиониста. "
+      "param": "+ 20 Attack Speed \n + 15% Spell Resistance \n GLIMMER FADE TIME: 0.6 \n GLIMMER MAGIC RESISTANCE: 45% \n GLIMMER DURATION: 5 ",
+      "use": "Active: Glimmer - After a 0.6 second delay, grants invisibility and 45% magic resistance to you or a target allied unit. Can be cast while channelling. ",
+      "info": "The stolen cape of a master illusionist. "
     },
     {
       "title": "Gloves of Haste",
@@ -427,9 +427,9 @@
       "level": 2,
       "gold": 500,
       "recipe": [0],
-      "param": "+ 20 к скорости атаки ",
+      "param": "+ 20 Attack Speed ",
       "use": "",
-      "info": "Пара магических перчаток, которые, похоже, снижают вес оружия. "
+      "info": "A pair of magical gloves that seems to render weapons weightless. "
     },
     {
       "title": "Guardian Greaves",
@@ -437,9 +437,9 @@
       "level": 5,
       "gold": 5300,
       "recipe": [64,3,128],
-      "param": "+ 55 к скорости передвижения \n + 250 к мане \n + 5 ко всем атрибутам \n + 5 к броне \n ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ В АУРЕ: 4 \n ДОП. БРОНЯ В АУРЕ: 2 \n ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ ДЛЯ РАНЕНЫХ: 15 \n ДОП. БРОНЯ ДЛЯ РАНЕНЫХ: 15 \n ПОРОГ УСИЛЕНИЯ АУРЫ: 20% \n ЛЕЧЕНИЕ ОТ СПОСОБНОСТИ: 250 \n МАНЫ ОТ СПОСОБНОСТИ: 160 \n РАДИУС ДЕЙСТВИЯ: 900 ",
-      "use": "Активируемая: Mend - восстанавливает 250 здоровья и 160 маны всем окружающим союзникам, а также рассеивает большинство отрицательных эффектов на владельце. \n Пассивная: Guardian Aura - дарует окружающим союзникам +4 к восстановлению здоровья и +2 к броне. Если в радиусе действия есть союзный герой, уровень здоровья которого ниже 20%, то для него восстановление здоровья увеличивается до 15, а броня — до 15. ",
-      "info": "Один из множества священных инструментов, созданных во славу Всезнающего. "
+      "param": "+ 55 Movement Speed \n + 250 Mana \n + 5 All Attributes \n + 5 Armor \n AURA HEALTH REGEN: 4 \n AURA ARMOR: 2 \n AURA BOOST HEALTH REGEN: 15 \n AURA BOOST ARMOR: 15 \n AURA BOOST THRESHOLD: 20% \n MEND HEAL: 250 \n MEND MANA RESTORE: 160 \n AURA/MEND RADIUS: 900 ",
+      "use": "Active: Mend - Restores 250 health and 160 mana to nearby allies, and removes most negative buffs from the caster. \n Passive: Guardian Aura - Provides nearby allies with 4 health regeneration and 2 bonus armor. If an allied hero's health falls below 20%, they receive 15 health regeneration and 15 armor. ",
+      "info": "One of many holy instruments constructed to honor the Omniscience. "
     },
     {
       "title": "Hand of Midas",
@@ -447,9 +447,9 @@
       "level": 4,
       "gold": 2050,
       "recipe": [43,128],
-      "param": "+ 30 к скорости атаки \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 600 ",
-      "use": "Активируемая: Transmute — мгновенно убивает цель (не героя), давая 190 золота и в 2.5 раза больше опыта. Невозможно использовать на древних крипах. ",
-      "info": "Никому не известно, как этот артефакт сохранился до наших времен. Однако Hand of Midas все еще существует и исправно служит владельцу, превращая в золото любое живое существо, которого он коснется. "
+      "param": "+ 30 Attack Speed \n TRANSMUTE CAST RANGE: 600 ",
+      "use": "Active: Transmute - Kills a non-hero target for 190 gold and 2.5x experience. Cannot be used on Ancient Creeps. ",
+      "info": "Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets."
     },
     {
       "title": "Headdress",
@@ -457,9 +457,9 @@
       "level": 3,
       "gold": 600,
       "recipe": [94,53,128],
-      "param": "+ 2 ко всем атрибутам \n ВОССТАНОВЛЕНИЕ В АУРЕ: 3 \n РАДИУС АУРЫ РЕГЕНЕРАЦИИ: 900 ",
-      "use": "Пассивная: Regeneration Aura — постепенно восстанавливает здоровье всем союзникам в радиусе 900.",
-      "info": "Создает успокаивающую ауру, которая восстанавливает здоровье соратников в бою. "
+      "param": "+ 2 All Attributes \n AURA HEALTH REGEN: 3 \n AURA REGEN RADIUS: 900 ",
+      "use": "Passive: Regeneration Aura - Restores health to allies in a 900 unit radius.",
+      "info": "Creates a soothing aura that restores allies in battle. "
     },
     {
       "title": "Heart of Tarrasque",
@@ -467,9 +467,9 @@
       "level": 5,
       "gold": 5500,
       "recipe": [88,120,128],
-      "param": "+ 40 к силе \n + 300 к здоровью \n ВОССТ. ЗДОРОВЬЯ В СЕКУНДУ: 4,75% ",
-      "use": "Пассивная: Health Regeneration — восстанавливает определенный процент максимального здоровья в секунду. Если владелец получит урон от вражеского героя или Рошана, способность отключается на 5 сек. для героев ближнего боя, или на 7 сек. для героев дальнего боя. ",
-      "info": "Сохранившееся сердце вымершего монстра, с которым его владелец становится мужественнее. "
+      "param": "+ 40 Strength \n + 300 Health \n HEALTH RESTORED PER SECOND: 4,75% ",
+      "use": "Passive: Health Regeneration - Restores a percentage of max health per second. If damage is taken from an enemy hero or Roshan, this ability is disabled for 5 seconds for melee heroes, or 7 seconds for ranged heroes. ",
+      "info": "Preserved heart of an extinct monster, it bolsters the bearer's fortitude. "
     },
     {
       "title": "Heaven's Halberd",
@@ -477,9 +477,9 @@
       "level": 5,
       "gold": 3850,
       "recipe": [99,114],
-      "param": "+ 25% к уклонению \n + 25 Урон \n + 20 к силе \n ШАНС НАНЕСТИ ТРАВМУ: 15% \n ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ: 20% \n ЗАМЕДЛЕНИЕ АТАКИ: 20 \n ДЛИТЕЛЬНОСТЬ ТРАВМЫ: 4 \n ДЛИТЕЛЬНОСТЬ НА ГЕРОЯХ ДАЛЬНЕГО БОЯ: 4.5 \n ДЛИТЕЛЬНОСТЬ НА ГЕРОЯХ БЛИЖНЕГО БОЯ: 3 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 600 ",
-      "use": "Активируемая: Disarm — запрещает цели атаковать. Длится 3.0 сек. при использовании на героях ближнего боя и 4.5 на героях дальнего боя. \n Пассивная: Lesser Maim — каждая атака получает шанс нанести травму, уменьшающую скорость передвижения и атаки врага на 4.0 сек.",
-      "info": "Эта алебарда движется со скоростью меньшего оружия, позволяя владельцу одержать победу в тех дуэлях, где более тяжелое орудие не справилось бы. "
+      "param": "+ 25% Evasion \n + 25 Damage \n + 20 Strength \n MAIM CHANCE: 15% \n MAIM MOVEMENT SLOW: 20% \n MAIM ATTACK SLOW: 20 \n MAIM DURATION: 4 \n DISARM RANGED DURATION: 4.5 \n DISARM MELEE DURATION: 3 \n DISARM CAST RANGE: 600 ",
+      "use": "Active: Disarm - Prevents a target from attacking. Lasts 3.0 seconds on melee targets, and 4.5 seconds on ranged targets. \n Passive: Lesser Maim - Each attack has a chance to slow the enemy's movement and attack speed for 4.0 seconds.",
+      "info": "This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not. "
     },
     {
       "title": "Helm of Iron Will",
@@ -487,9 +487,9 @@
       "level": 3,
       "gold": 900,
       "recipe": [0],
-      "param": "+ 5 к броне \n + 3 к регенерации здоровья ",
+      "param": "+ 5 Armor \n + 3 HP Regeneration ",
       "use": "",
-      "info": "Шлем легендарного воина, павшего в битве. "
+      "info": "The helmet of a legendary warrior who fell in battle. "
     },
     {
       "title": "Helm of the Dominator",
@@ -497,9 +497,9 @@
       "level": 4,
       "gold": 1800,
       "recipe": [69,49],
-      "param": "+ 20 Урон \n + 5 к броне \n + 3 к регенерации здоровья \n ВАМПИРИЗМ: 15% \n МИН. ЗДОРОВЬЕ СУЩЕСТВА: 1400",
-      "use": "Активируемая: Dominate — дает контроль над выбранным существом, не являющимся ни героем, ни древним крипом. Запас здоровья прирученного существа увеличивается до указанного минимума. Скорость прирученого 350.\n Пассивная: Lifesteal — дает владельцу вампиризм, который с каждой атакой восстанавливает его здоровье на часть нанесенного урона.",
-      "info": "Могучий шлем мертвого некроманта. "
+      "param": "+ 20 Damage \n + 5 Armor \n + 3 HP Regeneration \n LIFESTEAL: 15% \n DOMINATED HEALTH MINIMUM: 1400",
+      "use": "Active: Dominate - Take control of a non-hero, non-ancient target unit and sets its movement speed to 350. If a dominated creep's base health is naturally below the health minimum, its base health will be raised to the health minimum.\n Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.",
+      "info": "The powerful headpiece of a dead necromancer. "
     },
     {
       "title": "Hood of Defiance",
@@ -507,9 +507,9 @@
       "level": 4,
       "gold": 2100,
       "recipe": [92,24,94,94],
-      "param": "+ 9 к регенерации здоровья \n + 30% к сопротивлению магии",
-      "use": "",
-      "info": "Покрытый мехом головной убор, который ограждает владельца от разрушительного воздействия магии. "
+      "param": "+ 9 HP Regeneration \n + 30% Spell Resistance \n BARRIER BLOCK: 325 \n BARRIER DURATION: 12",
+      "use": "Active: Creates a spell shield that absorbs up to 325 magical damage.",
+      "info": "A furred, magic resistant headpiece that is feared by wizards."
     },
     {
       "title": "Hyperstone",
@@ -517,9 +517,9 @@
       "level": 4,
       "gold": 2000,
       "recipe": [0],
-      "param": "+ 55 к скорости атаки ",
+      "param": "+ 55 Attack Speed ",
       "use": "",
-      "info": "Загадочный гравированный камень, который делает носителя усерднее. "
+      "info": "A mystical, carved stone that boosts the fervor of the holder. "
     },
     {
       "title": "Iron Branch",
@@ -527,9 +527,9 @@
       "level": 1,
       "gold": 50,
       "recipe": [0],
-      "param": "+ 1 ко всем атрибутам ",
-      "use": "",
-      "info": "Обычная, казалось бы, веточка дарует владельцу полезные качества благодаря свойствам железного дерева, от которого она отрублена. "
+      "param": "+ 1 All Attributes \n TREE DURATION: 20 ",
+      "use": "Active: Targets the ground to plant a happy little tree that lasts for 20 seconds.",
+      "info": "A seemingly ordinary branch, its ironlike qualities are bestowed upon the bearer. "
     },
     {
       "title": "Javelin",
@@ -537,9 +537,9 @@
       "level": 4,
       "gold": 1500,
       "recipe": [0],
-      "param": "+ 10 Урон \n ШАНС ПРОНЗИТЬ: 25% \n ПРОНЗАЮЩИЙ УРОН: 85 ",
-      "use": "Пассивная: Pierce — дает шанс нанести дополнительный урон при каждой атаке.",
-      "info": "На удивление типичное копье, которым иногда можно пробить вражескую броню. "
+      "param": "+ 10 Damage \n CHANCE TO PIERCE: 25% \n PIERCE DAMAGE: 85 ",
+      "use": "Passive: Pierce - Grants each attack a chance to deal bonus damage.",
+      "info": "A rather typical spear that can sometimes pierce through an enemy's armor when used to attack. "
     },
     {
       "title": "Linken's Sphere",
@@ -547,9 +547,9 @@
       "level": 5,
       "gold": 5125,
       "recipe": [116,78,128],
-      "param": "+ 15 ко всем атрибутам \n + 6 к регенерации здоровья \n + 150% к регенерации маны \n + 15 Урон ",
-      "use": "Пассивная: Spellblock — блокирует большинство направленных заклинаний каждые 13 сек. \n Активируемая: Transfer Spellblock — временно снимает пассивный эффект с носителя и передает его выбранному союзнику. ",
-      "info": "Эта магическая сфера однажды защитила одного из самых знаменитых героев в истории. "
+      "param": "+ 15 All Attributes \n + 6 HP Regeneration \n + 150% Mana Regeneration \n + 15 Damage ",
+      "use": "Passive: Spellblock - Blocks most targeted spells once every 16.0 seconds. \n Transfer Spellblock - Temporarily removes Spellblock from the item's owner and transfers it to an allied unit. ",
+      "info": "This magical sphere once protected one of the most famous heroes in history. "
     },
     {
       "title": "Lotus Orb",
@@ -557,9 +557,9 @@
       "level": 5,
       "gold": 4000,
       "recipe": [78,81,128],
-      "param": "+ 10 Урон \n + 10 к броне \n + 5 к регенерации здоровья \n + 125% к регенерации маны \n ДЛИТЕЛЬНОСТЬ: 6 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 900 ",
-      "use": "Активируемая: Echo Shell - создает вокруг цели щит, отражающий большинство направленных заклинаний обратно во врага. Вражеские заклинания всё равно будут наносить урон. При применении рассеивает все негативные эффекты.",
-      "info": "Бриллиант в центре всё еще несет блеклое отражение своего создателя. "
+      "param": "+ 10 Damage \n + 10 Armor \n + 5 HP Regeneration \n + 125% Mana Regeneration \n ECHO DURATION: 6 \n ECHO CAST RANGE: 900 ",
+      "use": "Active: Echo Shell - Applies a shield to the target unit which re-casts most targeted spells back to their caster. The shielded unit will still take damage from the spell. Dispels negative buffs when applied.",
+      "info": "The jewel at its center still reflects a pale image of its creator. "
     },
     {
       "title": "Maelstrom",
@@ -567,9 +567,9 @@
       "level": 4,
       "gold": 2800,
       "recipe": [65,43,128],
-      "param": "+ 24 Урон \n + 25 к скорости атаки \n ШАНС РАЗРЯДА: 25% \n УРОН ОТ РАЗРЯДА: 120 \n ЦЕЛЕЙ ЦЕПНОЙ МОЛНИИ: 4 \n РАДИУС СКАЧКОВ МОЛНИИ: 900",
-      "use": "Пассивная: Chain Lightning — дает шанс при атаке создать разряд цепной молнии, которая скакнет по 4 целям и нанесет каждой по 120 магического урона.",
-      "info": "Молот Maelstrom, будучи кованым самими богами, позволяет своему владельцу подчинить силу молнии. "
+      "param": "+ 24 Damage \n + 25 Attack Speed \n CHAIN CHANCE: 25% \n CHAIN DAMAGE: 120 \n CHAIN TARGETS: 4 \n CHAIN LEAP RADIUS: 900",
+      "use": "Passive: Chain Lightning - Grants a chance on attack to release a bolt of electricity that leaps between 4 targets, dealing 120 magical damage to each.",
+      "info": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning."
     },
     {
       "title": "Magic Stick",
@@ -577,9 +577,9 @@
       "level": 1,
       "gold": 200,
       "recipe": [0],
-      "param": "ЗДОРОВЬЯ/МАНЫ ЗА ЗАРЯД: 15 ",
-      "use": "Активируемая: Energy Charge — восстанавливает здоровье и ману в зависимости от количества имеющихся зарядов (максимум: 10). За каждое использование способности врагом, который видим и находится неподалеку, добавляется один заряд.",
-      "info": "Простая волшебная палочка, используемая для концентрации магической энергии как начинающими волшебниками, так и великими колдунами. "
+      "param": "HEALTH/MANA PER CHARGE: 15 ",
+      "use": "Active: Energy Charge - Instantly restores health and mana based on the number of charges stored. Gains a charge (max 10) whenever a nearby visible enemy uses an ability. ",
+      "info": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.  "
     },
     {
       "title": "Magic Wand",
@@ -587,9 +587,9 @@
       "level": 2,
       "gold": 465,
       "recipe": [22,53,53,58],
-      "param": "+ 4 ко всем атрибутам \n ЗДОРОВЬЯ/МАНЫ ЗА ЗАРЯД: 15 ",
-      "use": "Активируемая: Energy Charge — восстанавливает здоровье и ману в зависимости от количества имеющихся зарядов (максимум: 17). За каждое использование способности врагом, который видим и находится неподалеку, добавляется один заряд.",
-      "info": "Простая волшебная палочка, используемая для концентрации магической энергии как начинающими волшебниками, так и великими колдунами. "
+      "param": "+ All Attributes \n HEALTH/MANA PER CHARGE: 15 ",
+      "use": "Active: Energy Charge - Instantly restores health and mana based on the number of charges stored. Gains a charge (max 17) whenever a nearby visible enemy uses an ability. ",
+      "info": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike. "
     },
     {
       "title": "Manta Style",
@@ -597,9 +597,9 @@
       "level": 5,
       "gold": 4950,
       "recipe": [124,116,128],
-      "param": "+ 10 к силе \n + 26 к ловкости \n + 10 к интеллекту \n + 15 к скорости атаки \n + 10% к скорости передвижения \n ЧИСЛО ИЛЛЮЗИЙ: 2 \n ВРЕМЯ ЖИЗНИ ИЛЛЮЗИЙ: 20 \n УРОН ИЛЛЮЗИЙ БЛИЖНЕГО БОЯ: 33% \n УРОН ПО ИЛЛЮЗИЯМ БЛИЖНЕГО БОЯ: 350% \n УРОН ИЛЛЮЗИЙ ДАЛЬНЕГО БОЯ: 28% \n УРОН ПО ИЛЛЮЗИЯМ ДАЛЬНЕГО БОЯ: 400% ",
-      "use": "Активируемая: Mirror Image — создает 2 зеркальные копии вашего героя, которые существуют 20 сек. Время перезарядки способности зависит от типа атаки владельца: 30 сек. для героев ближнего боя и 45 сек. для героев дальнего боя. \n Иллюзии героев ближнего боя наносят 33% урона и получают 350% урона, а иллюзии героев дальнего боя наносят 28% урона и получают 400% урона.",
-      "info": "Топор, созданный из отражающих материалов, которые вызывают смятение во вражеских рядах."
+      "param": "+ 10 Strength \n + 26 Agility \n + 10 Intelligence \n + 15 Attack Speed \n + 10% Movement Speed \n NUMBER OF IMAGES: 2 \n IMAGE DURATION: 20 \n MELEE IMAGE DAMAGE: 33% \n MELEE IMAGE DAMAGE TAKEN: 350% \n RANGED IMAGE DAMAGE: 28% \n RANGED IMAGE DAMAGE TAKEN: 400% ",
+      "use": "Active: Mirror Image - Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds.",
+      "info": "An axe made of reflective materials that causes confusion amongst enemy ranks. "
     },
     {
       "title": "Mantle of Intelligence",
@@ -607,9 +607,9 @@
       "level": 1,
       "gold": 150,
       "recipe": [0],
-      "param": "+ 3 к интеллекту",
+      "param": "+ 3 Intelligence ",
       "use": "",
-      "info": "Прекрасная сапфировая мантия, которую королевы носили из поколения в поколение. "
+      "info": "A beautiful sapphire mantle worn by generations of queens. "
     },
     {
       "title": "Mask of Madness",
@@ -617,9 +617,9 @@
       "level": 4,
       "gold": 1800,
       "recipe": [69,128],
-      "param": "ВАМПИРИЗМ: 20% \n ДОП. СКОРОСТЬ АТАКИ: 100 \n ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: 17% \n УВЕЛИЧЕНИЕ ПОЛУЧАЕМОГО УРОНА: 30% \n ДЛИТЕЛЬНОСТЬ: 12",
-      "use": "Активируемая: Berserk — дает 100 к скорости атаки и 17% к скорости передвижения, но заставляет получать на 30% больше урона. Длится 12.0 сек. \n Пассивная: Lifesteal — дает владельцу вампиризм, который с каждой атакой восстанавливает его здоровье на часть нанесенного урона.",
-      "info": "Как только эта маска надета, ее носитель тут же становится безудержной яростной силой. "
+      "param": "LIFESTEAL: 20% \n BERSERK ATTACK SPEED: 100 \n BERSERK MOVE SPEED: 17% \n BERSERK ADDED DAMAGE TAKEN: 30% \n BERSERK DURATION: 12",
+      "use": "Active: Berserk - Gives 100 attack speed and 17% movement speed, but causes you to take extra 30% damage. Lasts 12.0 seconds. \n Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.",
+      "info": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force. "
     },
     {
       "title": "Medallion of Courage",
@@ -627,9 +627,9 @@
       "level": 3,
       "gold": 1200,
       "recipe": [21,98,128],
-      "param": "+ 7 к броне \n + 50% к регенерации маны \n СНИЖЕНИЕ БРОНИ: 7 \n ДЛИТЕЛЬНОСТЬ: 7 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 1000",
-      "use": "Активируемая: Valor — при использовании на союзника увеличивает его броню и снижает вашу. При использовании на противника снижает броню и у вас, и у цели. Не действует на невосприимчивых к магии. Действует на Roshan вполсилы. ",
-      "info": "Его носитель не боится сражений."
+      "param": "+ 7 Armor \n + 50% Mana Regeneration \n VALOR ARMOR REDUCTION: 7 \n VALOR DURATION: 7 \n VALOR CAST RANGE: 1000",
+      "use": "Active: Valor - If cast on an ally, increases their armor while reducing the caster's. If cast on an enemy, reduces the armor of both the enemy and the caster. Cannot target magic immune enemies. Armor reduction is halved against Roshan. ",
+      "info": "The bearer has no fear of combat. "
     },
     {
       "title": "Mekansm",
@@ -637,9 +637,9 @@
       "level": 4,
       "gold": 2300,
       "recipe": [46,19,128],
-      "param": "+ 5 ко всем атрибутам \n + 5 к броне \n ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ В АУРЕ: 4 \n ЛЕЧЕНИЕ ОТ RESTORE: 250 \n ДОП. БРОНЯ ОТ RESTORE: 2 \n ВРЕМЯ ДЕЙСТВИЯ ДОП. БРОНИ: 25 \n РАДИУС АУРЫ/СПОСОБНОСТИ: 900 ",
-      "use": "Активируемая: Restore — восстанавливает 250 здоровья и дает +2 брони в радиусе 900 вокруг владельца. \n Пассивная: Mekansm Aura — увеличивает скорость восстановления здоровья на 4 у союзников в радиусе 900 вокруг владельца.",
-      "info": "Светящаяся драгоценность, собранная из частей, которые идеально дополняют друг друга"
+      "param": "+ 5 All Attributes \n + 5 Armor \n AURA HEALTH REGEN: 4 \n RESTORE HEAL: 250 \n RESTORE ARMOR: 2 \n RESTORE ARMOR DURATION: 25 \n AURA/RESTORE RADIUS: 900 ",
+      "use": "Active: Restore - Heals 250 health and gives +2 armor to allied units in a 900 radius. \n Passive: Mekansm Aura - Grants 4 health regeneration to allied units in a 900 radius.",
+      "info": "A glowing jewel formed out of assorted parts that somehow fit together perfectly."
     },
     {
       "title": "Mithril Hammer",
@@ -647,9 +647,9 @@
       "level": 4,
       "gold": 1600,
       "recipe": [0],
-      "param": "+ 24 Урон ",
+      "param": "+ 24 Damage ",
       "use": "",
-      "info": "Молот, скованный из чистейшего мифрила. "
+      "info": "A hammer forged of pure mithril."
     },
     {
       "title": "Mjollnir",
@@ -657,9 +657,9 @@
       "level": 5,
       "gold": 5700,
       "recipe": [57,52,128],
-      "param": "+ 24 Урон \n + 80 к скорости атаки \n ВРЕМЯ ДЕЙСТВИЯ ЩИТА: 15 \n ШАНС СРАБАТЫВАНИЯ ЩИТА: 20% \n УРОН ОТ ЩИТА: 200 \n РАДИУС УДАРА STATIC CHARGE: 900 \n ШАНС РАЗРЯДА: 25% \n УРОН ОТ РАЗРЯДА: 150 \n ЦЕЛЕЙ ЦЕПНОЙ МОЛНИИ: 12 \n РАДИУС СКАЧКОВ МОЛНИИ: 900",
-      "use": "Активируемая: Static Charge — устанавливает на выбранном юните заряженный щит, который имеет шанс в 20% ударить разрядом атакующего врага и 4 других. \n Пассивная: Chain Lightning — дает шанс при атаке создать разряд цепной молнии, которая скакнет по 12 целям и нанесет каждой по 150 магического урона.",
-      "info": "Магический молот Тора, созданный для него гномами по имени Брок и Эйтри. "
+      "param": "+ 24 Damage \n + 80 Attack Speed \n STATIC DURATION: 15 \n STATIC CHANCE: 20% \n STATIC DAMAGE: 200 \n STATIC RELEASE RADIUS: 900 \n CHAIN CHANCE: 25% \n CHAIN DAMAGE: 150 \n CHAIN TARGETS: 12 \n CHAIN LEAP RADIUS: 900",
+      "use": "Active: Static Charge - Places a charged shield on a target unit which has a 20% chance to release a shocking bolt at a nearby attacker and 4 additional enemies. \n Passive: Chain Lightning - Grants a chance on attack to release a bolt of electricity that leaps between 12 targets, dealing 150 magical damage to each.",
+      "info": "Thor's magical hammer, made for him by the dwarves Brok and Eitri."
     },
     {
       "title": "Monkey King Bar",
@@ -667,9 +667,9 @@
       "level": 5,
       "gold": 5400,
       "recipe": [29,54,54],
-      "param": "+ 66 Урон \n + 15 к скорости атаки \n ШАНС МИНИ-ОГЛУШЕНИЯ: 35% \n УРОН МИНИ-ОГЛУШЕНИЯ: 160",
-      "use": "Пассивная: Mini-Bash — дает шанс нанести дополнительный урон и кратковременно оглушить цель при каждой атаке. \n Пассивная: True Strike — исключает шанс промаха при атаке, если только целью не является вражеская постройка.",
-      "info": "Могущественный посох, используемый мастерами. "
+      "param": "+ 66 Damage \n + 15 Attack Speed \n MINI-BASH CHANCE: 35% \n MINI-BASH DAMAGE: 160",
+      "use": "Passive: Mini-Bash - Grants each attack a chance to deal bonus damage and deal a mini-stun. \n Passive: True Strike - Prevents your attacks from missing. True Strike does not work when attacking enemy structures.",
+      "info": "A powerful staff used by a master warrior. "
     },
     {
       "title": "Moon Shard",
@@ -677,9 +677,9 @@
       "level": 5,
       "gold": 4000,
       "recipe": [52,52],
-      "param": "+ 120 к скорости атаки \n ДОПОЛНИТЕЛЬНЫЙ ОБЗОР НОЧЬЮ: 250 \n СКОРОСТЬ АТАКИ ПРИ ПОГЛОЩЕНИИ: 60",
-      "use": "Использование: поглощает Moon Shard и навсегда увеличивает скорость атаки на 60. Повторное использование невозможно. \n Пассивная: Shade Sight - увеличивает радиус обзора ночью на 250. ",
-      "info": "Говорят, что это слеза Селимин — богини Луны."
+      "param": "+ 120 Attack Speed \n SHADE BONUS NIGHT VISION: 250 \n CONSUME ATTACK SPEED: 60",
+      "use": "Use: Consume the Moon Shard to permanently gain 60 attack speed. Does not stack. \n Passive: Shade Sight - Grants 250 bonus night vision. ",
+      "info": "Said to be a tear from the lunar goddess Selemene. "
     },
     {
       "title": "Morbid Mask",
@@ -687,9 +687,9 @@
       "level": 3,
       "gold": 900,
       "recipe": [0],
-      "param": "ВАМПИРИЗМ: 15% ",
-      "use": "Пассивная: Lifesteal — дает владельцу вампиризм, который с каждой атакой восстанавливает его здоровье на часть нанесенного урона.",
-      "info": "Маска, поглощающая энергию тех, кто попался ей на глаза. "
+      "param": "LIFESTEAL: 15% ",
+      "use": "Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.",
+      "info": "A mask that drains the energy of those caught in its gaze. "
     },
     {
       "title": "Mystic Staff",
@@ -697,9 +697,9 @@
       "level": 4,
       "gold": 2700,
       "recipe": [0],
-      "param": "+ 25 к интеллекту",
+      "param": "+ 25 Intelligence ",
       "use": "",
-      "info": "Загадочный посох, сделанный исключительно из дорогих кристаллов. "
+      "info": "Enigmatic staff made of only the most expensive crystals. "
     },
     {
       "title": "Necronomicon",
@@ -707,9 +707,9 @@
       "level": 3,
       "gold": 2700,
       "recipe": [112,8,128],
-      "param": "+ 15/21/24 к интеллекту \n + 8/12/16 к силе \n ЗДОРОВЬЕ ВОИНА: 700/800/900 \n УРОН ВОИНА: 45/60/75 \n СЖИГАНИЕ МАНЫ ВОИНОМ: 25/50/75 \n УРОН ОТ УБИЙСТВА ВОИНА: 550/675/800 \n ЗДОРОВЬЕ ЛУЧНИКА: 700/800/900 \n УРОН ЛУЧНИКА: 60/90/120 \n СЖИГАНИЕ МАНЫ ЛУЧНИКОМ: 125/175/225 \n СКОРОСТЬ АТАКИ В АУРЕ ЛУЧНИКА: 5%/7%/9% ",
-      "use": "Активируемая: Demonic Summoning — призывает на 40 сек. воина и лучника, сила и ловкость которых увеличиваются вместе с уровнем Necronomicon. Воин третьего уровня способен раскрывать невидимых юнитов. Можно улучшить. ",
-      "info": "Наиболее полный свод знаний о некромантии и демонологии, скрывающий на своих страницах мощную темную магию. "
+      "param": "+ 15/21/24 Intelligence \n + 8/12/16 Strength \n WARRIOR HEALTH: 700/800/900 \n WARRIOR DAMAGE: 45/60/75 \n WARRIOR MANA BREAK: 25/50/75 \n WARRIOR LAST WILL DMG: 550/675/800 \n ARCHER HEALTH: 700/800/900 \n ARCHER DAMAGE: 60/90/120 \n ARCHER MANA BURN: 125/175/225 \n ARCHER AURA SPEED: 5%/7%/9% ",
+      "use": "Active: Demonic Summoning - Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3. Upgradable. ",
+      "info": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages. "
     },
     {
       "title": "Null Talisman",
@@ -717,9 +717,9 @@
       "level": 2,
       "gold": 470,
       "recipe": [22,61,128],
-      "param": "+ 3 к силе \n + 3 к ловкости \n + 6 к интеллекту \n + 3 Урон ",
+      "param": "+ 3 Strength \n + 3 Agility \n + 6 Intelligence \n + 3 Damage ",
       "use": "",
-      "info": "Небольшой драгоценный камень, связанный звеньями. "
+      "info": "A small gemstone attached to several chains. "
     },
     {
       "title": "Oblivion Staff",
@@ -727,9 +727,9 @@
       "level": 4,
       "gold": 1650,
       "recipe": [85,98,95],
-      "param": "+ 6 к интеллекту \n + 10 к скорости атаки \n + 15 Урон \n + 75% к регенерации маны",
+      "param": "+ 6 Intelligence \n + 10 Attack Speed \n + 15 Damage \n + 75% Mana Regeneration",
       "use": "",
-      "info": "С первого взгляда — обычный посох, однако Oblivion Staff обладает скрытым могуществом, которым его наделил колдун Элдрич. "
+      "info": "Deceptively hidden as an ordinary quarterstaff, it is actually very powerful, much like the Eldritch who originally possessed it.  "
     },
     {
       "title": "Octarine Core",
@@ -737,9 +737,9 @@
       "level": 5,
       "gold": 5900,
       "recipe": [70,110],
-      "param": "+ 25 к интеллекту \n + 450 к здоровью \n + 400 к мане \n + 4 к регенерации здоровья \n + 100% к регенерации маны \n УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ: 25% \n ВАМПИРИЗМ ОТ ГЕРОЕВ: 25% \n ВАМПИРИЗМ ОТ КРИПОВ: 5% ",
-      "use": "Пассивная: Cooldown Reduction - уменьшает время перезарядки всех способностей и предметов на 25%. \n Пассивная: Spell Lifesteal - дает магический вампиризм, который восстанавливает здоровье в размере доли от нанесенного способностями урона.",
-      "info": "Само сердце колдовства раскрашено цветами, узреть которые способны лишь самые одаренные. "
+      "param": "+ 25 Intelligence \n + 450 Health \n + 400 Mana \n + 4 HP Regeneration \n + 100% Mana Regeneration \n COOLDOWN REDUCTION: 25% \n HERO SPELL LIFESTEAL: 25% \n CREEP SPELL LIFESTEAL: 5% ",
+      "use": "Passive: Cooldown Reduction - Reduces the cooldown time of all spells and items by 25%. \n Passive: Spell Lifesteal - A percentage of damage caused by spells is returned to the caster as health. ",
+      "info": "At the core of spellcraft are spectrums only the very gifted can sense. "
     },
     {
       "title": "Ogre Club",
@@ -747,9 +747,9 @@
       "level": 3,
       "gold": 1000,
       "recipe": [0],
-      "param": "+ 10 к силе ",
+      "param": "+ 10 Strength ",
       "use": "",
-      "info": "Вы становитесь сильнее, просто держа его в руках. "
+      "info": "You grow stronger just by holding it. "
     },
     {
       "title": "Orb of Venom",
@@ -757,9 +757,9 @@
       "level": 2,
       "gold": 275,
       "recipe": [0],
-      "param": "УРОН ОТ ЯДА В СЕКУНДУ: 3 \n ЗАМЕДЛЕНИЕ ОТ БЛИЖНИХ АТАК: 12% \n ЗАМЕДЛЕНИЕ ОТ ДАЛЬНИХ АТАК: 4% \n ДЛИТЕЛЬНОСТЬ: 4",
-      "use": "Пассивная: Poison Attack — отравляет цель, нанося периодический урон и снижая скорость передвижения в зависимости от типа атаки вашего героя.",
-      "info": "Орошает ваше оружие змеиным ядом. "
+      "param": "POISON DAMAGE PER SECOND: 3 \n POISON MELEE SLOW: 12% \n POISON RANGED SLOW: 4% \n POISON DURATION: 4",
+      "use": "Passive: Poison Attack - Poisons the target, dealing damage over time and slowing movement based on whether the equipped hero is melee or ranged. ",
+      "info": "Envenoms your veapon with the venom of a venomous viper. "
     },
     {
       "title": "Orchid Malevolence",
@@ -767,9 +767,9 @@
       "level": 5,
       "gold": 4075,
       "recipe": [73,73,128],
-      "param": "+ 25 к интеллекту \n + 30 к скорости атаки \n + 30 Урон \n + 150% к регенерации маны \n УВЕЛИЧЕНИЕ УРОНА ОТ SOUL BURN: 30% \n ДЛИТЕЛЬНОСТЬ SOUL BURN: 5",
-      "use": "Активируемая: Soul Burn — запрещает выбранной цели колдовать на 5.0 секунд и увеличивает наносимый ей урон на 30.0%. ",
-      "info": "В этом посохе, инкрустированном гранатами, заточена душа огненного демона. "
+      "param": "+ 25 Intelligence \n + 30 Attack Speed \n + 30 Damage \n + 150% Mana Regeneration \n SOUL BURN INCREASED DAMAGE: 30% \n SOUL BURN DURATION: 5",
+      "use": "Active: Soul Burn - Silences the target unit for 5.0 seconds and amplifies the damage it takes by 30.0%. ",
+      "info": "A garnet rod constructed from the essence of a fire demon. "
     },
     {
       "title": "Perseverance",
@@ -777,9 +777,9 @@
       "level": 4,
       "gold": 1700,
       "recipe": [92,122],
-      "param": "+ 5 к регенерации здоровья \n + 125% к регенерации маны \n + 10 Урон ",
+      "param": "+ 5 HP Regeneration \n + 125% Mana Regeneration \n + 10 Damage ",
       "use": "",
-      "info": "Камень, способный заменить сердце владельцу. "
+      "info": "A gem that grants heart to the bearer. "
     },
     {
       "title": "Phase Boots",
@@ -787,9 +787,9 @@
       "level": 4,
       "gold": 1240,
       "recipe": [15,12,12],
-      "param": "+ 45 к скорости передвижения \n + 24 Урон \n УСКОРЕНИЕ В БЛИЖНЕМ БОЮ: 24% \n УСКОРЕНИЕ В ДАЛЬНЕМ БОЮ: 20% \n ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ: 2.5",
-      "use": "Активируемая: Phase — увеличивает скорость передвижения и позволяет проходить сквозь юнитов. Сила эффекта зависит от типа атаки владельца. Эффект снимается преждевременно, если будет использован другой предмет или способность.",
-      "info": "Ботинки, которые позволяют владельцу путешествовать между мирами. "
+      "param": "+ 45 Movement Speed \n + 24 Damage \nPHASE MOVE BOOST MELEE: 24% \n PHASE MOVE BOOST RANGED: 20% \n PHASE DURATION: 2.5",
+      "use": "Active: Phase - Gives increased movement speed and lets you move through units. The increased movement speed is based on whether the equipped hero is melee or ranged.",
+      "info": "Boots that allow the wearer to travel between the ether. "
     },
     {
       "title": "Pipe of Insight",
@@ -797,9 +797,9 @@
       "level": 5,
       "gold": 3500,
       "recipe": [51,46,128],
-      "param": "+ 9 к регенерации здоровья \n + 30% к сопротивлению магии \n ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ В АУРЕ: 4 \n СОПРОТИВЛЕНИЕ МАГИИ В АУРЕ: 10% \n РАДИУС АУРЫ: 900 \n БЛОКИРУЕТ УРОНА: 400 \n ДЛИТЕЛЬНОСТЬ БАРЬЕРА: 12 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 900",
-      "use": "Активируемая: Barrier — создает на себе и союзниках, находящихся в радиусе 900, магический барьер, блокирующий 400 магического урона. \n Пассивная: Insight Aura — увеличивает скорость восстановления здоровья на 4 у союзников в радиусе 900 вокруг владельца и увеличивает их сопротивление магии на 10%.",
-      "info": "Могущественный артефакт таинственного происхождения. Он создает барьеры против магических сил. "
+      "param": "+ HP Regeneration \n + 30% Spell Resistance \n AURA HEALTH REGEN: 4 \n AURA MAGIC RESISTANCE: 10% \n AURA RADIUS: 900 \n BARRIER SPELL BLOCK: 400 \n BARRIER DURATION: 12 \n BARRIER CAST RADIUS: 900",
+      "use": "Active: Barrier - Gives a shield that blocks 400 spell damage to all allies in a 900 radius. \n Passive: Insight Aura - Gives allied units 4 health regeneration and 10% magic resistance in a 900 radius.",
+      "info": "A powerful artifact of mysterious origin, it creates barriers against magical forces. "
     },
     {
       "title": "Platemail",
@@ -807,9 +807,9 @@
       "level": 4,
       "gold": 1400,
       "recipe": [0],
-      "param": "+ 10 к броне ",
+      "param": "+ 10 Armor ",
       "use": "",
-      "info": "Толстые металлические пластины, полностью защищающие верхнюю часть тела. Будьте аккуратнее — не уроните на ноги! "
+      "info": "Thick metal plates that protect the entire upper body. Avoid dropping on feet. "
     },
     {
       "title": "Point Booster",
@@ -817,9 +817,9 @@
       "level": 4,
       "gold": 1200,
       "recipe": [0],
-      "param": "+ 150 к мане \n + 200 к здоровью ",
+      "param": "+ 150 Mana \n + 200 Health ",
       "use": "",
-      "info": "Аметист идеальной формы питает и разум, и тело владельца. "
+      "info": "A perfectly formed amethyst that nourishes body and mind when held. "
     },
     {
       "title": "Poor Man's Shield",
@@ -827,9 +827,9 @@
       "level": 2,
       "gold": 500,
       "recipe": [108,108,113],
-      "param": "+ 6 к ловкости \n БЛОК УРОНА НА ГЕРОЯХ БЛИЖНЕГО БОЯ: 20 \n БЛОК УРОНА НА ГЕРОЯХ ДАЛЬНЕГО БОЯ: 10 \n ШАНС БЛОКА УДАРОВ КРИПОВ: 53% ",
-      "use": "Пассивная: Damage Block — блокирует некоторое количество урона, наносимого физической атакой, в зависимости от типа атаки вашего героя. Poor Man's Shield всегда будет блокировать урон, наносимый вражескими героями, но урон от крипов блокируется с вероятностью в 53%. ",
-      "info": "Потрескавшийся старый щит, который, однако, способен защищать сильнее, чем кажется на первый взгляд. "
+      "param": "+ 6 Agility \n MELEE DAMAGE BLOCK: 20 \n RANGED DAMAGE BLOCK: 10 \n CREEP BLOCK CHANCE: 53% ",
+      "use": "Passive: Damage Block - Blocks physical attack damage based on whether the equipped hero is ranged or melee. Poor Man's Shield will always block attacks from enemy Heroes, but has a 53% chance to block damage from creeps. ",
+      "info": "A busted old shield that seems to block more than it should. "
     },
     {
       "title": "Power Treads",
@@ -837,9 +837,9 @@
       "level": 4,
       "gold": 1350,
       "recipe": [15,43,8],
-      "param": "+ 45 к скорости передвижения \n + 9 к выбранному атрибуту \n + 25 к скорости атаки ",
-      "use": "Активируемая: Switch Attribute — меняет значение выбранного параметра между силой, ловкостью и интеллектом.",
-      "info": "Пара сапог, выделанных из жесткой кожи, которая способна изменять свои свойства по желанию владельца."
+      "param": "+ 45 Movement Speed \n + 9 Selected Attribute \n + 25 Attack Speed ",
+      "use": "Active: Switch Attribute - Changes selected attribute between Strength, Agility and Intelligence.",
+      "info": "A pair of tough-skinned boots that change to meet the demands of the wearer. "
     },
     {
       "title": "Quarterstaff",
@@ -847,9 +847,9 @@
       "level": 3,
       "gold": 875,
       "recipe": [0],
-      "param": "+ 10 Урон \n + 10 к скорости атаки ",
+      "param": "+ 10 Damage \n + 10 Attack Speed ",
       "use": "",
-      "info": "Обычный посох, позволяющий быстро атаковать врагов. "
+      "info": "A basic staff that allows you to strike quickly. "
     },
     {
       "title": "Quelling Blade",
@@ -857,9 +857,9 @@
       "level": 2,
       "gold": 200,
       "recipe": [0],
-      "param": "ДОП. УРОН В БЛИЖНЕМ БОЮ: 140% \n ДОП. УРОН В ДАЛЬНЕМ БОЮ: 115% \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 350 \n ДАЛЬНОСТЬ УНИЧТОЖЕНИЯ ВАРДА: 450 ",
-      "use": "Активируемая: Chop Tree/Ward — уничтожает выбранное дерево или вард. Дальность использования больше, если цель способности — вард. \n Пассивная: Quell — увеличивает урон от атак по юнитам, не являющимися героями, в зависимости от типа атаки владельца. Не увеличивает урон по Рошану. ",
-      "info": "Топор павшего гнома, позволяющий эффективно маневрировать в лесу."
+      "param": "QUELL MELEE DAMAGE: 140% \n QUELL RANGED DAMAGE: 115% \n CHOP TREE CAST RANGE: 350 \n CHOP WARD CAST RANGE: 450 ",
+      "use": "Active: Chop Tree/Ward - Destroy a target tree or ward. Chop cast range is increased when targetting wards. \n Passive: Quell - Increases attack damage against non-hero units, based on whether the equipped hero is ranged or melee. Does not provide bonus damage against Roshan. ",
+      "info": "The axe of a fallen gnome, it allows you to effectively maneuver the forest. "
     },
     {
       "title": "Radiance",
@@ -867,9 +867,9 @@
       "level": 5,
       "gold": 5150,
       "recipe": [97,128],
-      "param": "+ 65 Урон \n ПЕРИОДИЧЕСКИЙ УРОН: 50 \n ШАНС ПРОМАХА: 17% \n РАДИУС: 700",
-      "use": "Активируемая: Toggle Burn — когда включено, каждую секунду наносит 50 урона противникам и ослепляет их, вынуждая промахиваться в 17% случаев.",
-      "info": "Божественный меч, окружающий владельца ярким сиянием, которое обращает в пепел всех окружающих врагов. "
+      "param": "+ 65 Damage \n BURN DAMAGE PER SECOND: 50 \n BURN MISS CHANCE: 17% \n BURN RADIUS: 700",
+      "use": "Active: Toggle Burn - When active, scorches nearby enemies for 50 damage per second and blinds them, causing them to miss 17% of their attacks. ",
+      "info": "A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies. "
     },
     {
       "title": "Reaver",
@@ -877,9 +877,9 @@
       "level": 4,
       "gold": 3000,
       "recipe": [0],
-      "param": "+ 25 к силе ",
+      "param": "+ 25 Strength ",
       "use": "",
-      "info": "Массивный топор, способный без труда сокрушать даже горы. "
+      "info": "A massive axe capable of tearing whole mountains down. "
     },
     {
       "title": "Refresher Orb",
@@ -887,9 +887,9 @@
       "level": 5,
       "gold": 5200,
       "recipe": [78,78,128],
-      "param": "+ 10 к регенерации здоровья \n + 250% к регенерации маны \n + 20 Урон ",
-      "use": "Активируемая: Reset Cooldowns — сбрасывает время перезарядки всех ваших предметов и способностей. ",
-      "info": "Могущественный артефакт, созданный для магов. "
+      "param": "+ 10 HP Regeneration \n + 250% Mana Regeneration \n + 20 Damage ",
+      "use": "Active: Reset Cooldowns - Resets the cooldowns of all your items and abilities. ",
+      "info": "A powerful artifact created for wizards. "
     },
     {
       "title": "Ring of Aquila",
@@ -897,9 +897,9 @@
       "level": 3,
       "gold": 1010,
       "recipe": [123,91],
-      "param": "+ 9 Урон \n + 3 к силе \n + 9 к ловкости \n + 3 к интеллекту \n + 1 к броне \n РЕГЕН МАНЫ В АУРЕ: 0.65 \n АУРА ДОП. БРОНИ: 2 ",
-      "use": "Пассивная: Aquila Aura — увеличивает броню и скорость регенерации маны в радиусе 900. \n Активируемая: переключает действие ауры на юнитов, не являющихся героями.",
-      "info": "Кольцо падшего воеводы Акилы продолжает поддерживать армии в бою. "
+      "param": "+ 9 Damage \n + 3 Strength \n + 9 Agility \n + 3 Intelligence \n + 1 Armor \n AURA MANA REGEN: 0.65 \n AURA BONUS ARMOR: 2 ",
+      "use": "Passive: Aquila Aura - Grants mana regeneration and armor in a 900 area of effect. \n Active: Toggle whether the aura affects other non-hero units.",
+      "info": "The ring of the fallen Warlord Aquila continues to support armies in battle. "
     },
     {
       "title": "Ring of Basilius",
@@ -907,9 +907,9 @@
       "level": 2,
       "gold": 525,
       "recipe": [93,98],
-      "param": "+ 6 Урон \n + 1 к броне \n РЕГЕН МАНЫ В АУРЕ: 0.65 \n АУРА ДОП. БРОНИ: 2 ",
-      "use": "Пассивная: Basilius Aura — увеличивает скорость регенерации маны и броню в радиусе 900. \n Активируемая: переключает действие ауры на юнитов, не являющихся героями.",
-      "info": "Кольцо, служившее наградой величайшим магам."
+      "param": "+ 6 Damage \n + 1 Armor \n AURA MANA REGEN: 0.65 \n AURA BONUS ARMOR: 2 ",
+      "use": "Passive: Basilius Aura - Grants mana regeneration and armor in a 900 area of effect. \n Active: Toggle whether the aura affects other non-hero units.",
+      "info": "Ring given as a reward to the greatest mages."
     },
     {
       "title": "Ring of Health",
@@ -917,9 +917,9 @@
       "level": 3,
       "gold": 850,
       "recipe": [0],
-      "param": "+ 5 к регенерации здоровья ",
+      "param": "+ 5 HP Regeneration ",
       "use": "",
-      "info": "Блестящее кольцо, найденное под трупом толстого полурослика. "
+      "info": "A shiny ring found beneath a fat halfling's corpse. "
     },
     {
       "title": "Ring of Protection",
@@ -927,9 +927,9 @@
       "level": 1,
       "gold": 175,
       "recipe": [0],
-      "param": "+ 2 к броне ",
+      "param": "+ 2 Armor  ",
       "use": "",
-      "info": "Мерцающее кольцо, защищающее своего носителя. "
+      "info": "A glimmering ring that defends its bearer. "
     },
     {
       "title": "Ring of Regen",
@@ -937,9 +937,9 @@
       "level": 1,
       "gold": 350,
       "recipe": [0],
-      "param": "+ 2 к регенерации здоровья ",
+      "param": "+ 2 HP Regeneration ",
       "use": "",
-      "info": "Гномы считают, что это кольцо приносит удачу. "
+      "info": "This ring is considered a good luck charm among the Gnomes. "
     },
     {
       "title": "Robe of the Magi",
@@ -947,9 +947,9 @@
       "level": 2,
       "gold": 450,
       "recipe": [0],
-      "param": "+ 6 к интеллекту ",
+      "param": "+ 6 Intelligence ",
       "use": "",
-      "info": "Это одеяние разлагает душу владельца, но в обмен дарует мудрость. "
+      "info": "This robe corrupts the soul of the user, but provides wisdom in return. "
     },
     {
       "title": "Rod of Atos",
@@ -957,9 +957,9 @@
       "level": 5,
       "gold": 3100,
       "recipe": [120,112,112],
-      "param": "+ 30 к интеллекту \n + 350 к здоровью \n ЗАМЕДЛЕНИЕ: 60% \n ДЛИТЕЛЬНОСТЬ: 4",
-      "use": "Активируемая: Cripple — снижает скорость передвижения цели. Дает существам, атакующим жертву, 40% точности",
-      "info": "В этом простом на первый взгляд жезле заключено естество владыки чумы Атоса."
+      "param": "+ 30 Intelligence \n + 350 Health \n CRIPPLE MOVE SLOW: 60% \n CRIPPLE DURATION: 4 \n CRIPPLE ENEMY ACCURACY",
+      "use": "Active: Cripple - Slows the target's movement speed and grants units that attack the target 40% accuracy. ",
+      "info": "Atos, the Lord of Blight, has his essence stored in this deceptively simple wand. "
     },
     {
       "title": "Sacred Relic",
@@ -967,9 +967,9 @@
       "level": 4,
       "gold": 3800,
       "recipe": [0],
-      "param": "+ 60 Урон",
+      "param": "+ 60 Damage ",
       "use": "",
-      "info": "Древнее оружие, способное изменить ход битвы. "
+      "info": "An ancient weapon that often turns the tides of war. "
     },
     {
       "title": "Sage's Mask",
@@ -977,9 +977,9 @@
       "level": 1,
       "gold": 325,
       "recipe": [0],
-      "param": "+ 50% к регенерации маны ",
+      "param": "+ 50% Mana Regeneration ",
       "use": "",
-      "info": "Маска, в основном используемая для проведения разнообразных ритуалов магами и колдунами."
+      "info": "A mask commonly used by mages and warlocks for various rituals. "
     },
     {
       "title": "Sange",
@@ -987,9 +987,9 @@
       "level": 3,
       "gold": 2050,
       "recipe": [75,8,128],
-      "param": "+ 10 Урон \n + 16 к силе \n ШАНС НАНЕСТИ ТРАВМУ: 15% \n ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ: 20% \n ЗАМЕДЛЕНИЕ АТАКИ: 20 \n ДЛИТЕЛЬНОСТЬ ТРАВМЫ: 4 ",
-      "use": "Пассивная: Lesser Maim — каждая атака получает шанс нанести травму, уменьшающую скорость передвижения и атаки врага на 4.0 сек. ",
-      "info": "Sange отыскивает слабые места врагов и бьет точно в них. "
+      "param": "+ 10 Damage \n + 16 Strength \n MAIM CHANCE: 15% \n MAIM MOVEMENT SLOW: 20% \n MAIM ATTACK SLOW: 20 \n MAIM DURATION: 4 ",
+      "use": "Passive: Lesser Maim - Each attack has a chance to slow the enemy's movement and attack speed for 4.0 seconds. ",
+      "info": "Sange is an unusually accurate weapon, seeking weak points automatically. "
     },
     {
       "title": "Sange and Yasha",
@@ -997,9 +997,9 @@
       "level": 4,
       "gold": 4100,
       "recipe": [99,124],
-      "param": "+ 16 Урон \n + 16 к силе \n + 16 к ловкости \n + 16 к скорости атаки \n + 16% к скорости передвижения \n ШАНС НАНЕСТИ ТРАВМУ: 16% \n ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ: 32% \n ЗАМЕДЛЕНИЕ АТАКИ: 32 \n ДЛИТЕЛЬНОСТЬ ТРАВМЫ: 5 ",
-      "use": "Пассивная: Greater Maim — каждая атака получает шанс нанести травму, уменьшающую скорость передвижения и атаки врага на 5.0 сек.",
-      "info": "Sange и Yasha, собранные вместе и ведомые лунным светом, становятся грозным оружием."
+      "param": "+ 16 Damage \n + 16 Strength \n + 16 Agility \n + 16 Attack Speed \n + 16% Movement Speed \n MAIM CHANCE: 16% \n MAIM MOVEMENT SLOW: 32% \n MAIM ATTACK SLOW: 32 \n MAIM DURATION: 5 ",
+      "use": "Passive: Greater Maim - Each attack has a chance to slow the enemy's movement and attack speed for 5.0 seconds.",
+      "info": "Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination. "
     },
     {
       "title": "Satanic",
@@ -1007,9 +1007,9 @@
       "level": 5,
       "gold": 5900,
       "recipe": [88,50,128],
-      "param": "+ 20 Урон \n + 25 к силе \n + 5 к броне \n ВАМПИРИЗМ: 25% \n ВАМПИРИЗМ ОТ UNHOLY RAGE: 200% \n ДЛИТЕЛЬНОСТЬ: 4",
-      "use": "Активируемая: Unholy Rage — увеличивает эффект Lifesteal до 200% на 4.5 сек. \n Пассивная: Lifesteal — дает владельцу вампиризм, который с каждой атакой восстанавливает его здоровье на часть нанесенного урона.",
-      "info": "Почти безграничная сила в обмен на вашу душу. "
+      "param": "+ 20 Damage \n + 25 Strength \n + 5 Armor \n LIFESTEAL: 25% \n UNHOLY RAGE LIFESTEAL: 200% \n UNHOLY RAGE DURATION: 4",
+      "use": "Active: Unholy Rage - Increases Lifesteal percentage to 200% for 4.5 seconds. \n Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.",
+      "info": "Immense power at the cost of your soul. "
     },
     {
       "title": "Scythe of Vyse",
@@ -1017,9 +1017,9 @@
       "level": 5,
       "gold": 5650,
       "recipe": [70,116,122],
-      "param": "+ 10 к силе \n + 10 к ловкости \n + 35 к интеллекту \n + 150% к регенерации маны \n ДЛИТЕЛЬНОСТЬ: 3.5 ",
-      "use": "Активируемая: Hex — превращает цель в безобидную зверушку на 3.5 сек. Мгновенно уничтожает иллюзии. ",
-      "info": "Наиболее охраняемая реликвия культа Вайз, этот артефакт — самое желанное приобретение для любого мага. "
+      "param": "+ 10 Strength \n + 10 Agility \n + 35 Intelligence \n + 150% Mana Regeneration \n HEX DURATION: 3.5 ",
+      "use": "Active: Hex - Turns a target unit into a harmless critter for 3.5 seconds. Instantly destroys illusions. ",
+      "info": "The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi. "
     },
     {
       "title": "Shadow Amulet",
@@ -1027,8 +1027,8 @@
       "level": 3,
       "gold": 1400,
       "recipe": [0],
-      "param": "+ 20 к скорости атаки \n ВРЕМЯ ДО НЕВИДИМОСТИ: 1.5 ",
-      "use": "Активируемая: Fade — делает вас или союзника невидимым спустя 1.5 сек. Передвижение снимает невидимость. Применение на себя не включает перезарядку.",
+      "param": "+ 20 Attack Speed \n FADE TIME: 1.5 ",
+      "use": "Active: Fade - Grants invisibility to you or a target allied hero after a 1.5 second fade time. Moving breaks the invisibility. There is no cooldown when using this item on yourself.",
       "info": "info"
     },
     {
@@ -1037,9 +1037,9 @@
       "level": 4,
       "gold": 2800,
       "recipe": [103,23],
-      "param": "+ 22 Урон \n + 30 к скорости атаки \n ДЛИТЕЛЬНОСТЬ НЕВИДИМОСТИ: 14 \n УРОН ИЗ НЕВИДИМОСТИ: 175",
-      "use": "Активируемая: Shadow Walk — делает вас невидимым на время действия или до момента вашей атаки или использования заклинания. Пока Shadow Walk активна, вы движетесь на 20% быстрее и можете проходить сквозь юнитов. Атака, раскрывающая невидимость, нанесет 175 дополнительного урона. Длится 14.0 секунд. ",
-      "info": "Клинок павшего короля позволяет вам передвигаться незамеченным и наносить удар из тени. "
+      "param": "+ 22 Damage \n + 30 Attack Speed \n SHADOW WALK DURATION: 14 \n SHADOW WALK DAMAGE: 175",
+      "use": "Active: Shadow Walk - Makes you invisible until the duration ends, or until you attack or cast a spell. While Shadow Walk is active, you move 20% faster and can move through units. If attacking to end the invisibility, you gain 175 bonus damage on that attack. Lasts 14.0 seconds.",
+      "info": "The blade of a fallen king, it allows you to move unseen and strike from the shadows. "
     },
     {
       "title": "Shiva's Guard",
@@ -1047,9 +1047,9 @@
       "level": 4,
       "gold": 4700,
       "recipe": [81,70,128],
-      "param": "+ 30 к интеллекту \n + 15 к броне \n ЗАМЕДЛЕНИЕ АТАКИ ОТ АУРЫ: 45 \n УРОН ОТ ВЗРЫВА: 200 \n ЗАМЕДЛЕНИЕ ОТ ВЗРЫВА: 40% \n ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ: 4 \n РАДИУС: 900",
-      "use": "Активируемая: Arctic Blast — выпускает замораживающую волну, которая наносит 200 урона противникам и снижает их скорость передвижения на -40% на 4.0 сек. \n Пассивная: Freezing Aura — снижает скорость атаки противников в радиусе 900.",
-      "info": "Артефакт, раньше принадлежавший богине, до сих пор сохранил часть былого могущества."
+      "param": "+ 30 Intelligence \n + 15 Armor \n AURA ATTACK SLOW: 45 \n BLAST DAMAGE: 200 \n BLAST MOVEMENT SLOW: 40% \n BLAST SLOW DURATION: 4 \n BLAST RADIUS: 900",
+      "use": "Active: Arctic Blast - Emits a freezing wave that deals 200 magical damage to enemies and slows their movement by -40% for 4.0 seconds. \n Passive: Freezing Aura - Reduces the attack speed of all enemies in a 900 radius.",
+      "info": "Said to have belonged to a goddess, today it retains much of its former power. "
     },
     {
       "title": "Silver Edge",
@@ -1057,9 +1057,9 @@
       "level": 5,
       "gold": 5450,
       "recipe": [99,104,128],
-      "param": "+ 32 Урон \n + 30 к скорости атаки \n + 16 к силе \n ШАНС НАНЕСТИ ТРАВМУ: 15% \n ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ: 20% \n ЗАМЕДЛЕНИЕ АТАКИ: 20 \n ДЛИТЕЛЬНОСТЬ ТРАВМЫ: 4 \n ДЛИТЕЛЬНОСТЬ НЕВИДИМОСТИ: 14 \n УРОН ИЗ НЕВИДИМОСТИ: 225 \n СНИЖЕНИЕ УРОНА ЦЕЛИ: 40% \n ДЛИТЕЛЬНОСТЬ СНИЖЕНИЯ УРОНА: 5 ",
-      "use": "Активируемая: Shadow Walk — делает вас невидимым на время действия или до момента вашей атаки или использования заклинания. Пока Shadow Walk активна, вы движетесь на 20% быстрее и можете проходить сквозь юнитов. Атака, раскрывающая невидимость, нанесет 225 дополнительного урона, отключит пассивные способности цели и уменьшит весь наносимый ею урон. \n Пассивная: Lesser Maim — каждая атака получает шанс нанести травму, уменьшающую скорость передвижения и атаки врага на 4.0 сек.",
-      "info": "Повергнув несправедливого правителя, этот клинок лишь развязал гражданскую войну. "
+      "param": "+ 32 Damage \n + 30 Attack Speed \n + 16 Strength \n MAIM CHANCE: 15% \n MAIM MOVE SLOW: 20% \n MAIM ATTACK SLOW: 20 \n MAIM DURATION: 4 \n SHADOW WALK DURATION: 14 \n BONUS ATTACK DAMAGE: 225 \n ENEMY DAMAGE REDUCTION: 40% \n REDUCTION DURATION: 5 ",
+      "use": "Active: Shadow Walk - Makes you invisible until the duration ends, or until you attack or cast a spell. While invisible, you move 20% faster and can move through units. Attacking to end the invisibility will deal 225 bonus damage to the target, disable their passive abilities, and reduce their damage output. \n Passive: Lesser Maim - Each attack has a chance to slow the enemy's movement and attack speed for 4.0 seconds. ",
+      "info": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath. "
     },
     {
       "title": "Skull Basher",
@@ -1067,9 +1067,9 @@
       "level": 4,
       "gold": 2950,
       "recipe": [8,54,128],
-      "param": "+ 10 Урон \n + 10 к силе \n ШАНС В БЛИЖНЕМ БОЮ: 25% \n ШАНС В ДАЛЬНЕМ БОЮ: 10% \n ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ: 1.4 \n ДОП. УРОН ОТ BASH: 120 ",
-      "use": "Пассивная: Bash — дает каждой атаке шанс оглушить цель на 1.4 сек. и нанести 60 дополнительного урона; шанс зависит от типа атаки владельца. ",
-      "info": "Устрашающее оружие в умелых руках, этот молот способен уничтожить любую защиту. Не стоит его недооценивать."
+      "param": "+ 10 Damage \n + 10 Strength \n BASH MELEE CHANCE: 25% \n BASH RANGED CHANCE: 10% \n BASH STUN DURATION: 1.4 \n BASH BONUS DAMAGE: 120 ",
+      "use": "Passive: Bash - Grants each attack a chance to stun the target for 1.4 seconds and deal 120 bonus damage, based on whether the equipped hero is ranged or melee. ",
+      "info": "A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated. "
     },
     {
       "title": "Slippers of Agility",
@@ -1077,9 +1077,9 @@
       "level": 1,
       "gold": 150,
       "recipe": [0],
-      "param": "+ 3 к ловкости ",
+      "param": "+ 3 Agility ",
       "use": "",
-      "info": "Легкие ботинки, сделанные из кожи паука, обостряют ваше чутье. "
+      "info": "Light boots made from spider skin that tingles your senses. "
     },
     {
       "title": "Solar Crest",
@@ -1087,9 +1087,9 @@
       "level": 4,
       "gold": 3000,
       "recipe": [63,114],
-      "param": "+ 10 к броне \n + 75% к регенерации маны \n + 25% к уклонению \n ДОП. БРОНЯ СОЮЗНИКАМ: 10 \n УКЛОНЕНИЕ СОЮЗНИКАМ: 25% \n УМЕНЬШЕНИЕ ВРАЖЕСКОЙ БРОНИ: 10 \n ШАНС ПРОМАХА У ВРАГА: 25% \n ДЛИТЕЛЬНОСТЬ: 7 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ: 1000",
-      "use": "Активируемая: Shine - временно убирает у владельца дополнительную броню и шанс уклонения, даруемые этим предметом. При использовании на союзнике увеличивает ему броню на 10 и дает шанс уклонения в 25%. При использовании на противнике уменьшает его броню на 10 и ослепляет, заставляя его промахиваться атаками в 25% случаев. Не действует на невосприимчивых к магии. Действует на Roshan вполсилы. ",
-      "info": "Талисман, выкованный в честь дневного неба. "
+      "param": "+ 10 Armor \n + 75% Mana Regeneration \n + 25% Evasion \n SHINE ALLY BONUS ARMOR: 10 \n SHINE ALLY EVASION: 25% \n SHINE ENEMY ARMOR LOSS: 10 \n SHINE ENEMY MISS CHANCE: 25% \n SHINE DURATION: 7 \n SHINE CAST RANGE: 1000",
+      "use": "Active: Shine - Temporarily removes the armor and evasion from Solar Crest. When cast on an ally it grants them 10 armor and 25% evasion. When cast on an enemy, it removes 10 of their armor and blinds them, causing them to miss 25% of their attacks. Cannot target magic immune enemies. Armor reduction is halved against Roshan. ",
+      "info": "A talisman forged to honor the daytime sky. "
     },
     {
       "title": "Soul Booster",
@@ -1097,9 +1097,9 @@
       "level": 4,
       "gold": 3200,
       "recipe": [120,82,35],
-      "param": "+ 450 к здоровью \n + 400 к мане \n + 4 к регенерации здоровья \n + 100% к регенерации маны ",
+      "param": "+ 450 Health \n + 400 Mana \n + 4 HP Regeneration \n + 100% Mana Regeneration ",
       "use": "",
-      "info": "Возвращает былую отвагу. "
+      "info": "Regain lost courage. "
     },
     {
       "title": "Soul Ring",
@@ -1107,9 +1107,9 @@
       "level": 4,
       "gold": 800,
       "recipe": [94,98,128],
-      "param": "+ 3 к регенерации здоровья \n + 50% к регенерации маны \n ДЛИТЕЛЬНОСТЬ: 10 ",
+      "param": "+ 3 HP Regeneration \n + 50% Mana Regeneration \n SACRIFICE DURATION: 10 ",
       "use": "Активируемая: Sacrifice — переводит 150 ед. вашего здоровья в 150 ед. маны. Действует 10 секунд. ",
-      "info": "Кольцо, наполняющееся энергией душ тех, кто его носит. "
+      "info": "Active: Sacrifice - Consume 150 health to temporarily gain 150 mana. Lasts 10 seconds. "
     },
     {
       "title": "Staff of Wizardry",
@@ -1117,9 +1117,9 @@
       "level": 2,
       "gold": 1000,
       "recipe": [0],
-      "param": "+ 10 к интеллекту ",
+      "param": "+ 10 Intelligence ",
       "use": "",
-      "info": "Посох, наделенный магическими силами, переданными от древних магов. "
+      "info": "A staff of magical powers passed down from the eldest mages. "
     },
     {
       "title": "Stout Shield",
@@ -1127,9 +1127,9 @@
       "level": 1,
       "gold": 200,
       "recipe": [0],
-      "param": "БЛОК УРОНА НА ГЕРОЯХ БЛИЖНЕГО БОЯ: 16 \n БЛОК УРОНА НА ГЕРОЯХ ДАЛЬНЕГО БОЯ: 8 \n ШАНС БЛОКА: 50% ",
-      "use": "Пассивная: Damage Block — дает шанс заблокировать урон в зависимости от типа атаки вашего героя. ",
-      "info": "Для одного это дно бочки, для другого — щит."
+      "param": "MELEE DAMAGE BLOCK: 16 \n RANGED DAMAGE BLOCK: 8 \n BLOCK CHANCE: 50% ",
+      "use": "Passive: Damage Block - Gives a chance to block damage based on whether the equipped hero is melee or ranged. ",
+      "info": "One man's wine barrel bottom is another man's shield. "
     },
     {
       "title": "Talisman of Evasion",
@@ -1137,9 +1137,9 @@
       "level": 4,
       "gold": 1800,
       "recipe": [0],
-      "param": "+ 25% к уклонению ",
-      "use": "Сочетается по закону убывающей полезности с другими источниками уклонения. ",
-      "info": "Ожерелье, позволяющее предвидеть вражеские атаки. "
+      "param": "+ 25% Evasion ",
+      "use": "Stacks diminishingly with other sources of Evasion. ",
+      "info": "A necklace that allows you to anticipate enemy attacks. "
     },
     {
       "title": "Tranquil Boots",
@@ -1147,9 +1147,9 @@
       "level": 3,
       "gold": 1000,
       "recipe": [15,93,94],
-      "param": "+ 85 к скорости передвижения \n + 3 к броне \n + 12 к регенерации здоровья ",
-      "use": "Пассивная: Break — Tranquil Boots теряют регенерацию здоровья и 30 скорости передвижения на 13 секунд, если владелец атаковал или атакован. ",
-      "info": "Хоть эти сапоги и увеличивают выживаемость обладателя, они не слишком надежны."
+      "param": "+ 85 Movement Speed \n + 3 Armor \n + 12 HP Regeneration ",
+      "use": "Passive: Break - Whenever you attack or are attacked, the health regeneration and 30 Movement Speed are lost for 13 seconds. ",
+      "info": "While they increase the longevity of the wearer, this boot is not particularly reliable."
     },
     {
       "title": "Ultimate Orb",
@@ -1157,9 +1157,9 @@
       "level": 3,
       "gold": 2100,
       "recipe": [0],
-      "param": "+ 10 ко всем атрибутам ",
+      "param": "+ 10 All Attributes ",
       "use": "",
-      "info": "Мистическая сфера, содержащая в себе эссенцию жизни.  "
+      "info": "A mystical orb containing the essence of life.  "
     },
     {
       "title": "Urn of Shadows",
@@ -1167,9 +1167,9 @@
       "level": 2,
       "gold": 875,
       "recipe": [40,40,98,128],
-      "param": "+ 50% к регенерации маны \n + 6 к силе \n СУММАРНОЕ ЛЕЧЕНИЕ: 400 \n СУММАРНЫЙ УРОН: 150 \n ДЛИТЕЛЬНОСТЬ: 8 \n ДАЛЬНОСТЬ ПРИМЕНЕНИЯ SOUL RELEASE: 950 ",
-      "use": "Активируемая: Soul Release — постепенно восстанавливает здоровье дружественным юнитам, либо наносит постепенный урон вражеским юнитам. Лечебный эффект утрачивается при получении юнитом урона от вражеского героя или башни. \n Получает заряды каждый раз, когда вражеский герой умирает в радиусе 1400. Заряд получит только артефакт, ближайший к умирающему герою. ",
-      "info": "Содержит пепел могучих демонов. "
+      "param": "+ 50% Mana Regeneration \n + 6 Strength \n RELEASE ALLY TOTAL HEAL: 400 \n RELEASE ENEMY TOTAL DAMAGE: 150 \n SOUL RELEASE DURATION: 8 \n SOUL RELEASE CAST RANGE: 950 ",
+      "use": "Active: Soul Release - Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower. \n Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge.  ",
+      "info": "Contains the ashes of powerful demons. "
     },
     {
       "title": "Vanguard",
@@ -1177,9 +1177,9 @@
       "level": 3,
       "gold": 2150,
       "recipe": [92,120,113],
-      "param": "+ 250 к здоровью \n + 6 к регенерации здоровья \n ШАНС БЛОКА: 100% \n БЛОК УРОНА ГЕРОЯМИ БЛИЖНЕГО БОЯ: 32 \n БЛОК УРОНА ГЕРОЯМИ ДАЛЬНЕГО БОЯ: 16 ",
-      "use": "Пассивная: Damage Block — дает владельцу шанс отразить часть урона от каждой атаки в зависимости от типа атаки вашего героя. ",
-      "info": "Мощный щит, защищающий своего хозяина даже от самых яростных атак. "
+      "param": "+ 250 Health \n + 6 HP Regeneration \n BLOCK DAMAGE MELEE: 32 \n BLOCK DAMAGE RANGED: 16 ",
+      "use": "Passive: Damage Block - Makes the wielder block damage from each incoming attack based on whether the equipped hero is melee or ranged. ",
+      "info": "A powerful shield that defends its wielder from even the most vicious of attacks. "
     },
     {
       "title": "Veil of Discord",
@@ -1187,9 +1187,9 @@
       "level": 3,
       "gold": 2270,
       "recipe": [49,72,95,95],
-      "param": " 6 к регенерации здоровья \n + 6 к броне \n + 6 ко всем атрибутам \n + 6 Урон\n + 18 интелект \n ДОП. МАГИЧЕСКИЙ УРОН: 25% \n РАДИУС ДЕЙСТВИЯ: 600 \n ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ: 16 ",
-      "use": "ктивируемая: Magic Weakness — ослабляет врагов, увеличивая магический урон, наносимый им, в течение 16.0 секунд. ",
-      "info": "Головной убор испорченных магов."
+      "param": " 6 HP Regeneration \n + 6 Armor \n + 6 Agility \n + 6 Strength \n + 6 Damage \n + 18 Intelligence\n INCREASED MAGIC DAMAGE: 25% \n MAGIC WEAKNESS RADIUS: 600 \n MAGIC WEAKNESS DURATION: 16 ",
+      "use": "Active: Magic Weakness - Emits a weakening blast that increases the magic damage enemies take. Lasts 16.0 seconds. ",
+      "info": "The headwear of corrupt magi. "
     },
     {
       "title": "Vitality Booster",
@@ -1197,9 +1197,9 @@
       "level": 2,
       "gold": 1100,
       "recipe": [0],
-      "param": "+ 250 к здоровью ",
+      "param": "+ 250 Health  ",
       "use": "",
-      "info": "Драгоценный рубин, переходящий из поколения в поколение в семьях воинов. "
+      "info": "A ruby gemstone that has been passed down through generations of warrior kin. "
     },
     {
       "title": "Vladmir's Offering",
@@ -1207,9 +1207,9 @@
       "level": 3,
       "gold": 2325,
       "recipe": [46,91,69,128],
-      "param": "+ 2 ко всем атрибутам \n ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ В АУРЕ: 3 \n РЕГЕН МАНЫ В АУРЕ: 0.8 \n АУРА ДОП. БРОНИ: 5 \n ДОП. УРОН В АУРЕ: 15% \n ВАМПИРИЗМ В БЛИЖНЕМ БОЮ: 15% \n ВАМПИРИЗМ В ДАЛЬНЕМ БОЮ: 10% \n РАДИУС АУРЫ: 900 ",
-      "use": "Пассивная: Vladmir's Aura — дает эффект вампиризма, дополнительный урон и броню, а также усиливает восстановление здоровья и маны у всех союзников в радиусе 900. Эффект вампиризма Vladmir's Aura зависит от типа атаки героя.",
-      "info": "Жуткая маска, проклятая злобой павшего вампира."
+      "param": "+ 2 All Attributes \n AURA HEALTH REGEN: 3 \n AURA MANA REGEN: 0.8 \n AURA BONUS ARMOR: 5 \n AURA BONUS ATTACK DAMAGE: 15% \n AURA MELEE LIFESTEAL: 15% \n AURA RANGED LIFESTEAL: 10% \n AURA RADIUS: 900 ",
+      "use": "Passive: Vladmir's Aura - Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.",
+      "info": "An eerie mask that is haunted with the malice of a fallen vampire. "
     },
     {
       "title": "Void Stone",
@@ -1217,9 +1217,9 @@
       "level": 4,
       "gold": 850,
       "recipe": [0],
-      "param": "+ 100% к регенерации маны ",
+      "param": "+ 100% Mana Regeneration ",
       "use": "",
-      "info": "Это драгоценное кольцо, источающее энергию, раньше использовали для связи с нижними магическими мирами."
+      "info": "Jewelry that was once used to channel nether realm magic, this ring pulses with energy. "
     },
     {
       "title": "Wraith Band",
@@ -1227,9 +1227,9 @@
       "level": 2,
       "gold": 485,
       "recipe": [22,108,128],
-      "param": "+ 3 к силе \n + 6 к ловкости \n + 3 к интеллекту \n + 3 Урон",
+      "param": "+ 3 Strength \n + 6 Agility \n + 3 Intelligence \n + 3 Damage ",
       "use": "",
-      "info": "Диадема, от которой доносится легкий шепот. "
+      "info": "A circlet with faint whispers echoing about it. "
     },
     {
       "title": "Yasha",
@@ -1237,9 +1237,9 @@
       "level": 4,
       "gold": 2050,
       "recipe": [11,6,128],
-      "param": "+ 16 к ловкости \n + 15 к скорости атаки \n + 8% к скорости передвижения",
-      "use": "Процентные бонусы к скорости от нескольких предметов на основе Yasha не складываются. ",
-      "info": "Yasha считается самым скоростным оружием из всех когда-либо созданных. "
+      "param": "+ 16 Agility \n + 15 Attack Speed \n + 8% Movement Speed ",
+      "use": "Yasha-based movement speed bonuses from multiple items do not stack. ",
+      "info": "Yasha is regarded as the swiftest weapon ever created. "
     }
   ,
     {
@@ -1248,8 +1248,8 @@
       "level": 3,
       "gold": 2350,
       "recipe": [35,92,24,128],
-      "param": "+ 250 к мане \n + 8 к регенерации здоровья \n + 15% к сопротивлению магии",
-      "use": "Пассивная: Увеличивает дальность за способности на 200 и урон от них на 8% \n Увеличивается дальность применения только у способностей, направленных на цель или зависящих от расстояния",
+      "param": "+ 250 Mana \n + 8 HP Regeneration \n + 15% Spell Resistance \n + 200 Cast Range",
+      "use": "Passive: Increases spell cast range by 200 and spell damage output by 8% ",
       "info": ""
     }
   ,
@@ -1259,8 +1259,8 @@
       "level": 3,
       "gold": 1875,
       "recipe": [75,85],
-      "param": "+10 к силе \n +10 к скорости атаки \n +10 урона \n +130 к дальности атаки",
-      "use": "",
+      "param": "+10 Damage \n +10 Attack Speed \n +10 Strength \n +130 Attack Range",
+      "use": "Passive: Increases attack range of ranged heroes by 130. ",
       "info": ""
     }
     ,
@@ -1270,8 +1270,8 @@
       "level": 2,
       "gold": 500,
       "recipe": [86,93,128],
-      "param": "+ 2 к броне \n ДОП. УРОН В БЛИЖНЕМ БОЮ: 140% \n ДОП. УРОН В ДАЛЬНЕМ БОЮ: 115%",
-      "use": " Активируемая способность: Срезает у выбранного существа не под управлением героя 40% от текущего запаса здоровья. Перезарядка: 14 секунд. \n Примечание: Не действует на древних крипов. Время перезарядки при использовании на дерево: 4 секунды.",
+      "param": "+ 2 Armor  \n QUELL MELEE DAMAGE: 140% \n QUELL RANGED DAMAGE: 115%",
+      "use": " Active: Targets a non-player enemy unit to remove 40% of its current HP. \n Passive: Quell - Increases attack damage against non-hero units, based on whether the equipped hero is ranged or melee. Does not provide bonus damage against Roshan. ",
       "info": ""
     }
     ,
@@ -1281,9 +1281,9 @@
       "level": 2,
       "gold": 155,
       "recipe": [0],
-      "param": "рецепт",
-      "use": "Сборка некоторых вещей требует инструкций. ",
-      "info": "Просто рецепт "
+      "param": "recipe",
+      "use": "manual for craft items",
+      "info": "just recipe"
     }
   ]
 }
