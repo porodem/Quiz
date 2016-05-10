@@ -2,6 +2,7 @@
     <string name="app_name">Dota Quiz X</string>
 
     <string name="start_btn">Start Quiz</string>
+    <string name="item_list_btn">Browse Items</string>
 
 
     <string name="add">yes</string>
@@ -11,6 +12,6 @@
 
     <string name="check">Confirm</string>
 
-    <string name="correct">Rignt</string>
+    <string name="correct">Right</string>
     <string name="wrong">Wrong</string>\
 </resources>

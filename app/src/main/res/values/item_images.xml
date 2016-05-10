@@ -128,6 +128,12 @@
         <item>@drawable/yb_aether_lens_lg</item>
         <item>@drawable/yc_dragon_lance_lg</item>
         <item>@drawable/yd_iron_talon_lg</item>
+        <item>@drawable/ye_bloodthorn_lg</item>
+        <item>@drawable/yf_echo_sabre_lg</item>
+        <item>@drawable/yg_blight_stone_lg</item>
+        <item>@drawable/yh_infused_raindrop_lg</item>
+        <item>@drawable/yi_wind_lace_lg</item>
+        <item>@drawable/yj_hurricane_pike_lg</item>
         <item>@drawable/z_recipe</item>
     </array>
 </resources>

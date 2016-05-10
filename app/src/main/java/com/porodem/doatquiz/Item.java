@@ -1,4 +1,4 @@
-package com.porodem.quiz;
+package com.porodem.doatquiz;
 
 /**
  * Created by porod on 09.11.2015.

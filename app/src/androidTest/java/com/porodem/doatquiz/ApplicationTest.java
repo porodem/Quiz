@@ -1,4 +1,4 @@
-package com.porodem.quiz;
+package com.porodem.doatquiz;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

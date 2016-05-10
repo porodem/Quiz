@@ -1,4 +1,4 @@
-package com.porodem.quiz;
+package com.porodem.doatquiz;
 
 import org.junit.Test;
 

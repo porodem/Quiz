@@ -5,10 +5,10 @@
       "title": "Abyssal Blade",
       "sound": "",
       "level": 5,
-      "gold": 6750,
-      "recipe": [107, 97],
-      "param": "+ 70 Damage \n + 10 Strength \n BASH MELEE CHANCE: 25% \n BASH RANGED CHANCE: 10% \n BASH STUN DURATION: 1.4 \n BASH BONUS DAMAGE: 120 \n OVERWHELM STUN DURATION: 2 ",
-      "use": "Active: Overwhelm - Stuns a target enemy unit for 2.0 seconds. Pierces Spell Immunity. \n Passive: Bash - Grants each attack a chance to stun the target for 1.4 seconds and deal 120 bonus damage, based on whether the equipped hero is ranged or melee.",
+      "gold": 6400,
+      "recipe": [107, 118, 134],
+      "param": "+ 250 Health \n + 15 HP Regeneration \n BLOCK DAMAGE MELEE: 40 \n BLOCK DAMAGE RANGED: 20 \n + 10 Damage \n + 10 Strength \n BASH MELEE CHANCE: 25% \n BASH RANGED CHANCE: 10% \n BASH STUN DURATION: 1.4 \n BASH BONUS DAMAGE: 85 \n OVERWHELM STUN DURATION: 2 ",
+      "use": "Active: Overwhelm - Stuns a target enemy unit for 2.0 seconds. Pierces Spell Immunity. \n Passive: Bash - Grants each attack a chance to stun the target for 1.4 seconds and deal 85 bonus damage, based on whether the equipped hero is ranged or melee. Passive: Damage Block - Makes the wielder block damage from each incoming attack based on whether the equipped hero is melee or ranged.",
       "info": "The lost blade of the Commander of the Abyss, this edge cuts into an enemy's soul. "
     },
     {
@@ -36,9 +36,9 @@
       "sound": "armlet",
       "level": 3,
       "gold": 2320,
-      "recipe": [49,43,12,128],
+      "recipe": [49,43,12,134],
       "param": "+ 9 Damage \n + 25 Attack Speed \n + 5 Armor \n + 7 HP Regeneration ",
-      "use": "Active: Toggle Unholy Strength - When active, Unholy Strength grants +31 damage and +25 strength, but drains 40 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated. ",
+      "use": "Active: Toggle Unholy Strength - When active, Unholy Strength grants +31 damage and +25 strength, + 5 armor, but drains 40 health per second. You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated. ",
       "info": "Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power. "
     },
     {
@@ -46,7 +46,7 @@
       "sound": "assault",
       "level": 5,
       "gold": 5250,
-      "recipe": [81,52,21,128],
+      "recipe": [81,52,21,134],
       "param": "+ 35 Attack Speed \n + 10 Armor \n AURA ATTACK SPEED: 20 \n AURA ALLY BONUS ARMOR: 5 \n AURA ENEMY ARMOR REDUCTION: 5 ",
       "use": "Passive: Assault Aura - Grants attack speed and armor to nearby allied units and structures, and decreases the armor of nearby enemies.",
       "info": "Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed. "
@@ -86,7 +86,7 @@
       "sound": "blackking",
       "level": 5,
       "gold": 3975,
-      "recipe": [75,65,128],
+      "recipe": [75,65,134],
       "param": "+ 10 Strength \n + 24 Damage \n AVATAR DURATION: 10/9/8/7/6/5 ",
       "use": "Active: Avatar - Grants Spell Immunity and 100% Magic Damage Resistance. Duration and cooldown decrease with each use. Some abilities are able to disable through Avatar. ",
       "info": "A powerful staff imbued with the strength of giants. "
@@ -136,7 +136,7 @@
       "sound": "bloodstone",
       "level": 5,
       "gold": 4900,
-      "recipe": [110,111,128],
+      "recipe": [110,111,134],
       "param": "+ 500 Health \n + 400 Mana \n + 9 HP Regeneration \n + 200% Mana Regeneration ",
       "use": "Active: Pocket Deny - Instantly causes you to die. \n Passive: Bloodpact - Begins with 8 charges, and gains a charge each time an enemy hero dies within 1675 range. Each charge grants 1 mana regeneration per second, and reduces respawn time by 3 seconds. If the bearer dies, 500 + 30 health per charge is restored to all allies within a 1675 radius, while the Bloodstone loses a third of its charges. ",
       "info": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit. "
@@ -156,7 +156,7 @@
       "sound": "bootstravel",
       "level": 4,
       "gold": 2450,
-      "recipe": [15,128],
+      "recipe": [15,134],
       "param": "+ 100 Movement Speed ",
       "use": "Active: Teleport - Teleports you to an allied non-hero unit or structure. Double-click to teleport to your team's base fountain. Upgradable to allow you to teleport to allied heroes. ",
       "info": "Winged boots that grant omnipresence. "
@@ -166,7 +166,7 @@
       "sound": "звук",
       "level": 3,
       "gold": 525,
-      "recipe": [22,40,128],
+      "recipe": [22,40,134],
       "param": "+ 6 Strength \n + 3 Agility \n + 3 Intelligence \n + 3 Damage ",
       "use": "",
       "info": "The bracer is a common choice to toughen up defenses and increase longevity. "
@@ -186,7 +186,7 @@
       "sound": "звук",
       "level": 3,
       "gold": 800,
-      "recipe": [21,53,128],
+      "recipe": [21,53,134],
       "param": "+ 5 Armor \n + 2 All Attributes \n ARMOR CAST RADIUS: 900 ",
       "use": "Active: Armor Bonus - Gives +2 armor to all allied units in a 900 radius. Lasts 25 seconds on heroes, 30 seconds on units. ",
       "info": "A powerful shield that imbues the bearer with the strength of heroes past, it is capable of protecting entire armies in battle. "
@@ -246,8 +246,8 @@
       "sound": "звук",
       "level": 5,
       "gold": 3550,
-      "recipe": [118,19,128],
-      "param": "+ 250 Health \n + 6 HP Regeneration \n + 2 All Attributes \n + 5 Armor \n ШАНС БЛОКА: 100% \n BLOCK DAMAGE MELEE: 32 \n BLOCK DAMAGE RANGED: 16 \n GUARD ARMOR: 2 \n GUARD DURATION: 10 \n GUARD RADIUS: 900 \n GUARD DAMAGE BLOCK: 55",
+      "recipe": [118,19,134],
+      "param": "+ 250 Health \n + 8 HP Regeneration \n + 2 All Attributes \n + 5 Armor \n ШАНС БЛОКА: 100% \n BLOCK DAMAGE MELEE: 32 \n BLOCK DAMAGE RANGED: 16 \n GUARD ARMOR: 2 \n GUARD DURATION: 10 \n GUARD RADIUS: 900 \n GUARD DAMAGE BLOCK: 55",
       "use": "Active: Guard - Grant nearby allied heroes a 100% chance to block 55 damage from each incoming attack, along with 2 armor. Lasts 10 seconds. \n Passive: Damage Block - Makes the wielder block damage from each incoming attack based on whether the equipped hero is melee or ranged. ",
       "info": "A cuirass originally built to protect against the dreaded Year Beast. "
     },
@@ -256,7 +256,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 2120,
-      "recipe": [18,12,128],
+      "recipe": [18,12,134],
       "param": "+ 30 Damage \n CRITICAL CHANCE: 20% \n CRITICAL DAMAGE: 175% ",
       "use": "Passive: Critical Strike - Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings. ",
       "info": "A blade forged from rare crystals, it seeks weak points in enemy armor. "
@@ -266,7 +266,7 @@
       "sound": "deadalus",
       "level": 5,
       "gold": 5520,
-      "recipe": [26,29,128],
+      "recipe": [26,29,134],
       "param": "+ 81 Damage \n CRITICAL CHANCE: 30% \n CRITICAL DAMAGE: 220%",
       "use": "Passive: Critical Strike - Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings. ",
       "info": "A weapon of incredible power that is difficult for even the strongest of warriors to control."
@@ -276,7 +276,7 @@
       "sound": "dagon",
       "level": 4,
       "gold": 2720,
-      "recipe": [112,72,128],
+      "recipe": [112,72,134],
       "param": "+ 13/16/19/22/25 Intelligence \n + 3 All Attributes \n + 9 Damage \n BURST DAMAGE: 400/500/600/700/800 \n CAST RANGE: 600/650/700/750/800 ",
       "use": "Active: Energy Burst - Emits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.  ",
       "info": "A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user. "
@@ -296,7 +296,7 @@
       "sound": "desolator",
       "level": 5,
       "gold": 3500,
-      "recipe": [65,65,128],
+      "recipe": [65,65,130],
       "param": "+ 50 Damage \n ARMOR REDUCTION: 7",
       "use": "Desolator is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers. ",
       "info": "A wicked weapon, used in torturing political criminals. "
@@ -306,9 +306,9 @@
       "sound": "звук",
       "level": 5,
       "gold": 3150,
-      "recipe": [11,11,95,128],
+      "recipe": [11,11,95,134],
       "param": "+ 25/35 Agility \n + 10/15 Intelligence \n PURGE SLOW DURATION: 4 \n PURGE CAST RANGE: 600 ",
-      "use": "Active: Purge - If cast on an enemy, removes buffs from the target and slows it for 4.0 seconds. If cast on an ally, Purge removes most debuffs. \n Passive: Manabreak - Each attack burns 25 mana from the target, and deals the same amount in physical damage. Burns 12 mana per attack from ranged illusions. Does not stack with other manabreak abilities.",
+      "use": "Active: Purge - If cast on an enemy, removes buffs from the target and slows it for 4.0 seconds. If cast on an ally, Purge removes most debuffs. \n Passive:  Manabreak - Each attack burns 40 mana from the target, and deals the same amount in physical damage. Burns 20 mana per attack from melee illusions and 10 mana per attack from ranged illusions. Does not stack with other manabreak abilities.",
       "info": "An enchanted blade that allows the user to cut straight into the enemy's soul. "
     },
     {
@@ -325,8 +325,8 @@
       "title": "Drum of Endurance",
       "sound": "звук",
       "level": 4,
-      "gold": 1850,
-      "recipe": [95,17,128],
+      "gold": 1775,
+      "recipe": [94,17,132],
       "param": "+ 9 All Attributes \n + 3 Damage \n AURA ATTACK SPEED: 5 \n AURA MOVE SPEED: 5% \n ENDURANCE ATTACK SPEED: 25 \n ENDURANCE MOVE SPEED: 10% \n ENDURANCE DURATION: 6 \n AURA/ENDURANCE RADIUS: 900 ",
       "use": "Active: Endurance - Gives bonus +25 attack speed and +13% movement speed to allies in a 900 radius. \n Passive: Swiftness Aura - Gives bonus attack and movement speed to allies in a 900 radius.",
       "info": "A relic that enchants the bodies of those around it for swifter movement in times of crisis. "
@@ -366,7 +366,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 2825,
-      "recipe": [98,112,122,128],
+      "recipe": [132,112,122,134],
       "param": "+ 10 Intelligence \n + 150% Mana Regeneration \n + 40 Movement Speed \n CYCLONE DURATION: 2.5 \n CYCLONE CAST RANGE: 575 ",
       "use": "Active: Cyclone - Sweeps a target unit up into cyclone, making them invulnerable for 2.5 seconds. Cyclone can be cast on yourself. Enemy units take 50 magical damage upon landing. ",
       "info": "A mysterious scepter passed down through the ages, its disruptive winds can be used for good or evil.  "
@@ -386,7 +386,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 2250,
-      "recipe": [112,94,128],
+      "recipe": [112,94,134],
       "param": "+ 10 Intelligence \n + 4 HP Regeneration ",
       "use": "Active: Force - Pushes any target unit 600 units in the direction it is facing. Double click to instantly cast Force on yourself. ",
       "info": "Allows you to manipulate others, for good or evil. "
@@ -435,8 +435,8 @@
       "title": "Guardian Greaves",
       "sound": "звук",
       "level": 5,
-      "gold": 5300,
-      "recipe": [64,3,128],
+      "gold": 5275,
+      "recipe": [64,3,134],
       "param": "+ 55 Movement Speed \n + 250 Mana \n + 5 All Attributes \n + 5 Armor \n AURA HEALTH REGEN: 4 \n AURA ARMOR: 2 \n AURA BOOST HEALTH REGEN: 15 \n AURA BOOST ARMOR: 15 \n AURA BOOST THRESHOLD: 20% \n MEND HEAL: 250 \n MEND MANA RESTORE: 160 \n AURA/MEND RADIUS: 900 ",
       "use": "Active: Mend - Restores 250 health and 160 mana to nearby allies, and removes most negative buffs from the caster. \n Passive: Guardian Aura - Provides nearby allies with 4 health regeneration and 2 bonus armor. If an allied hero's health falls below 20%, they receive 15 health regeneration and 15 armor. ",
       "info": "One of many holy instruments constructed to honor the Omniscience. "
@@ -446,7 +446,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 2050,
-      "recipe": [43,128],
+      "recipe": [43,134],
       "param": "+ 30 Attack Speed \n TRANSMUTE CAST RANGE: 600 ",
       "use": "Active: Transmute - Kills a non-hero target for 190 gold and 2.5x experience. Cannot be used on Ancient Creeps. ",
       "info": "Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets."
@@ -456,7 +456,7 @@
       "sound": "звук",
       "level": 3,
       "gold": 600,
-      "recipe": [94,53,128],
+      "recipe": [94,53,134],
       "param": "+ 2 All Attributes \n AURA HEALTH REGEN: 3 \n AURA REGEN RADIUS: 900 ",
       "use": "Passive: Regeneration Aura - Restores health to allies in a 900 unit radius.",
       "info": "Creates a soothing aura that restores allies in battle. "
@@ -466,8 +466,8 @@
       "sound": "звук",
       "level": 5,
       "gold": 5500,
-      "recipe": [88,120,128],
-      "param": "+ 40 Strength \n + 300 Health \n HEALTH RESTORED PER SECOND: 4,75% ",
+      "recipe": [88,120,134],
+      "param": "+ 45 Strength \n + 250 Health \n HEALTH RESTORED PER SECOND: 4,75% ",
       "use": "Passive: Health Regeneration - Restores a percentage of max health per second. If damage is taken from an enemy hero or Roshan, this ability is disabled for 5 seconds for melee heroes, or 7 seconds for ranged heroes. ",
       "info": "Preserved heart of an extinct monster, it bolsters the bearer's fortitude. "
     },
@@ -478,7 +478,7 @@
       "gold": 3850,
       "recipe": [99,114],
       "param": "+ 25% Evasion \n + 25 Damage \n + 20 Strength \n MAIM CHANCE: 15% \n MAIM MOVEMENT SLOW: 20% \n MAIM ATTACK SLOW: 20 \n MAIM DURATION: 4 \n DISARM RANGED DURATION: 4.5 \n DISARM MELEE DURATION: 3 \n DISARM CAST RANGE: 600 ",
-      "use": "Active: Disarm - Prevents a target from attacking. Lasts 3.0 seconds on melee targets, and 4.5 seconds on ranged targets. \n Passive: Lesser Maim - Each attack has a chance to slow the enemy's movement and attack speed for 4.0 seconds.",
+      "use": "Active: Disarm - Prevents a target from attacking. Lasts 3.0 seconds on melee targets, and 5.5 seconds on ranged targets. \n Passive: Lesser Maim - Each attack has a chance to slow the enemy's movement and attack speed for 4.0 seconds.",
       "info": "This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not. "
     },
     {
@@ -505,9 +505,9 @@
       "title": "Hood of Defiance",
       "sound": "звук",
       "level": 4,
-      "gold": 2100,
-      "recipe": [92,24,94,94],
-      "param": "+ 9 HP Regeneration \n + 30% Spell Resistance \n BARRIER BLOCK: 325 \n BARRIER DURATION: 12",
+      "gold": 1725,
+      "recipe": [92,24,94],
+      "param": "+ 8 HP Regeneration \n + 30% Spell Resistance \n BARRIER BLOCK: 325 \n BARRIER DURATION: 12",
       "use": "Active: Creates a spell shield that absorbs up to 325 magical damage.",
       "info": "A furred, magic resistant headpiece that is feared by wizards."
     },
@@ -545,8 +545,8 @@
       "title": "Linken's Sphere",
       "sound": "звук",
       "level": 5,
-      "gold": 5125,
-      "recipe": [116,78,128],
+      "gold": 4800,
+      "recipe": [116,78,134],
       "param": "+ 15 All Attributes \n + 6 HP Regeneration \n + 150% Mana Regeneration \n + 15 Damage ",
       "use": "Passive: Spellblock - Blocks most targeted spells once every 16.0 seconds. \n Transfer Spellblock - Temporarily removes Spellblock from the item's owner and transfers it to an allied unit. ",
       "info": "This magical sphere once protected one of the most famous heroes in history. "
@@ -556,8 +556,8 @@
       "sound": "звук",
       "level": 5,
       "gold": 4000,
-      "recipe": [78,81,128],
-      "param": "+ 10 Damage \n + 10 Armor \n + 5 HP Regeneration \n + 125% Mana Regeneration \n ECHO DURATION: 6 \n ECHO CAST RANGE: 900 ",
+      "recipe": [78,81,35],
+      "param": "+ 10 Damage \n + 10 Armor \n + 6 HP Regeneration \n + 125% Mana Regeneration \n ECHO DURATION: 6 \n ECHO CAST RANGE: 900 ",
       "use": "Active: Echo Shell - Applies a shield to the target unit which re-casts most targeted spells back to their caster. The shielded unit will still take damage from the spell. Dispels negative buffs when applied.",
       "info": "The jewel at its center still reflects a pale image of its creator. "
     },
@@ -566,7 +566,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 2800,
-      "recipe": [65,43,128],
+      "recipe": [65,43,134],
       "param": "+ 24 Damage \n + 25 Attack Speed \n CHAIN CHANCE: 25% \n CHAIN DAMAGE: 120 \n CHAIN TARGETS: 4 \n CHAIN LEAP RADIUS: 900",
       "use": "Passive: Chain Lightning - Grants a chance on attack to release a bolt of electricity that leaps between 4 targets, dealing 120 magical damage to each.",
       "info": "A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning."
@@ -596,7 +596,7 @@
       "sound": "звук",
       "level": 5,
       "gold": 4950,
-      "recipe": [124,116,128],
+      "recipe": [124,116,134],
       "param": "+ 10 Strength \n + 26 Agility \n + 10 Intelligence \n + 15 Attack Speed \n + 10% Movement Speed \n NUMBER OF IMAGES: 2 \n IMAGE DURATION: 20 \n MELEE IMAGE DAMAGE: 33% \n MELEE IMAGE DAMAGE TAKEN: 350% \n RANGED IMAGE DAMAGE: 28% \n RANGED IMAGE DAMAGE TAKEN: 400% ",
       "use": "Active: Mirror Image - Creates 2 images of your hero that last 20 seconds. Melee heroes have a 30 second cooldown on this ability, while for Ranged heroes the cooldown is 45 seconds.",
       "info": "An axe made of reflective materials that causes confusion amongst enemy ranks. "
@@ -616,9 +616,9 @@
       "sound": "звук",
       "level": 4,
       "gold": 1800,
-      "recipe": [69,128],
+      "recipe": [69,134],
       "param": "LIFESTEAL: 20% \n BERSERK ATTACK SPEED: 100 \n BERSERK MOVE SPEED: 17% \n BERSERK ADDED DAMAGE TAKEN: 30% \n BERSERK DURATION: 12",
-      "use": "Active: Berserk - Gives 100 attack speed and 17% movement speed, but causes you to take extra 30% damage. Lasts 12.0 seconds. \n Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.",
+      "use": "Active: Berserk - Gives 100 attack speed and 17% movement speed, but causes you to take extra 25% damage. Lasts 12.0 seconds. \n Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.",
       "info": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force. "
     },
     {
@@ -626,7 +626,7 @@
       "sound": "звук",
       "level": 3,
       "gold": 1200,
-      "recipe": [21,98,128],
+      "recipe": [21,98,130],
       "param": "+ 7 Armor \n + 50% Mana Regeneration \n VALOR ARMOR REDUCTION: 7 \n VALOR DURATION: 7 \n VALOR CAST RANGE: 1000",
       "use": "Active: Valor - If cast on an ally, increases their armor while reducing the caster's. If cast on an enemy, reduces the armor of both the enemy and the caster. Cannot target magic immune enemies. Armor reduction is halved against Roshan. ",
       "info": "The bearer has no fear of combat. "
@@ -636,7 +636,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 2300,
-      "recipe": [46,19,128],
+      "recipe": [46,19,134],
       "param": "+ 5 All Attributes \n + 5 Armor \n AURA HEALTH REGEN: 4 \n RESTORE HEAL: 250 \n RESTORE ARMOR: 2 \n RESTORE ARMOR DURATION: 25 \n AURA/RESTORE RADIUS: 900 ",
       "use": "Active: Restore - Heals 250 health and gives +2 armor to allied units in a 900 radius. \n Passive: Mekansm Aura - Grants 4 health regeneration to allied units in a 900 radius.",
       "info": "A glowing jewel formed out of assorted parts that somehow fit together perfectly."
@@ -656,7 +656,7 @@
       "sound": "звук",
       "level": 5,
       "gold": 5700,
-      "recipe": [57,52,128],
+      "recipe": [57,52,134],
       "param": "+ 24 Damage \n + 80 Attack Speed \n STATIC DURATION: 15 \n STATIC CHANCE: 20% \n STATIC DAMAGE: 200 \n STATIC RELEASE RADIUS: 900 \n CHAIN CHANCE: 25% \n CHAIN DAMAGE: 150 \n CHAIN TARGETS: 12 \n CHAIN LEAP RADIUS: 900",
       "use": "Active: Static Charge - Places a charged shield on a target unit which has a 20% chance to release a shocking bolt at a nearby attacker and 4 additional enemies. \n Passive: Chain Lightning - Grants a chance on attack to release a bolt of electricity that leaps between 12 targets, dealing 150 magical damage to each.",
       "info": "Thor's magical hammer, made for him by the dwarves Brok and Eitri."
@@ -706,7 +706,7 @@
       "sound": "звук",
       "level": 3,
       "gold": 2700,
-      "recipe": [112,8,128],
+      "recipe": [112,8,134],
       "param": "+ 15/21/24 Intelligence \n + 8/12/16 Strength \n WARRIOR HEALTH: 700/800/900 \n WARRIOR DAMAGE: 45/60/75 \n WARRIOR MANA BREAK: 25/50/75 \n WARRIOR LAST WILL DMG: 550/675/800 \n ARCHER HEALTH: 700/800/900 \n ARCHER DAMAGE: 60/90/120 \n ARCHER MANA BURN: 125/175/225 \n ARCHER AURA SPEED: 5%/7%/9% ",
       "use": "Active: Demonic Summoning - Summons a Warrior and an Archer to fight for you for 40 seconds, whose strength and abilities increase as Necronomicon is upgraded. Warrior gains True Sight at level 3. Upgradable. ",
       "info": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages. "
@@ -716,7 +716,7 @@
       "sound": "звук",
       "level": 2,
       "gold": 470,
-      "recipe": [22,61,128],
+      "recipe": [22,61,134],
       "param": "+ 3 Strength \n + 3 Agility \n + 6 Intelligence \n + 3 Damage ",
       "use": "",
       "info": "A small gemstone attached to several chains. "
@@ -737,7 +737,7 @@
       "level": 5,
       "gold": 5900,
       "recipe": [70,110],
-      "param": "+ 25 Intelligence \n + 450 Health \n + 400 Mana \n + 4 HP Regeneration \n + 100% Mana Regeneration \n COOLDOWN REDUCTION: 25% \n HERO SPELL LIFESTEAL: 25% \n CREEP SPELL LIFESTEAL: 5% ",
+      "param": "+ 25 Intelligence \n + 450 Health \n + 400 Mana \n + 50% Mana Regeneration \n COOLDOWN REDUCTION: 25% \n HERO SPELL LIFESTEAL: 25% \n CREEP SPELL LIFESTEAL: 5% ",
       "use": "Passive: Cooldown Reduction - Reduces the cooldown time of all spells and items by 25%. \n Passive: Spell Lifesteal - A percentage of damage caused by spells is returned to the caster as health. ",
       "info": "At the core of spellcraft are spectrums only the very gifted can sense. "
     },
@@ -766,7 +766,7 @@
       "sound": "звук",
       "level": 5,
       "gold": 4075,
-      "recipe": [73,73,128],
+      "recipe": [73,73,134],
       "param": "+ 25 Intelligence \n + 30 Attack Speed \n + 30 Damage \n + 150% Mana Regeneration \n SOUL BURN INCREASED DAMAGE: 30% \n SOUL BURN DURATION: 5",
       "use": "Active: Soul Burn - Silences the target unit for 5.0 seconds and amplifies the damage it takes by 30.0%. ",
       "info": "A garnet rod constructed from the essence of a fire demon. "
@@ -777,7 +777,7 @@
       "level": 4,
       "gold": 1700,
       "recipe": [92,122],
-      "param": "+ 5 HP Regeneration \n + 125% Mana Regeneration \n + 10 Damage ",
+      "param": "+ 6 HP Regeneration \n + 125% Mana Regeneration \n + 10 Damage ",
       "use": "",
       "info": "A gem that grants heart to the bearer. "
     },
@@ -796,8 +796,8 @@
       "sound": "звук",
       "level": 5,
       "gold": 3500,
-      "recipe": [51,46,128],
-      "param": "+ HP Regeneration \n + 30% Spell Resistance \n AURA HEALTH REGEN: 4 \n AURA MAGIC RESISTANCE: 10% \n AURA RADIUS: 900 \n BARRIER SPELL BLOCK: 400 \n BARRIER DURATION: 12 \n BARRIER CAST RADIUS: 900",
+      "recipe": [51,46,134],
+      "param": "+8 HP Regeneration \n + 30% Spell Resistance \n AURA HEALTH REGEN: 4 \n AURA MAGIC RESISTANCE: 10% \n AURA RADIUS: 900 \n BARRIER SPELL BLOCK: 400 \n BARRIER DURATION: 12 \n BARRIER CAST RADIUS: 900",
       "use": "Active: Barrier - Gives a shield that blocks 400 spell damage to all allies in a 900 radius. \n Passive: Insight Aura - Gives allied units 4 health regeneration and 10% magic resistance in a 900 radius.",
       "info": "A powerful artifact of mysterious origin, it creates barriers against magical forces. "
     },
@@ -817,7 +817,7 @@
       "level": 4,
       "gold": 1200,
       "recipe": [0],
-      "param": "+ 150 Mana \n + 200 Health ",
+      "param": "+ 175 Mana \n + 175 Health ",
       "use": "",
       "info": "A perfectly formed amethyst that nourishes body and mind when held. "
     },
@@ -866,7 +866,7 @@
       "sound": "звук",
       "level": 5,
       "gold": 5150,
-      "recipe": [97,128],
+      "recipe": [97,134],
       "param": "+ 65 Damage \n BURN DAMAGE PER SECOND: 50 \n BURN MISS CHANCE: 17% \n BURN RADIUS: 700",
       "use": "Active: Toggle Burn - When active, scorches nearby enemies for 50 damage per second and blinds them, causing them to miss 17% of their attacks. ",
       "info": "A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies. "
@@ -886,8 +886,8 @@
       "sound": "звук",
       "level": 5,
       "gold": 5200,
-      "recipe": [78,78,128],
-      "param": "+ 10 HP Regeneration \n + 250% Mana Regeneration \n + 20 Damage ",
+      "recipe": [78,78,134],
+      "param": "+ 12 HP Regeneration \n + 250% Mana Regeneration \n + 20 Damage ",
       "use": "Active: Reset Cooldowns - Resets the cooldowns of all your items and abilities. ",
       "info": "A powerful artifact created for wizards. "
     },
@@ -897,7 +897,7 @@
       "level": 3,
       "gold": 1010,
       "recipe": [123,91],
-      "param": "+ 9 Damage \n + 3 Strength \n + 9 Agility \n + 3 Intelligence \n + 1 Armor \n AURA MANA REGEN: 0.65 \n AURA BONUS ARMOR: 2 ",
+      "param": "+ 10 Damage \n + 3 Strength \n + 9 Agility \n + 3 Intelligence \n AURA MANA REGEN: 0.65 \n AURA BONUS ARMOR: 2 ",
       "use": "Passive: Aquila Aura - Grants mana regeneration and armor in a 900 area of effect. \n Active: Toggle whether the aura affects other non-hero units.",
       "info": "The ring of the fallen Warlord Aquila continues to support armies in battle. "
     },
@@ -907,7 +907,7 @@
       "level": 2,
       "gold": 525,
       "recipe": [93,98],
-      "param": "+ 6 Damage \n + 1 Armor \n AURA MANA REGEN: 0.65 \n AURA BONUS ARMOR: 2 ",
+      "param": "+ 7 Damage \n AURA MANA REGEN: 0.65 \n AURA BONUS ARMOR: 2 ",
       "use": "Passive: Basilius Aura - Grants mana regeneration and armor in a 900 area of effect. \n Active: Toggle whether the aura affects other non-hero units.",
       "info": "Ring given as a reward to the greatest mages."
     },
@@ -917,7 +917,7 @@
       "level": 3,
       "gold": 850,
       "recipe": [0],
-      "param": "+ 5 HP Regeneration ",
+      "param": "+ 6 HP Regeneration ",
       "use": "",
       "info": "A shiny ring found beneath a fat halfling's corpse. "
     },
@@ -935,7 +935,7 @@
       "title": "Ring of Regen",
       "sound": "звук",
       "level": 1,
-      "gold": 350,
+      "gold": 325,
       "recipe": [0],
       "param": "+ 2 HP Regeneration ",
       "use": "",
@@ -958,7 +958,7 @@
       "gold": 3100,
       "recipe": [120,112,112],
       "param": "+ 30 Intelligence \n + 350 Health \n CRIPPLE MOVE SLOW: 60% \n CRIPPLE DURATION: 4 \n CRIPPLE ENEMY ACCURACY",
-      "use": "Active: Cripple - Slows the target's movement speed and grants units that attack the target 40% accuracy. ",
+      "use": "Active: Cripple - Slows the target's movement speed.",
       "info": "Atos, the Lord of Blight, has his essence stored in this deceptively simple wand. "
     },
     {
@@ -986,8 +986,8 @@
       "sound": "звук",
       "level": 3,
       "gold": 2050,
-      "recipe": [75,8,128],
-      "param": "+ 10 Damage \n + 16 Strength \n MAIM CHANCE: 15% \n MAIM MOVEMENT SLOW: 20% \n MAIM ATTACK SLOW: 20 \n MAIM DURATION: 4 ",
+      "recipe": [75,8,134],
+      "param": "+ 10 Damage \n + 16 Strength \n MAIM CHANCE: 20% \n MOVEMENT SLOW MELEE: 20% \n ATTACK SLOW MELEE: 20 \n MOVEMENT SLOW RANGED: 10% \n ATTACK SLOW RANGED: 10 \n MAIM DURATION: 4",
       "use": "Passive: Lesser Maim - Each attack has a chance to slow the enemy's movement and attack speed for 4.0 seconds. ",
       "info": "Sange is an unusually accurate weapon, seeking weak points automatically. "
     },
@@ -997,7 +997,7 @@
       "level": 4,
       "gold": 4100,
       "recipe": [99,124],
-      "param": "+ 16 Damage \n + 16 Strength \n + 16 Agility \n + 16 Attack Speed \n + 16% Movement Speed \n MAIM CHANCE: 16% \n MAIM MOVEMENT SLOW: 32% \n MAIM ATTACK SLOW: 32 \n MAIM DURATION: 5 ",
+      "param": "+ 16 Damage \n + 16 Strength \n + 16 Agility \n + 16 Attack Speed \n + 16% Movement Speed \n MAIM CHANCE: 30% \n MOVEMENT SLOW MELEE: 26% \n ATTACK SLOW MELEE: 26 \n MOVEMENT SLOW RANGED: 13% \n ATTACK SLOW RANGED: 13 \n MAIM DURATION: 5",
       "use": "Passive: Greater Maim - Each attack has a chance to slow the enemy's movement and attack speed for 5.0 seconds.",
       "info": "Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination. "
     },
@@ -1006,7 +1006,7 @@
       "sound": "звук",
       "level": 5,
       "gold": 5900,
-      "recipe": [88,50,128],
+      "recipe": [88,50,134],
       "param": "+ 20 Damage \n + 25 Strength \n + 5 Armor \n LIFESTEAL: 25% \n UNHOLY RAGE LIFESTEAL: 200% \n UNHOLY RAGE DURATION: 4",
       "use": "Active: Unholy Rage - Increases Lifesteal percentage to 200% for 4.5 seconds. \n Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.",
       "info": "Immense power at the cost of your soul. "
@@ -1025,7 +1025,7 @@
       "title": "Shadow Amulet",
       "sound": "звук",
       "level": 3,
-      "gold": 1400,
+      "gold": 1300,
       "recipe": [0],
       "param": "+ 20 Attack Speed \n FADE TIME: 1.5 ",
       "use": "Active: Fade - Grants invisibility to you or a target allied hero after a 1.5 second fade time. Moving breaks the invisibility. There is no cooldown when using this item on yourself.",
@@ -1046,7 +1046,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 4700,
-      "recipe": [81,70,128],
+      "recipe": [81,70,134],
       "param": "+ 30 Intelligence \n + 15 Armor \n AURA ATTACK SLOW: 45 \n BLAST DAMAGE: 200 \n BLAST MOVEMENT SLOW: 40% \n BLAST SLOW DURATION: 4 \n BLAST RADIUS: 900",
       "use": "Active: Arctic Blast - Emits a freezing wave that deals 200 magical damage to enemies and slows their movement by -40% for 4.0 seconds. \n Passive: Freezing Aura - Reduces the attack speed of all enemies in a 900 radius.",
       "info": "Said to have belonged to a goddess, today it retains much of its former power. "
@@ -1056,8 +1056,8 @@
       "sound": "звук",
       "level": 5,
       "gold": 5450,
-      "recipe": [99,104,128],
-      "param": "+ 32 Damage \n + 30 Attack Speed \n + 16 Strength \n MAIM CHANCE: 15% \n MAIM MOVE SLOW: 20% \n MAIM ATTACK SLOW: 20 \n MAIM DURATION: 4 \n SHADOW WALK DURATION: 14 \n BONUS ATTACK DAMAGE: 225 \n ENEMY DAMAGE REDUCTION: 40% \n REDUCTION DURATION: 5 ",
+      "recipe": [104,116],
+      "param": "+ 30 Damage \n + 30 Attack Speed \n + 15 All Attributes \n SHADOW WALK DURATION: 14 \n BONUS ATTACK DAMAGE: 225 \n ENEMY DAMAGE REDUCTION: 50% \n REDUCTION DURATION: 5 ",
       "use": "Active: Shadow Walk - Makes you invisible until the duration ends, or until you attack or cast a spell. While invisible, you move 20% faster and can move through units. Attacking to end the invisibility will deal 225 bonus damage to the target, disable their passive abilities, and reduce their damage output. \n Passive: Lesser Maim - Each attack has a chance to slow the enemy's movement and attack speed for 4.0 seconds. ",
       "info": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath. "
     },
@@ -1065,10 +1065,10 @@
       "title": "Skull Basher",
       "sound": "звук",
       "level": 4,
-      "gold": 2950,
-      "recipe": [8,54,128],
-      "param": "+ 10 Damage \n + 10 Strength \n BASH MELEE CHANCE: 25% \n BASH RANGED CHANCE: 10% \n BASH STUN DURATION: 1.4 \n BASH BONUS DAMAGE: 120 ",
-      "use": "Passive: Bash - Grants each attack a chance to stun the target for 1.4 seconds and deal 120 bonus damage, based on whether the equipped hero is ranged or melee. ",
+      "gold": 2700,
+      "recipe": [8,54,134],
+      "param": "+ 10 Damage \n + 10 Strength \n BASH MELEE CHANCE: 25% \n BASH RANGED CHANCE: 10% \n BASH STUN DURATION: 1.4 \n BASH BONUS DAMAGE: 85 ",
+      "use": "Passive: Bash - Grants each attack a chance to stun the target for 1.4 seconds and deal 85 bonus damage, based on whether the equipped hero is ranged or melee. ",
       "info": "A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated. "
     },
     {
@@ -1097,7 +1097,7 @@
       "level": 4,
       "gold": 3200,
       "recipe": [120,82,35],
-      "param": "+ 450 Health \n + 400 Mana \n + 4 HP Regeneration \n + 100% Mana Regeneration ",
+      "param": "+ 450 Health \n + 400 Mana \n + 50% Mana Regeneration ",
       "use": "",
       "info": "Regain lost courage. "
     },
@@ -1106,7 +1106,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 800,
-      "recipe": [94,98,128],
+      "recipe": [94,98,134],
       "param": "+ 3 HP Regeneration \n + 50% Mana Regeneration \n SACRIFICE DURATION: 10 ",
       "use": "Активируемая: Sacrifice — переводит 150 ед. вашего здоровья в 150 ед. маны. Действует 10 секунд. ",
       "info": "Active: Sacrifice - Consume 150 health to temporarily gain 150 mana. Lasts 10 seconds. "
@@ -1135,7 +1135,7 @@
       "title": "Talisman of Evasion",
       "sound": "звук",
       "level": 4,
-      "gold": 1800,
+      "gold": 1700,
       "recipe": [0],
       "param": "+ 25% Evasion ",
       "use": "Stacks diminishingly with other sources of Evasion. ",
@@ -1166,7 +1166,7 @@
       "sound": "звук",
       "level": 2,
       "gold": 875,
-      "recipe": [40,40,98,128],
+      "recipe": [40,40,98,134],
       "param": "+ 50% Mana Regeneration \n + 6 Strength \n RELEASE ALLY TOTAL HEAL: 400 \n RELEASE ENEMY TOTAL DAMAGE: 150 \n SOUL RELEASE DURATION: 8 \n SOUL RELEASE CAST RANGE: 950 ",
       "use": "Active: Soul Release - Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower. \n Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge.  ",
       "info": "Contains the ashes of powerful demons. "
@@ -1186,8 +1186,8 @@
       "sound": "звук",
       "level": 3,
       "gold": 2270,
-      "recipe": [49,72,95,95],
-      "param": " 6 HP Regeneration \n + 6 Armor \n + 6 Agility \n + 6 Strength \n + 6 Damage \n + 18 Intelligence\n INCREASED MAGIC DAMAGE: 25% \n MAGIC WEAKNESS RADIUS: 600 \n MAGIC WEAKNESS DURATION: 16 ",
+      "recipe": [49,72,72,134],
+      "param": " 6 HP Regeneration \n + 6 Armor \n + 6 Agility \n + 6 Strength \n + 6 Damage \n + 12 Intelligence\n INCREASED MAGIC DAMAGE: 25% \n MAGIC WEAKNESS RADIUS: 600 \n MAGIC WEAKNESS DURATION: 16 ",
       "use": "Active: Magic Weakness - Emits a weakening blast that increases the magic damage enemies take. Lasts 16.0 seconds. ",
       "info": "The headwear of corrupt magi. "
     },
@@ -1206,8 +1206,8 @@
       "sound": "звук",
       "level": 3,
       "gold": 2325,
-      "recipe": [46,91,69,128],
-      "param": "+ 2 All Attributes \n AURA HEALTH REGEN: 3 \n AURA MANA REGEN: 0.8 \n AURA BONUS ARMOR: 5 \n AURA BONUS ATTACK DAMAGE: 15% \n AURA MELEE LIFESTEAL: 15% \n AURA RANGED LIFESTEAL: 10% \n AURA RADIUS: 900 ",
+      "recipe": [46,91,69,134],
+      "param": "+ 2 All Attributes \n AURA HEALTH REGEN: 3 \n AURA MANA REGEN: 0.8 \n AURA BONUS ARMOR: 4 \n AURA BONUS ATTACK DAMAGE: 15% \n AURA MELEE LIFESTEAL: 15% \n AURA RANGED LIFESTEAL: 10% \n AURA RADIUS: 900 ",
       "use": "Passive: Vladmir's Aura - Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.",
       "info": "An eerie mask that is haunted with the malice of a fallen vampire. "
     },
@@ -1226,7 +1226,7 @@
       "sound": "звук",
       "level": 2,
       "gold": 485,
-      "recipe": [22,108,128],
+      "recipe": [22,108,134],
       "param": "+ 3 Strength \n + 6 Agility \n + 3 Intelligence \n + 3 Damage ",
       "use": "",
       "info": "A circlet with faint whispers echoing about it. "
@@ -1236,7 +1236,7 @@
       "sound": "звук",
       "level": 4,
       "gold": 2050,
-      "recipe": [11,6,128],
+      "recipe": [11,6,134],
       "param": "+ 16 Agility \n + 15 Attack Speed \n + 8% Movement Speed ",
       "use": "Yasha-based movement speed bonuses from multiple items do not stack. ",
       "info": "Yasha is regarded as the swiftest weapon ever created. "
@@ -1247,9 +1247,9 @@
       "sound": "звук",
       "level": 3,
       "gold": 2350,
-      "recipe": [35,92,24,128],
-      "param": "+ 250 Mana \n + 8 HP Regeneration \n + 15% Spell Resistance \n + 200 Cast Range",
-      "use": "Passive: Increases spell cast range by 200 and spell damage output by 8% ",
+      "recipe": [35,92,24,134],
+      "param": "+ 250 Mana \n + 8 HP Regeneration \n + 200 Cast Range",
+      "use": "Passive: Increases spell cast range by 200 and spell damage output by 5% ",
       "info": ""
     }
   ,
@@ -1257,8 +1257,8 @@
       "title": "Dragon Lance",
       "sound": "звук",
       "level": 3,
-      "gold": 1875,
-      "recipe": [75,85],
+      "gold": 1900,
+      "recipe": [6,6,75],
       "param": "+10 Damage \n +10 Attack Speed \n +10 Strength \n +130 Attack Range",
       "use": "Passive: Increases attack range of ranged heroes by 130. ",
       "info": ""
@@ -1269,12 +1269,79 @@
       "sound": "звук",
       "level": 2,
       "gold": 500,
-      "recipe": [86,93,128],
+      "recipe": [86,93,134],
       "param": "+ 2 Armor  \n QUELL MELEE DAMAGE: 140% \n QUELL RANGED DAMAGE: 115%",
       "use": " Active: Targets a non-player enemy unit to remove 40% of its current HP. \n Passive: Quell - Increases attack damage against non-hero units, based on whether the equipped hero is ranged or melee. Does not provide bonus damage against Roshan. ",
       "info": ""
     }
+
     ,
+    {
+      "title": "Bloodthorn",
+      "sound": "звук",
+      "level": 5,
+      "gold": 7195,
+      "recipe": [77,26,134],
+      "param": "+ 25 Intelligence \n + 30 Attack Speed \n + 60 Damage \n + 150% Mana Regeneration \n CRITICAL CHANCE: 20% \n CRITICAL DAMAGE: 175% \n SILENCE INCREASED DAMAGE: 30% \n SILENCE DURATION: 5 \n SILENCE CRITICAL DAMAGE: 135% ",
+      "use": "Active: Silences a target for 5.0 seconds and amplifies the damage it takes by 30.0%. All attacks on the silenced target will have True Strike and land a crit on impact. \n Critical Strike - Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings. ",
+      "info": "just recipe"
+    }
+    ,
+    {
+      "title": "Echo Sabre",
+      "sound": "звук",
+      "level": 3,
+      "gold": 2650,
+      "recipe": [75,73],
+      "param": "+ 10 Intelligence \n + 10 Strength \n + 10 Attack Speed \n + 15 Damage \n + 75% Mana Regeneration \n MOVEMENT SLOW: 100% \n ATTACK SLOW: 100 \n SLOW DURATION: 0.6 ",
+      "use": "Passive: Causes melee attacks to attack twice in quick succession. The double attacks apply a 0.6 second 100% movement and attack speed slow on each strike. ",
+      "info": " "
+    }
+  ,
+    {
+      "title": "Blight Stone",
+      "sound": "звук",
+      "level": 1,
+      "gold": 300,
+      "recipe": [0],
+      "param": "ARMOR REDUCTION: 2 \n DURATION: 8 ",
+      "use": "Passive: Your attacks reduce target's armor for 8.0 seconds. \n Blight Stone is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers. ",
+      "info": " "
+    }
+  ,
+    {
+      "title": "Infused Raindrops",
+      "sound": "звук",
+      "level": 1,
+      "gold": 225,
+      "recipe": [0],
+      "param": "MANA REGEN: 0.85 \n MAGIC DAMAGE BLOCK: 120 \n INITIAL CHARGES: 5 ",
+      "use": "Passive: Consumes a charge to block 120 magic damage from damage instances over 50 damage. Comes with 5 charges. When the charges are gone, the item disappear. ",
+      "info": " "
+    }
+  ,
+    {
+      "title": "Wind Lace",
+      "sound": "звук",
+      "level": 1,
+      "gold": 225,
+      "recipe": [0],
+      "param": "+ 20 Movement Speed ",
+      "use": "Passive: Gives increased movement speed. ",
+      "info": " "
+    }
+  ,
+    {
+      "title": "Hurricane Pike",
+      "sound": "звук",
+      "level": 4,
+      "gold": 4375,
+      "recipe": [126,39,134],
+      "param": "+ 10 Intelligence \n + 4 HP Regeneration \n + 20 Agility \n + 15 Strength \n+ 130 Attack Range (Ranged Only) \n UNLIMITED RANGE DURATION: 5 \n CAST RANGE ON ENEMY: 400 \n UNLIMITED RANGE ATTACKS: 4 ",
+      "use": "Active: When used on an enemy, it pushes you both away from each other 450 units each, and allows you to attack the target without range restrictions for 4 attacks for a maximum of 5.0 seconds. Works like Force Staff when used on self or allies. \n Passive: Increases attack range of ranged heroes by 130.  ",
+      "info": " "
+    }
+  ,
     {
       "title": "Recipe",
       "sound": "звук",

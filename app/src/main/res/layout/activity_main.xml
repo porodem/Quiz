@@ -14,4 +14,22 @@
         android:onClick="click_start"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_list_btn"
+        android:id="@+id/btnItem"
+        android:onClick="click_list"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test browse button"
+        android:onClick="test"
+        android:id="@+id/button2"
+        android:layout_below="@+id/btnItem"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAlert">
+        <ImageView
+            android:id="@+id/ivInfItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aghanims_scepter"/>
+        <TextView
+            android:id="@+id/dInfItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:text="param"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dInfParam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="11">
+    </TextView>
+    <TextView
+        android:id="@+id/dInfUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22">
+    </TextView>
+    <TextView
+        android:id="@+id/dInfInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ivInfIngr1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quest_mark"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ivInfIngr2"
+            android:layout_toStartOf="@+id/ivInfIngr2" />
+        <ImageView
+            android:id="@+id/ivInfIngr2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quest_mark"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/dummyForCenter"
+            android:layout_toStartOf="@+id/dummyForCenter" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/dummyForCenter" />
+        <ImageView
+            android:id="@+id/ivInfIngr3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quest_mark"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/dummyForCenter"
+            android:layout_toEndOf="@+id/dummyForCenter" />
+        <ImageView
+            android:id="@+id/ivInfIngr4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quest_mark"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivInfIngr3"
+            android:layout_toEndOf="@+id/ivInfIngr3" />
+    </RelativeLayout>
+
+</LinearLayout>
